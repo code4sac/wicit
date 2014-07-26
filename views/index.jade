@@ -1,0 +1,5 @@
+extends layout
+block content
+    include header
+    div#map-container(ng-controller='mapCtrl')
+        div#map(class="{{mapLoading ? 'loading' : ''}}")

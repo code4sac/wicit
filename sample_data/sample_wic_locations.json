@@ -1,0 +1,50 @@
+[
+  {
+    "count": "9",
+    "zipcode": "90254",
+    "birthweght": "1500-2499g",
+    "year": "2008",
+    "location_1": {
+      "needs_recoding": false,
+      "longitude": "-118.39718642699972",
+      "latitude": "33.86430130900044",
+      "human_address": "{\"address\":\"\",\"city\":\"HERMOSA BEACH\",\"state\":\"CA\",\"zip\":\"90254\"}"
+    }
+  },
+    {
+    "count": "204",
+    "zipcode": "90254",
+    "birthweght": "2500+ grams",
+    "year": "2008",
+    "location_1": {
+      "needs_recoding": false,
+      "longitude": "-118.39718642699972",
+      "latitude": "33.86430130900044",
+      "human_address": "{\"address\":\"\",\"city\":\"HERMOSA BEACH\",\"state\":\"CA\",\"zip\":\"90254\"}"
+    }
+  },
+    {
+    "count": "2",
+    "zipcode": "90254",
+    "birthweght": "UNDER 1500g",
+    "year": "2008",
+      "location_1": {
+      "needs_recoding": false,
+        "longitude": "-118.39718642699972",
+        "latitude": "33.86430130900044",
+        "human_address": "{\"address\":\"\",\"city\":\"HERMOSA BEACH\",\"state\":\"CA\",\"zip\":\"90254\"}"
+    }
+  },
+    {
+    "count": "0",
+    "zipcode": "90254",
+    "birthweght": "UNK",
+    "year": "2008",
+    "location_1": {
+      "needs_recoding": false,
+      "longitude": "-118.39718642699972",
+      "latitude": "33.86430130900044",
+      "human_address": "{\"address\":\"\",\"city\":\"HERMOSA BEACH\",\"state\":\"CA\",\"zip\":\"90254\"}"
+    }
+  }
+]

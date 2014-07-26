@@ -1,0 +1,7 @@
+// Created by jesserosato on 7/24/14.
+div#header
+    div.logo
+        h1.title wicit
+ul#global-notifications.notifications
+    li(ng-repeat="notification in notifications", class="{{ notification.status.class }}", ng-class="{hide: remove}")
+        | {{ notification.message }}
