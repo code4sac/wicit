@@ -1,89 +1,60 @@
-var wicItApp = angular.module('wicItApp', ['notifications', 'geolocation']);
+var wicItApp = angular.module('wicItApp', ['notifications', 'maps']);
 
 /** MAP CONTROLLER */
 var mapCtrl;
-mapCtrl = function ($scope, $http, $timeout, GeolocationService, NotificationService) {
+mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
 
-  var lat;
-  var long;
   var map;
-  var mapUpdating = false;;
+  var pinIcon = MapService.iconFactory('image/pin.png', 'image/pin_shadow.png', 30, 30);
+  var markerIcon = MapService.iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
+  var mapUpdating = false
 
   $scope.mapLoading = true;
+  var promise = MapService.initMapOnUserPosition(pinIcon);
+  promise.then(initMap, geolocationError);
+  promise["finally"](function() {
+    $scope.mapLoading = false;
+  });
 
-  GeolocationService.getPosition(initMap, geolocationError);
-
-  // TODO: MOVE MAP STUFF TO SERVICE.
-  function geolocationError(message) {
-    $scope.$apply(function () {
-      $scope.mapLoading = false;
+  function initMap(theMap) {
+    map = theMap;
+    updateNearbyLocations();
+    map.on('moveend', function(e) {
+      updateNearbyLocations(e);
     });
+  }
+
+  function geolocationError(geolocationError) {
+    var message = geolocationError.code == geolocationError.PERMISSION_DENIED ? "Dang, geolocation is disabled." : "Dang, we can't get your location.";
     NotificationService.addNotificiation({
       message: message,
       status: NotificationService.STATUSES.ERROR
     });
   }
 
-  function initMap(latitude, longitude) {
-    $scope.$apply(function () {
-      $scope.mapLoading = false;
-    });
-    lat = '33.86430130900044'; //latitude;
-    long = '-118.39718642699972'; //longitude;
-    map = L.map('map', { zoomControl: false }).setView([lat, long], 13);
-    var zoomCtrl = L.control.zoom({position: 'topright'});
-    map.addControl(zoomCtrl);
-    createMapTileLayer(map);
-
-    var pinIcon = createMapIcon('pin');
-
-    L.marker([lat, long], {icon: pinIcon}).addTo(map);
-
-    updateNearbyLocations();
-
-    map.on('moveend', updateNearbyLocations);
-  }
-
-  function createMapIcon(icon) {
-    return L.icon({
-      iconUrl: 'image/' + icon + '.png',
-      shadowUrl: 'image/' + icon + '_shadow.png',
-      iconSize: [30, 30], // size of the icon
-      shadowSize: [30, 30], // size of the shadow
-      iconAnchor: [0, 15], // point of the icon which will correspond to marker's location
-      shadowAnchor: [0, 15],  // the same for the shadow
-      popupAnchor: [40, 15] // point from which the popup should open relative to the iconAnchor
-    });
-  }
-
-  function createMapTileLayer(map) {
-    var iconAttr = 'Map Marker designed by <a href="http://www.thenounproject.com/AaronDodson">Aaron Dodson</a> from the <a href="http://www.thenounproject.com">Noun Project</a><br />'
-    iconAttr += 'Pin designed by <a href="http://www.thenounproject.com/eugen.belyakoff">Eugen Belyakoff</a> from the <a href="http://www.thenounproject.com">Noun Project</a>';
-    var mqTilesAttr = 'Tiles &copy; <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" />';
-    // add MapQuest tile layer, must give proper OpenStreetMap attribution according to MapQuest terms
-    L.tileLayer('http://otile4.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {attribution: mqTilesAttr + "<br />" + iconAttr}).addTo(map);
-  }
-
-  function updateNearbyLocations(e) {
+  /**
+   * Update the map with nearby locations
+   * TODO: Use real data.
+   * TODO: search on map center.
+   */
+  function updateNearbyLocations() {
     // Update
     if (mapUpdating) {
       return false;
     }
     mapUpdating = true;
-    $http.get('/locations').success(displayNearbyLocations).error(getNearbyLocationsError);
+    // TODO: only query server for nearby locations.
+    $http.get('/locations').success(displayLocations).error(updateNearbyLocationsError);
+    // Only update markers every 1.5 seconds
+    return $timeout(function() { mapUpdating = false; }, 1500);
 
-    function displayNearbyLocations(data, status, headers, config) {
-      // Only update markers every 1.5 seconds
-      $timeout(function() {
-        mapUpdating = false;
-      }, 1500);
-      var markerIcon = createMapIcon('marker');
+    function displayLocations(data) {
       data.forEach(function (location) {
-        L.marker([location.location_1.latitude, location.location_1.longitude], {icon: markerIcon}).addTo(map);
+        MapService.addMarker(map, [location.location_1.latitude, location.location_1.longitude], markerIcon)
       });
     }
 
-    function getNearbyLocationsError(data, status, headers, config) {
+    function updateNearbyLocationsError(data, status, headers, config) {
       NotificationService.addNotificiation({
         message: "Unable to load nearby locations.",
         status: NotificationService.STATUSES.ERROR
