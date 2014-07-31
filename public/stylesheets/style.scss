@@ -12,6 +12,20 @@ a {
   color: $brand-info;
 }
 
+@include keyframes(throbble) {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 #global-notifications {
   position: absolute;
   z-index: 2;
@@ -49,22 +63,7 @@ a {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: $brand-primary;
   &.loading {
-    @include animation(throbble 1s infinite);
-  }
-}
-
-@include keyframes(throbble) {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: .2;
-  }
-
-  100% {
-    opacity: 1;
+    background: url('../image/loader.GIF') no-repeat center center;
   }
 }

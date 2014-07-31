@@ -6,21 +6,24 @@ mapModule.factory('MapService', function($q, GeolocationService) {
   var mapServiceInstance = {};
 
   mapServiceInstance.initMap = function(latitude, longitude, icon) {
-    var lat = '33.86430130900044'; //latitude;
-    var long = '-118.39718642699972'; //longitude;
+    var lat = latitude;
+    var long = longitude;
     var map = L.map('map', { zoomControl: false }).setView([lat, long], 13);
     var zoomCtrl = L.control.zoom({position: 'topright'});
     map.addControl(zoomCtrl);
     createMapTileLayer(map);
-    mapServiceInstance.addMarker(map, [lat, long], icon);
+    if (icon) {
+      mapServiceInstance.addMarker(map, [lat, long], icon);
+    }
     return map;
   };
 
   mapServiceInstance.initMapOnUserPosition = function(icon)
   {
     var deferred = $q.defer();
-    GeolocationService.getPosition().then(function(lat, long) {
-      deferred.resolve(mapServiceInstance.initMap(lat, long, icon));
+    GeolocationService.getPosition().then(function(pos) {
+      var coords = pos.coords;
+      deferred.resolve(mapServiceInstance.initMap(coords.latitude, coords.longitude, icon));
     }, function(error) {
       deferred.reject(error);
     });

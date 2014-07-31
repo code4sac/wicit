@@ -6,9 +6,9 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
 
   var map;
   var pinIcon = MapService.iconFactory('image/pin.png', 'image/pin_shadow.png', 30, 30);
-  var markerIcon = MapService.iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
-  var mapUpdating = false
-
+  var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
+  var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
+  var mapUpdating = false;
   $scope.mapLoading = true;
   var promise = MapService.initMapOnUserPosition(pinIcon);
   promise.then(initMap, geolocationError);
@@ -20,7 +20,9 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
     map = theMap;
     updateNearbyLocations();
     map.on('moveend', function(e) {
-      updateNearbyLocations(e);
+      if ( ! mapUpdating) {
+        updateNearbyLocations(e).then(function() { mapUpdating = false });
+      }
     });
   }
 
@@ -35,22 +37,30 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
   /**
    * Update the map with nearby locations
    * TODO: Use real data.
-   * TODO: search on map center.
+   * TODO: search in map bounding box
    */
   function updateNearbyLocations() {
     // Update
-    if (mapUpdating) {
-      return false;
-    }
     mapUpdating = true;
-    // TODO: only query server for nearby locations.
-    $http.get('/locations').success(displayLocations).error(updateNearbyLocationsError);
-    // Only update markers every 1.5 seconds
-    return $timeout(function() { mapUpdating = false; }, 1500);
+    var bounds = map.getBounds();
+    var nw = bounds.getNorthWest();
+    var se = bounds.getSouthEast();
+    var locationsUrl = '/locations';
+    // var locationsUrl = locationsBaseUrl;
+    // locationsUrl += '&$where=within_box(location, ' + nw.lat + ', ' + nw.long + ', ' + se.lat + ', ' + se.long + ')';
+    return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
-      data.forEach(function (location) {
-        MapService.addMarker(map, [location.location_1.latitude, location.location_1.longitude], markerIcon)
+      data.forEach(function (vendor) {
+        var lat = vendor.location.latitude;
+        var long = vendor.location.longitude;
+        var name = vendor.vendor;
+        var address = vendor.address;
+        var city = vendor.city;
+        var zip = vendor.zip_code;
+        var markerIcon = MapService.iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
+        MapService.addMarker(map, [lat, long], markerIcon);
+        return $timeout(function(){}, 1500);
       });
     }
 
