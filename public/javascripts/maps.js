@@ -50,7 +50,6 @@ mapModule.factory('MapService', function($q, GeolocationService) {
   };
 
   function createTileLayer(map) {
-
     var iconAttr = 'Map Marker designed by <a href="http://www.thenounproject.com/AaronDodson">Aaron Dodson</a> from the <a href="http://www.thenounproject.com">Noun Project</a><br />'
     iconAttr += 'Pin designed by <a href="http://www.thenounproject.com/eugen.belyakoff">Eugen Belyakoff</a> from the <a href="http://www.thenounproject.com">Noun Project</a>';
     return L.tileLayer('https://{s}.tiles.mapbox.com/v3/jesserosato.j200j557/{z}/{x}/{y}.png', {

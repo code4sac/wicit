@@ -1,14 +1,13 @@
 #header {
   position: absolute;
   display: inline-block;
-  background-color: $brand-primary;
-  border: 2px solid #fff;
   z-index: 2;
 }
 
 .logo {
   display: inline-block;
   padding: 10px;
+  border: 2px solid #fff;
   background-color: $brand-primary;
   vertical-align: top;
   h1.title {

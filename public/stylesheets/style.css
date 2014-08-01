@@ -5297,13 +5297,12 @@ body {
 #header {
   position: absolute;
   display: inline-block;
-  background-color: #af22e8;
-  border: 2px solid #fff;
   z-index: 2; }
 
 .logo {
   display: inline-block;
   padding: 10px;
+  border: 2px solid #fff;
   background-color: #af22e8;
   vertical-align: top; }
   .logo h1.title {
