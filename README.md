@@ -9,3 +9,5 @@
   - Install client-side dependencies: `bower install`
   - Start the server: `grunt dev`
   - [Try it out](http://localhost:3000)
+###License
+Wicit is free software, and may be redistributed under the MIT-LICENSE.
