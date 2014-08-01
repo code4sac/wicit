@@ -6,6 +6,7 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
 
   var map;
   var pinIcon = MapService.iconFactory('image/pin.png', 'image/pin_shadow.png', 30, 30);
+  var markerIcon = MapService.iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
   var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
   var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
   var mapUpdating = false;
@@ -40,7 +41,6 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
    * TODO: search in map bounding box
    */
   function updateNearbyLocations() {
-    // Update
     mapUpdating = true;
     var bounds = map.getBounds();
     var nw = bounds.getNorthWest();
@@ -58,7 +58,6 @@ mapCtrl = function ($scope, $http, $timeout, NotificationService, MapService) {
         var address = vendor.address;
         var city = vendor.city;
         var zip = vendor.zip_code;
-        var markerIcon = MapService.iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
         MapService.addMarker(map, [lat, long], markerIcon);
         return $timeout(function(){}, 1500);
       });

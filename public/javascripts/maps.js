@@ -8,10 +8,11 @@ mapModule.factory('MapService', function($q, GeolocationService) {
   mapServiceInstance.initMap = function(latitude, longitude, icon) {
     var lat = latitude;
     var long = longitude;
-    var map = L.map('map', { zoomControl: false }).setView([lat, long], 13);
+    L.mapbox.accessToken = 'pk.eyJ1IjoiamVzc2Vyb3NhdG8iLCJhIjoiUzZUNi1GdyJ9.Dj1yzEE4SifPEq5gTR8LJA';
+    var mapboxTiles = createTileLayer();
+    var map = L.map('map', { zoomControl: false }).setView([lat, long], 13).addLayer(mapboxTiles);
     var zoomCtrl = L.control.zoom({position: 'topright'});
     map.addControl(zoomCtrl);
-    createMapTileLayer(map);
     if (icon) {
       mapServiceInstance.addMarker(map, [lat, long], icon);
     }
@@ -48,12 +49,13 @@ mapModule.factory('MapService', function($q, GeolocationService) {
     L.marker(location, {icon: icon}).addTo(map);
   };
 
-  function createMapTileLayer(map) {
+  function createTileLayer(map) {
+
     var iconAttr = 'Map Marker designed by <a href="http://www.thenounproject.com/AaronDodson">Aaron Dodson</a> from the <a href="http://www.thenounproject.com">Noun Project</a><br />'
     iconAttr += 'Pin designed by <a href="http://www.thenounproject.com/eugen.belyakoff">Eugen Belyakoff</a> from the <a href="http://www.thenounproject.com">Noun Project</a>';
-    var mqTilesAttr = 'Tiles &copy; <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" />';
-    // add MapQuest tile layer, must give proper OpenStreetMap attribution according to MapQuest terms
-    L.tileLayer('http://otile4.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {attribution: mqTilesAttr + "<br />" + iconAttr}).addTo(map);
+    return L.tileLayer('https://{s}.tiles.mapbox.com/v3/jesserosato.j200j557/{z}/{x}/{y}.png', {
+      attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a><br />' + iconAttr
+    });
   }
 
   return mapServiceInstance;
