@@ -22,6 +22,13 @@
   }
 }
 
+.leaflet-container a.leaflet-popup-close-button {
+  color: #fff;
+  &:hover {
+    color: $brand-info;
+  }
+}
+
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
   color: #fff;
@@ -33,6 +40,10 @@
     color: #fff;
     font-weight: bold;
   }
+}
+
+.leaflet-popup-tip {
+  background-color: rgba(175, 34, 232, .8);
 }
 
 .marker-cluster-small {

@@ -5391,6 +5391,11 @@ body {
     z-index: 0;
     opacity: 1; }
 
+.leaflet-container a.leaflet-popup-close-button {
+  color: #fff; }
+  .leaflet-container a.leaflet-popup-close-button:hover {
+    color: #8c7bff; }
+
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
   color: #fff;
@@ -5400,6 +5405,9 @@ body {
   .leaflet-popup-content-wrapper a {
     color: #fff;
     font-weight: bold; }
+
+.leaflet-popup-tip {
+  background-color: #af22e8; }
 
 .marker-cluster-small {
   background-color: rgba(255, 108, 87, 0.6); }
