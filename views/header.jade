@@ -2,6 +2,8 @@
 div#header
     div.logo
         h1.title wicit
+        p
+            | Where to shop with WIC
 ul#global-notifications.notifications
     li(ng-repeat="notification in notifications", class="{{ notification.status.class }}", ng-class="{hide: remove}")
         | {{ notification.message }}

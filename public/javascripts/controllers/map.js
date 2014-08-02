@@ -1,5 +1,5 @@
 /** MAP CONTROLLER */
-var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationService, GeolocationService) {
+var mapCtrl = function ($scope, $http, $timeout, leafletEvents, leafletData, NotificationService, GeolocationService) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
@@ -8,7 +8,8 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationServ
   var tileUrl = "https://{s}.tiles.mapbox.com/v3/jesserosato.j200j557/{z}/{x}/{y}.png";
   var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
   var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
-  var mapUpdating = false;
+  var prevBounds = false;
+  var curBounds = false;
 
   $scope.mapLoading = true;
 
@@ -17,9 +18,15 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationServ
   GeolocationService.getPosition().then(setUserLocation, geolocationError);
 
   $scope.$on('leafletDirectiveMap.moveend', function(event){
-    if ( ! mapUpdating) {
-      updateNearbyLocations(event).then(function() { mapUpdating = false });
-    }
+    leafletData.getMap().then(function(map) {
+      if ( curBounds) {
+        prevBounds = curBounds;
+      }
+      curBounds = map.getBounds();
+      if ( ! prevBounds || ! prevBounds.contains(curBounds)) {
+        updateNearbyLocations(event).then(function() { mapUpdating = false });
+      }
+    });
   });
 
   function initMap()
@@ -71,6 +78,7 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationServ
       message: message,
       status: NotificationService.STATUSES.ERROR
     });
+    $scope.mapLoading = false;
   }
 
   /**
@@ -96,7 +104,7 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationServ
         var city = vendor.city;
         var zip = vendor.zip_code;
         var address = vendor.address + ' ' + vendor.second_address + ', ' + city + ' ' + zip;
-        var message ='<h3>' + name + '</h3><p>' + address + '</p><p></p><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
+        var message ='<h3>' + name + '</h3><p class="address">' + address + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
         $scope.markers[keyify(name)] = {
           group: vendor.county,
           lat: lat,
@@ -106,7 +114,6 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, NotificationServ
           icon: markerIcon
         }
       });
-      return $timeout(function() {}, 1500);
     }
 
     function updateNearbyLocationsError(data, status, headers, config) {

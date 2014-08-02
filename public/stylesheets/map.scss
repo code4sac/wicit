@@ -20,12 +20,23 @@
     z-index: 0;
     opacity: 1;
   }
+
+  .leaflet-top.leaflet-right {
+    top: 20px;
+    right: 20px;
+    .leaflet-control {
+      margin: 0;
+    }
+  }
 }
 
 .leaflet-container a.leaflet-popup-close-button {
   color: #fff;
+  top: 5px;
+  right: 5px;
   &:hover {
-    color: $brand-info;
+    color: #fff;
+    font-size: 1.2em;
   }
 }
 
@@ -33,17 +44,23 @@
   font-family: Oxygen, sans-serif;
   color: #fff;
   background-color: rgba(175, 34, 232, .6);
+  border: 2px solid #fff;
+  @include border-radius(8px);
   .leaflet-popup-content {
     background-color: transparent;
+    text-align: center;
+    p.address {
+      font-size: .8em;
+    }
+    p.directions {
+      font-size: 1.2em;
+      a {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
   }
-  a {
-    color: #fff;
-    font-weight: bold;
-  }
-}
-
-.leaflet-popup-tip {
-  background-color: rgba(175, 34, 232, .8);
 }
 
 .marker-cluster-small {

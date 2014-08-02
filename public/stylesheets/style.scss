@@ -6,8 +6,11 @@
 @import 'notifications';
 @import 'map';
 
-body {
-  padding: 20px 50px;
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 a {
