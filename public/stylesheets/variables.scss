@@ -4,3 +4,17 @@ $brand-info:            #8C7BFF;
 $brand-warning:         #E8B44F;
 $brand-danger:          #FF6C57;
 $brand-error:           #FF1A35;
+
+@include keyframes(throbble) {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

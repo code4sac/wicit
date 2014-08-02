@@ -5290,32 +5290,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  font-family: Oxygen, sans-serif;
-  color: #333333; }
-
-#header {
-  position: absolute;
-  display: inline-block;
-  z-index: 2; }
-
-.logo {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid #fff;
-  background-color: #af22e8;
-  vertical-align: top; }
-  .logo h1.title {
-    color: #fff;
-    font-family: Lobster, cursive;
-    margin: 0; }
-
-body {
-  padding: 20px 50px; }
-
-a {
-  color: #8c7bff; }
-
 @-webkit-keyframes throbble {
   0% {
     opacity: 1; }
@@ -5352,6 +5326,26 @@ a {
 
   100% {
     opacity: 1; } }
+body {
+  font-family: Oxygen, sans-serif;
+  color: #333333; }
+
+#header {
+  position: absolute;
+  display: inline-block;
+  z-index: 2; }
+
+.logo {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #af22e8;
+  vertical-align: top; }
+  .logo h1.title {
+    color: #fff;
+    font-family: Lobster, cursive;
+    margin: 0; }
+
 #global-notifications {
   position: absolute;
   z-index: 2;
@@ -5377,12 +5371,93 @@ a {
     #global-notifications li.success {
       background-color: #8dff70; }
 
-#map {
+#map-container {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0; }
-  #map.loading {
-    background: url("../image/loader.GIF") no-repeat center center; }
+  background-color: #8c7bff; }
+  #map-container.loading {
+    background: #8c7bff url("../image/loader.gif") no-repeat center center; }
+    #map-container.loading .angular-leaflet-map {
+      opacity: 0; }
+  #map-container .angular-leaflet-map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 1; }
+
+.leaflet-popup-content-wrapper {
+  font-family: Oxygen, sans-serif;
+  color: #fff;
+  background-color: rgba(175, 34, 232, 0.6); }
+  .leaflet-popup-content-wrapper .leaflet-popup-content {
+    background-color: transparent; }
+  .leaflet-popup-content-wrapper a {
+    color: #fff;
+    font-weight: bold; }
+
+.marker-cluster-small {
+  background-color: rgba(255, 108, 87, 0.6); }
+
+.marker-cluster-small div {
+  background-color: rgba(255, 108, 87, 0.2); }
+
+.marker-cluster-medium {
+  background-color: rgba(140, 123, 255, 0.6); }
+
+.marker-cluster-medium div {
+  background-color: rgba(140, 123, 255, 0.2); }
+
+.marker-cluster-large {
+  background-color: rgba(175, 34, 232, 0.6); }
+
+.marker-cluster-large div {
+  background-color: rgba(175, 34, 232, 0.2); }
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+  background-color: #b5e28c; }
+
+.leaflet-oldie .marker-cluster-small div {
+  background-color: #6ecc39; }
+
+.leaflet-oldie .marker-cluster-medium {
+  background-color: #f1d357; }
+
+.leaflet-oldie .marker-cluster-medium div {
+  background-color: #f0c20c; }
+
+.leaflet-oldie .marker-cluster-large {
+  background-color: #fd9c73; }
+
+.leaflet-oldie .marker-cluster-large div {
+  background-color: #f18017; }
+
+.marker-cluster {
+  background-clip: padding-box;
+  border-radius: 20px; }
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+  font: 14px "Helvetica Neue", Oxygen, sans-serif; }
+
+.marker-cluster span {
+  line-height: 30px; }
+
+body {
+  padding: 20px 50px; }
+
+a {
+  color: #8c7bff; }

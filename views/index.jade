@@ -1,5 +1,5 @@
 extends layout
 block content
     include header
-    div#map-container(ng-controller='mapCtrl')
-        div#map(class="{{mapLoading ? 'loading' : ''}}")
+    div#map-container(ng-controller='mapCtrl', class="{{mapLoading ? 'loading' : ''}}")
+        leaflet(defaults='defaults', center='center', markers='markers')

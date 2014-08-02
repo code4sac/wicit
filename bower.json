@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular": "~1.2.20",
-    "leaflet": "~0.7.3"
+    "leaflet": "~0.7.3",
+    "leaflet.markercluster": "~0.4.0"
   }
 }

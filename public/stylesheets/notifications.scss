@@ -1,0 +1,29 @@
+#global-notifications {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    background-color: $brand-info;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    text-transform: uppercase;
+    &:last-of-type {
+      border-bottom: 2px solid #fff;
+    }
+    &.error {
+      background-color: $brand-error;
+    }
+    &.success {
+      background-color: $brand-success;
+    }
+  }
+}
