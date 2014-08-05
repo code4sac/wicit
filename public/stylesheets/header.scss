@@ -1,19 +1,13 @@
 #header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: inline-block;
   z-index: 2;
+  width: 100%;
+  background-color: $brand-primary;
+  text-align: center;
 }
 
 .logo {
   display: inline-block;
-  padding: 10px 10px 0 10px;
-  border: 2px solid #fff;
-  background-color: rgba(175, 34, 232, .6);
-  vertical-align: top;
-  text-align: center;
-  @include border-radius(8px);
+  padding: 5px 10px;
   h1.title {
     color: #fff;
     font-family: $cursive;
@@ -21,7 +15,6 @@
   }
   p {
     color: #fff;
-    font-size: .8em;
-    text-transform: uppercase;
+    font-weight: 100;
   }
 }

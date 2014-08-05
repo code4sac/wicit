@@ -1,5 +1,7 @@
 extends layout
 block content
     include header
-    div#map-container(ng-controller='mapCtrl', class="{{mapLoading ? 'loading' : ''}}")
-        leaflet(defaults='defaults', center='center', markers='markers')
+    include menu
+    include notifications
+    div(ui-view)
+    include footer

@@ -1,8 +1,9 @@
 #global-notifications {
   position: absolute;
+  max-width: 50%;
   z-index: 2;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -15,21 +16,19 @@
     padding: 10px;
     border: 2px solid #fff;
     border-bottom: none;
+    border-left: none;
     text-transform: uppercase;
     &:last-of-type {
-      border-bottom: 2px solid #fff;
-      @include border-radius-bottom-left(8px);
-      @include border-radius-bottom-right(8px);
+      padding-bottom: 30px;
     }
-    &:first-of-type {
-      @include border-radius-top-right(8px);
-      @include border-radius-top-left(8px);
+    &.warning {
+      background-color: rgba($brand-warning, .6);
     }
     &.error {
-      background-color: $brand-error;
+      background-color: rgba($brand-error, .6);
     }
     &.success {
-      background-color: $brand-success;
+      background-color: rgba($brand-success, .6);
     }
   }
 }

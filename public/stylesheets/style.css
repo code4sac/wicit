@@ -5331,36 +5331,58 @@ body {
   color: #333333; }
 
 #header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: inline-block;
-  z-index: 2; }
+  z-index: 2;
+  width: 100%;
+  background-color: #af22e8;
+  text-align: center; }
 
 .logo {
   display: inline-block;
-  padding: 10px 10px 0 10px;
-  border: 2px solid #fff;
-  background-color: rgba(175, 34, 232, 0.6);
-  vertical-align: top;
-  text-align: center;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px; }
+  padding: 5px 10px; }
   .logo h1.title {
     color: #fff;
     font-family: Lobster, cursive;
     margin: 0; }
   .logo p {
     color: #fff;
-    font-size: .8em;
-    text-transform: uppercase; }
+    font-weight: 100; }
+
+#menu-wrapper {
+  border-bottom: none; }
+
+#main-menu {
+  display: table;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  width: 100%; }
+  #main-menu li {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
+    background-color: #8c7bff;
+    width: 33.33%; }
+    #main-menu li a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 100;
+      display: block;
+      width: 100%;
+      padding: 5px 10px; }
+    #main-menu li:hover {
+      background-color: #af22e8; }
+    #main-menu li.active, #main-menu li.active:hover {
+      background-color: #af22e8; }
 
 #global-notifications {
   position: absolute;
+  max-width: 50%;
   z-index: 2;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -5373,51 +5395,35 @@ body {
     padding: 10px;
     border: 2px solid #fff;
     border-bottom: none;
+    border-left: none;
     text-transform: uppercase; }
     #global-notifications li:last-of-type {
-      border-bottom: 2px solid #fff;
-      -webkit-border-bottom-left-radius: 8px;
-      -moz-border-radius-bottomleft: 8px;
-      border-bottom-left-radius: 8px;
-      -webkit-border-bottom-right-radius: 8px;
-      -moz-border-radius-bottomright: 8px;
-      border-bottom-right-radius: 8px; }
-    #global-notifications li:first-of-type {
-      -webkit-border-top-right-radius: 8px;
-      -moz-border-radius-topright: 8px;
-      border-top-right-radius: 8px;
-      -webkit-border-top-left-radius: 8px;
-      -moz-border-radius-topleft: 8px;
-      border-top-left-radius: 8px; }
+      padding-bottom: 30px; }
+    #global-notifications li.warning {
+      background-color: rgba(232, 180, 79, 0.6); }
     #global-notifications li.error {
-      background-color: #ff1a35; }
+      background-color: rgba(255, 26, 53, 0.6); }
     #global-notifications li.success {
-      background-color: #8dff70; }
+      background-color: rgba(141, 255, 112, 0.6); }
 
 #map-container {
-  position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #8c7bff; }
+  background-color: #8c7bff;
+  z-index: 0; }
   #map-container.loading {
     background: #8c7bff url("../image/loader.gif") no-repeat center center; }
     #map-container.loading .angular-leaflet-map {
       opacity: 0; }
   #map-container .angular-leaflet-map {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
     opacity: 1; }
-  #map-container .leaflet-top.leaflet-right {
-    top: 20px;
-    right: 20px; }
-    #map-container .leaflet-top.leaflet-right .leaflet-control {
-      margin: 0; }
+  #map-container .leaflet-control-zoom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0; }
 
 .leaflet-container a.leaflet-popup-close-button {
   color: #fff;
@@ -5502,11 +5508,37 @@ body {
 .marker-cluster span {
   line-height: 30px; }
 
-body, html {
+body, html, .ng-scope {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: #8c7bff; }
 
-a {
+a, a:hover {
   color: #8c7bff; }
+
+#content {
+  padding: 20px 50px;
+  background-color: #fff; }
+
+div.video-container {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  background-color: #af22e8;
+  border: 10px solid #8c7bff;
+  box-sizing: border-box; }
+  div.video-container iframe, div.video-container object, div.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 768px) {
+  #content {
+    padding: 20px; } }

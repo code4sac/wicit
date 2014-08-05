@@ -18,6 +18,6 @@
     "angular": "~1.2.20",
     "leaflet": "~0.7.3",
     "leaflet.markercluster": "~0.4.0",
-    "angular-route": "~1.2.21"
+    "angular-ui-router": "~0.2.10"
   }
 }

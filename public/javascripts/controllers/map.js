@@ -1,5 +1,5 @@
 /** MAP CONTROLLER */
-var mapCtrl = function ($scope, $http, $timeout, leafletEvents, leafletData, NotificationService, GeolocationService, ServerConstants) {
+var MapCtrl = function ($scope, $http, leafletEvents, leafletData, NotificationService, GeolocationService, ServerConstants) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
@@ -36,7 +36,7 @@ var mapCtrl = function ($scope, $http, $timeout, leafletEvents, leafletData, Not
       defaults: {
         tileLayer: tileUrl,
         maxZoom: maxZoom,
-        zoomControlPosition: 'topright',
+        zoomControlPosition: 'bottomright',
         tileLayerOptions: {
           detectRetina: true,
           reuseTiles: true
