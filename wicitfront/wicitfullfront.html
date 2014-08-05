@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>wic.it app</title>
+	<meta name="author" content="Brandon Pugh" />
+	<meta name="description" content="wic.it front end design" />
+	
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Bubblegum+Sans|Crafty+Girls|Poiret+One|Lobster|Yanone+Kaffeesatz|Pacifico|Dancing+Script|Audiowide|Coming+Soon|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#firstPage').fullpage({
+				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff'],
+				anchors: ['mapsection'],
+				menu: '#menu'
+			});
+		});
+	</script>
+
+</head>
+
+
+<body>
+<div id="header">
+	<h1>Wic It</h1><p>Search for Wic throughout California</p>
+</div>
+
+<div id="fullpage">
+	<div class="section active" id="mapsection">
+		<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=California%2C%20United%20States&key=AIzaSyDqBRPfmmyrUWbV0Ln-Usy3Lv9eUc8-Odo"></iframe>
+	</div>
+
+	<div class="section" id="fooditems">
+	    <div class="slide active"><h1>Wic approved food items.</h1></div>
+	    <div class="slide"><h1>Milk</h1></div>
+	    <div class="slide"><h1>Cheese and Eggs</h1></div>
+	    <div class="slide"><h1>Soy and Tofu</h1></div>
+	    <div class="slide"><h1>Whole Grains</h1></div>
+	    <div class="slide"><h1>Breakfast Cereal</h1></div>
+	    <div class="slide"><h1>Peanut Butter,Dry Beans,<br>Peas or Lentils and Canned Beans</h1></div>
+	    <div class="slide"><h1>Bottled and Concentrate Juice</h1></div>
+	    <div class="slide"><h1>Produce</h1></div>
+	    <div class="slide"><h1>Infant Foods</h1></div>
+	</div>
+
+	<div class="section" id="qualify"><h1>Fill out this form to see if you qualify.</h1></div>
+
+	<div class="section" id="about"><h1>Info about WIC, CDPH and Code for Sacramento.</h1></div>
+</div>
+
+
+<div id="footmenu">
+	<ul id="menu">
+		<li data-menuanchor="firstPage"><a href="#mapsection">Search Nearby</a></li>
+		<li data-menuanchor="secondPage"><a href="#fooditems">Food Items</a></li>
+		<li data-menuanchor="3rdPage"><a href="#qualify">Qualify</a></li>
+		<li data-menuanchor="4thpage"><a href="#about">About</a></li>
+	</ul>
+<div>
+
+</body>
+
+</html>
