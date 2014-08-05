@@ -21,14 +21,5 @@
     &:last-of-type {
       padding-bottom: 30px;
     }
-    &.warning {
-      background-color: rgba($brand-warning, .6);
-    }
-    &.error {
-      background-color: rgba($brand-error, .6);
-    }
-    &.success {
-      background-color: rgba($brand-success, .6);
-    }
   }
 }

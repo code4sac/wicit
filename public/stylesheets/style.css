@@ -5399,12 +5399,6 @@ body {
     text-transform: uppercase; }
     #global-notifications li:last-of-type {
       padding-bottom: 30px; }
-    #global-notifications li.warning {
-      background-color: rgba(232, 180, 79, 0.6); }
-    #global-notifications li.error {
-      background-color: rgba(255, 26, 53, 0.6); }
-    #global-notifications li.success {
-      background-color: rgba(141, 255, 112, 0.6); }
 
 #map-container {
   width: 100%;
@@ -5517,6 +5511,36 @@ body, html, .ng-scope {
 
 a, a:hover {
   color: #8c7bff; }
+
+.warning {
+  background-color: rgba(232, 180, 79, 0.6); }
+
+p.warning {
+  padding: 5px;
+  border: 2px solid #e8b44f;
+  color: #fff; }
+  p.warning a {
+    color: #e8b44f; }
+
+.error {
+  background-color: rgba(255, 26, 53, 0.6); }
+
+p.error {
+  padding: 5px;
+  border: 2px solid #ff1a35;
+  color: #fff; }
+  p.error a {
+    color: #ff1a35; }
+
+.success {
+  background-color: rgba(141, 255, 112, 0.6); }
+
+p.success {
+  padding: 5px;
+  border: 2px solid #8dff70;
+  color: #fff; }
+  p.success a {
+    color: #8dff70; }
 
 #content {
   padding: 20px 50px;

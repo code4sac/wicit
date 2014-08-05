@@ -3,7 +3,7 @@ var constants = {
 };
 angular.module('wicItApp.Constants', []).constant('ServerConstants', constants);
 
-var wicItApp = angular.module('wicItApp', ['wicItApp.Constants', 'ui.router', 'leaflet-directive', 'geolocation', 'notifications']);
+var wicItApp = angular.module('wicItApp', ['wicItApp.Constants', 'ui.router', 'ngAnimate', 'leaflet-directive', 'geolocation', 'notifications']);
 wicItApp.config(function($stateProvider, $urlRouterProvider) {
   // For any unmatched url, redirect to /state1
   $urlRouterProvider.otherwise("/map");
@@ -18,6 +18,18 @@ wicItApp.config(function($stateProvider, $urlRouterProvider) {
       url: '/qualify',
       templateUrl: '/partials/qualify'
   })
+    .state('qualify.residency', {
+      url: '/residency',
+      templateUrl: '/partials/qualify/residency'
+    })
+    .state('qualify.category', {
+      url: '/category',
+      templateUrl: '/partials/qualify/category'
+    })
+    .state('qualify.income', {
+      url: '/category',
+      templateUrl: '/partials/qualify/income'
+    })
   .state('about', {
     url: '/about',
     templateUrl: '/partials/about'

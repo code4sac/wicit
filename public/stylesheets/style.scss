@@ -20,6 +20,42 @@ a, a:hover {
   color: $brand-info;
 }
 
+.warning {
+  background-color: rgba($brand-warning, .6);
+}
+p.warning {
+  padding: 5px;
+  border: 2px solid $brand-warning;
+  color: #fff;
+  a {
+    color: $brand-warning;
+  }
+}
+
+.error {
+  background-color: rgba($brand-error, .6);
+}
+p.error {
+  padding: 5px;
+  border: 2px solid $brand-error;
+  color: #fff;
+  a {
+    color: $brand-error;
+  }
+}
+
+.success {
+  background-color: rgba($brand-success, .6);
+}
+p.success {
+  padding: 5px;
+  border: 2px solid $brand-success;
+  color: #fff;
+  a {
+    color: $brand-success;
+  }
+}
+
 #content {
   padding: 20px 50px;
   background-color: #fff;
