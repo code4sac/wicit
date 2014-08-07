@@ -37,8 +37,8 @@
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
   color: #fff;
-  background-color: rgba(175, 34, 232, .6);
-  border: 2px solid #fff;
+  background-color: #fff;
+  border: 2px solid $brand-info;
   @include border-radius(8px);
   .leaflet-popup-content {
     background-color: transparent;
@@ -58,24 +58,24 @@
 }
 
 .marker-cluster-small {
-  background-color: rgba(255, 108, 87, .6);
+  background-color: rgba($brand-warning, .6);
 }
 .marker-cluster-small div {
-  background-color: rgba(255, 108, 87, .2);
+  background-color: rgba($brand-warning, .2);
 }
 
 .marker-cluster-medium {
-  background-color: rgba(140, 123, 255, .6);
+  background-color: rgba($brand-info, .6);
 }
 .marker-cluster-medium div {
-  background-color: rgba(140, 123, 255, .2);
+  background-color: rgba($brand-info, .2);
 }
 
 .marker-cluster-large {
-  background-color: rgba(175, 34, 232, .6);
+  background-color: rgba($brand-primary, .6);
 }
 .marker-cluster-large div {
-  background-color: rgba(175, 34, 232, .2);
+  background-color: rgba($brand-primary, .2);
 }
 
 /* IE 6-8 fallback colors */

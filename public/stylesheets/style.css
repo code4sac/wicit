@@ -5333,7 +5333,7 @@ body {
 #header {
   z-index: 2;
   width: 100%;
-  background-color: #af22e8;
+  background-color: #fff;
   text-align: center; }
 
 .logo {
@@ -5344,7 +5344,7 @@ body {
     font-family: Lobster, cursive;
     margin: 0; }
   .logo p {
-    color: #fff;
+    color: #444444;
     font-weight: 100; }
 
 #menu-wrapper {
@@ -5362,7 +5362,7 @@ body {
     vertical-align: middle;
     display: table-cell;
     margin: 0;
-    background-color: #8c7bff;
+    background-color: #a4a436;
     width: 33.33%; }
     #main-menu li a {
       background-color: transparent;
@@ -5373,9 +5373,9 @@ body {
       width: 100%;
       padding: 5px 10px; }
     #main-menu li:hover {
-      background-color: #af22e8; }
+      background-color: #8c8a34; }
     #main-menu li.active, #main-menu li.active:hover {
-      background-color: #af22e8; }
+      background-color: #8c8a34; }
 
 #global-notifications {
   position: absolute;
@@ -5389,7 +5389,7 @@ body {
   padding: 0;
   list-style: none; }
   #global-notifications li {
-    background-color: #8c7bff;
+    background-color: #8c8a34;
     color: #fff;
     display: block;
     padding: 10px;
@@ -5400,19 +5400,19 @@ body {
     #global-notifications li:last-of-type {
       padding-bottom: 30px; }
     #global-notifications li.warning {
-      background-color: rgba(232, 180, 79, 0.6); }
+      background-color: #b06b5c; }
     #global-notifications li.error {
-      background-color: rgba(255, 26, 53, 0.6); }
+      background-color: #b06b5c; }
     #global-notifications li.success {
-      background-color: rgba(141, 255, 112, 0.6); }
+      background-color: #a4a436; }
 
 #map-container {
   width: 100%;
   height: 100%;
-  background-color: #8c7bff;
+  background-color: #8c8a34;
   z-index: 0; }
   #map-container.loading {
-    background: #8c7bff url("../image/loader.gif") no-repeat center center; }
+    background: #8c8a34 url("../image/loader.gif") no-repeat center center; }
     #map-container.loading .angular-leaflet-map {
       opacity: 0; }
   #map-container .angular-leaflet-map {
@@ -5436,8 +5436,8 @@ body {
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
   color: #fff;
-  background-color: rgba(175, 34, 232, 0.6);
-  border: 2px solid #fff;
+  background-color: #fff;
+  border: 2px solid #8c8a34;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px; }
@@ -5454,22 +5454,22 @@ body {
         text-transform: uppercase; }
 
 .marker-cluster-small {
-  background-color: rgba(255, 108, 87, 0.6); }
+  background-color: rgba(176, 107, 92, 0.6); }
 
 .marker-cluster-small div {
-  background-color: rgba(255, 108, 87, 0.2); }
+  background-color: rgba(176, 107, 92, 0.2); }
 
 .marker-cluster-medium {
-  background-color: rgba(140, 123, 255, 0.6); }
+  background-color: rgba(140, 138, 52, 0.6); }
 
 .marker-cluster-medium div {
-  background-color: rgba(140, 123, 255, 0.2); }
+  background-color: rgba(140, 138, 52, 0.2); }
 
 .marker-cluster-large {
-  background-color: rgba(175, 34, 232, 0.6); }
+  background-color: rgba(164, 164, 54, 0.6); }
 
 .marker-cluster-large div {
-  background-color: rgba(175, 34, 232, 0.2); }
+  background-color: rgba(164, 164, 54, 0.2); }
 
 /* IE 6-8 fallback colors */
 .leaflet-oldie .marker-cluster-small {
@@ -5513,10 +5513,14 @@ body, html, .ng-scope {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #8c7bff; }
+  color: #444444;
+  background-color: #fff; }
 
-a, a:hover {
-  color: #8c7bff; }
+a {
+  color: #8c8a34; }
+
+a:hover {
+  color: #a4a436; }
 
 #content {
   padding: 20px 50px;
@@ -5529,8 +5533,7 @@ div.video-container {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-  background-color: #af22e8;
-  border: 10px solid #8c7bff;
+  background-color: #a4a436;
   box-sizing: border-box; }
   div.video-container iframe, div.video-container object, div.video-container embed {
     position: absolute;

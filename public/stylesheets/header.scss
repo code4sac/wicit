@@ -1,7 +1,7 @@
 #header {
   z-index: 2;
   width: 100%;
-  background-color: $brand-primary;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
     margin: 0;
   }
   p {
-    color: #fff;
+    color: $brand-text;
     font-weight: 100;
   }
 }

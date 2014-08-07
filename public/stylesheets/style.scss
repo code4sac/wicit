@@ -13,11 +13,16 @@ body, html, .ng-scope {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: $brand-info;
+  color: $brand-text;
+  background-color: #fff;
 }
 
-a, a:hover {
+a {
   color: $brand-info;
+}
+
+a:hover {
+  color: $brand-primary;
 }
 
 #content {
@@ -33,7 +38,6 @@ div.video-container {
   height: 0;
   overflow: hidden;
   background-color: $brand-primary;
-  border: 10px solid $brand-info;
   box-sizing: border-box;
 
   iframe, object, embed {
