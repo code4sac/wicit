@@ -2,18 +2,21 @@
 @import 'mixins';
 @import 'variables';
 @import 'fonts';
+@import 'form';
 @import 'header';
 @import 'menu';
 @import 'footer';
 @import 'notifications';
 @import 'map';
+@import 'qualify';
 
-body, html, .ng-scope {
+body, html, #container {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   background-color: $brand-info;
+  box-sizing: border-box;
 }
 
 a, a:hover {

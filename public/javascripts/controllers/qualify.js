@@ -1,9 +1,8 @@
-var QualifyCtrl = function ($scope) {
+var QualifyCtrl = function ($scope, $state) {
   // we will store all of our form data in this object
   $scope.formData = {};
 
-  // function to process the form
-  $scope.processForm = function() {
-    alert('awesome!');
+  $scope.progress = function (nextState) {
+    $state.transitionTo(nextState);
   };
 };

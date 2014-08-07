@@ -1,9 +1,9 @@
 #global-notifications {
-  position: absolute;
+  position: fixed;
   max-width: 50%;
   z-index: 2;
-  bottom: 0;
-  left: 0;
+  bottom: 20px;
+  left: 20px;
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -16,10 +16,18 @@
     padding: 10px;
     border: 2px solid #fff;
     border-bottom: none;
-    border-left: none;
     text-transform: uppercase;
     &:last-of-type {
-      padding-bottom: 30px;
+      border-bottom: 2px solid #fff;
+    }
+    &.error {
+      background-color: rgba($brand-error, .6);
+    }
+    &.warning {
+      background-color: rgba($brand-warning, .6);
+    }
+    &.success {
+      background-color: rgba($brand-success, .6);
     }
   }
 }
