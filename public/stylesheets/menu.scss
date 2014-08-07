@@ -14,7 +14,7 @@
     vertical-align: middle;
     display: table-cell;
     margin: 0;
-    background-color: $brand-info;
+    background-color: $brand-primary;
     width: 33.33%;
     a {
       background-color: transparent;
@@ -26,10 +26,10 @@
       padding: 10px;
     }
     &:hover {
-      background-color: $brand-primary;
+      background-color: $brand-info;
     }
     &.active, &.active:hover {
-      background-color: $brand-primary;
+      background-color: $brand-info;
     }
   }
 }

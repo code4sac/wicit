@@ -20,14 +20,14 @@
     &:last-of-type {
       border-bottom: 2px solid #fff;
     }
-    &.error {
-      background-color: rgba($brand-error, .6);
-    }
     &.warning {
-      background-color: rgba($brand-warning, .6);
+      background-color: $brand-warning;
+    }
+    &.error {
+      background-color: $brand-error;
     }
     &.success {
-      background-color: rgba($brand-success, .6);
+      background-color: $brand-success;
     }
   }
 }
