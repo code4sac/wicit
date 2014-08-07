@@ -29,8 +29,44 @@ var qualifyResidencyState = {
 var qualifyCategoryState = {
   name: 'qualify.category',
   parent: qualifyState,
+  abstract: true,
   url: '/category',
   templateUrl: '/partials/qualify-category'
+};
+
+var qualifyCategoryPregnantState = {
+  name: 'qualify.category.pregnant',
+  parent: qualifyCategoryState,
+  url : '',
+  templateUrl: '/partials/qualify-category-pregnant'
+};
+
+var qualifyCategoryBreastfeedingState = {
+  name: 'qualify.category.breastfeeding',
+  parent: qualifyCategoryState,
+  url : '/category/breastfeeding',
+  templateUrl: '/partials/qualify-category-breastfeeding'
+};
+
+var qualifyCategoryInfantState = {
+  name: 'qualify.category.infant',
+  parent: qualifyCategoryState,
+  url : '/category/infant',
+  templateUrl: '/partials/qualify-category-infant'
+};
+
+var qualifyCategoryChildState = {
+  name: 'qualify.category.child',
+  parent: qualifyCategoryState,
+  url : '/category/child',
+  templateUrl: '/partials/qualify-category-child'
+};
+
+var qualifyCategoryOtherProgramsState = {
+  name: 'qualify.category.otherprograms',
+  parent: qualifyCategoryState,
+  url : '/category/other-programs',
+  templateUrl: '/partials/qualify-category-otherprograms'
 };
 
 var qualifyIncomeState = {
@@ -38,6 +74,13 @@ var qualifyIncomeState = {
   parent: qualifyState,
   url: '/income',
   templateUrl: '/partials/qualify-income'
+};
+
+var qualifyResultState = {
+  name: 'qualify.result',
+  parent: qualifyState,
+  url: '/result',
+  templateUrl: '/partials/qualify-result'
 };
 
 var aboutState = {
@@ -55,6 +98,12 @@ wicItApp.config(function($stateProvider, $urlRouterProvider) {
     .state(qualifyState)
     .state(qualifyResidencyState)
     .state(qualifyCategoryState)
+    .state(qualifyCategoryPregnantState)
+    .state(qualifyCategoryBreastfeedingState)
+    .state(qualifyCategoryInfantState)
+    .state(qualifyCategoryChildState)
+    .state(qualifyCategoryOtherProgramsState)
     .state(qualifyIncomeState)
+    .state(qualifyResultState)
     .state(aboutState);
 });

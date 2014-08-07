@@ -1,8 +1,7 @@
-div.form-group
-    div.radio
-        span.form-group-label
-            | Do you live in California?
-        button(ng-click='negativeResult("residency")')
-            | no
-        button(ng-click='progress("qualify.category")')
-            | yes
+div.form-group.qualify.residency
+    span.form-group-label
+        | Do you live in California?
+    button(ng-click='negativeResult("residency")')
+        | no
+    button(ng-click='next("qualify.category.pregnant")')
+        | yes

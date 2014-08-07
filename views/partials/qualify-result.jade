@@ -1,0 +1,26 @@
+if success
+    | You probably qualify for WIC!
+else
+    if (reason == 'residency')
+        p
+            | Sorry, you have to live in-state to qualify for WIC in California. If you're moving here, WIC can work with you. Give them a call at
+            a(href='tel://888-942-9675')
+                | 1-888-WIC-WORKS
+            | .
+    else if (reason == 'category')
+        p
+            | Sorry, WIC is for people who identify with one of the following:
+        ul
+            li
+                | Women who are pregnant, breastfeeding, or just had a baby.
+                | Children under 5 years old (including foster children)
+                | Families with low to medium income (working families may qualify)
+    else if (reason == 'income')
+        p
+            | Sorry, WIC is for families making less than 185% of the Federal Poverty Level ($23,850 for a family of four in 2014).
+p.warning
+    | Please keep in mind, this is just a guide. Only local WIC Agency staff can determine for certain if you qualify for WIC services.
+    | Call
+    a(href='tel://888-942-9675')
+        | 1-888-WIC-WORKS
+    |  to find out for sure if you qualify.
