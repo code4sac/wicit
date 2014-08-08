@@ -1,21 +1,16 @@
 .form-group.qualify {
-  padding: 20px;
-  text-align: center;
-  button {
-    margin-right: 20px;
-    &:last-of-type {
-      margin-right: 0;
-    }
+
+  select {
+    line-height: 30px;
   }
 
-  li {
-    text-align: left;
-  }
-
+  padding: 20px 0;
+  text-align: left;
   .family-count, .family-payperiod, .currency-sign, .per {
     margin-left: 10px;
   }
   .currency-sign {
     margin-right: 5px;
   }
+
 }

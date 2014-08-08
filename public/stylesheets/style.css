@@ -5515,14 +5515,10 @@ body.map, body.map #container {
   line-height: 30px; }
 
 .form-group.qualify {
-  padding: 20px;
-  text-align: center; }
-  .form-group.qualify button {
-    margin-right: 20px; }
-    .form-group.qualify button:last-of-type {
-      margin-right: 0; }
-  .form-group.qualify li {
-    text-align: left; }
+  padding: 20px 0;
+  text-align: left; }
+  .form-group.qualify select {
+    line-height: 30px; }
   .form-group.qualify .family-count, .form-group.qualify .family-payperiod, .form-group.qualify .currency-sign, .form-group.qualify .per {
     margin-left: 10px; }
   .form-group.qualify .currency-sign {
