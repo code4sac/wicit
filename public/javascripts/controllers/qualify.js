@@ -3,9 +3,9 @@ var QualifyCtrl = function ($scope, $state, NotificationService) {
 
   // we will store all of our form data in this object
   $scope.periods = [
-    { label: 'week', value: 52 },
+    { label: 'year', value: 1 },
     { label: 'month', value: 12 },
-    { label: 'year', value: 1 }
+    { label: 'week', value: 52 },
   ];
 
   $scope.submit = function()
