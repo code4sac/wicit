@@ -3,7 +3,7 @@ div#menu-wrapper
         li(ui-sref-active='active')
             a(ui-sref='map')
                 | WIC Locations
-        li(ui-sref-active='active')
+        li(ng-class='{active : $state.includes("qualify")}')
             a(ui-sref='qualify.residency')
                 | Do I Qualify?
         li(ui-sref-active='active')

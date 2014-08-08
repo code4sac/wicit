@@ -10,7 +10,7 @@
 @import 'map';
 @import 'qualify';
 
-body, html, #container {
+body, html {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -19,12 +19,40 @@ body, html, #container {
   background-color: #fff;
 }
 
+#container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 a {
   color: $brand-info;
 }
 
 a:hover {
   color: $brand-primary;
+}
+
+button {
+  display: inline-block;
+  color: #fff;
+  background-color: $brand-primary;
+  border: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 10px;
+  min-width: 100px;
+  margin-top: 10px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: $brand-info;
+  }
+}
+
+.warning {
+  background-color: rgba($brand-warning, .6);
 }
 p.warning {
   padding: 5px;
@@ -62,6 +90,7 @@ p.success {
 #content {
   padding: 20px 50px;
   background-color: #fff;
+  overflow-y: auto;
 }
 
 div.video-container {

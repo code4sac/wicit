@@ -5336,7 +5336,6 @@ body {
   font-weight: bold; }
 
 #header {
-  z-index: 2;
   width: 100%;
   background-color: #fff;
   text-align: center; }
@@ -5410,11 +5409,13 @@ body {
     #global-notifications li.success {
       background-color: #a4a436; }
 
+body.map, body.map #container {
+  overflow: hidden; }
+
 #map-container {
-  width: 100%;
   height: 100%;
-  background-color: #8c8a34;
-  z-index: 0; }
+  width: 100%;
+  background-color: #8c8a34; }
   #map-container.loading {
     background: #8c8a34 url("../image/loader.gif") no-repeat center center; }
     #map-container.loading .angular-leaflet-map {
@@ -5430,16 +5431,15 @@ body {
     margin: 0; }
 
 .leaflet-container a.leaflet-popup-close-button {
-  color: #fff;
+  color: #a4a436;
   top: 5px;
   right: 5px; }
   .leaflet-container a.leaflet-popup-close-button:hover {
-    color: #fff;
-    font-size: 1.2em; }
+    color: #8c8a34; }
 
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
-  color: #fff;
+  color: #444444;
   background-color: #fff;
   border: 2px solid #8c8a34;
   -moz-border-radius: 8px;
@@ -5453,9 +5453,11 @@ body {
     .leaflet-popup-content-wrapper .leaflet-popup-content p.directions {
       font-size: 1.2em; }
       .leaflet-popup-content-wrapper .leaflet-popup-content p.directions a {
-        color: #fff;
+        color: #a4a436;
         font-weight: bold;
         text-transform: uppercase; }
+      .leaflet-popup-content-wrapper .leaflet-popup-content p.directions a:hover {
+        color: #8c8a34; }
 
 .marker-cluster-small {
   background-color: rgba(176, 107, 92, 0.6); }
@@ -5512,21 +5514,21 @@ body {
 .marker-cluster span {
   line-height: 30px; }
 
-#qualify-form {
-  background-color: #af22e8;
-  color: #fff;
-  padding: 20px; }
-  #qualify-form .radio {
-    text-align: center; }
-    #qualify-form .radio .form-group-label {
-      font-size: 200%;
-      font-weight: 100; }
-    #qualify-form .radio label {
-      margin-right: 20px; }
-      #qualify-form .radio label:last-of-type {
-        margin-right: 0; }
+.form-group.qualify {
+  padding: 20px;
+  text-align: center; }
+  .form-group.qualify button {
+    margin-right: 20px; }
+    .form-group.qualify button:last-of-type {
+      margin-right: 0; }
+  .form-group.qualify li {
+    text-align: left; }
+  .form-group.qualify .family-count, .form-group.qualify .family-payperiod, .form-group.qualify .currency-sign, .form-group.qualify .per {
+    margin-left: 10px; }
+  .form-group.qualify .currency-sign {
+    margin-right: 5px; }
 
-body, html, #container {
+body, html {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -5534,42 +5536,66 @@ body, html, #container {
   color: #444444;
   background-color: #fff; }
 
+#container {
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
 a {
   color: #8c8a34; }
 
 a:hover {
   color: #a4a436; }
 
+button {
+  display: inline-block;
+  color: #fff;
+  background-color: #a4a436;
+  border: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 10px;
+  min-width: 100px;
+  margin-top: 10px; }
+  button:last-of-type {
+    margin-right: 0; }
+  button:hover {
+    background-color: #8c8a34; }
+
+.warning {
+  background-color: rgba(176, 107, 92, 0.6); }
+
 p.warning {
   padding: 5px;
-  border: 2px solid #e8b44f;
+  border: 2px solid #b06b5c;
   color: #fff; }
   p.warning a {
-    color: #e8b44f; }
+    color: #b06b5c; }
 
 .error {
-  background-color: rgba(255, 26, 53, 0.6); }
+  background-color: rgba(176, 107, 92, 0.6); }
 
 p.error {
   padding: 5px;
-  border: 2px solid #ff1a35;
+  border: 2px solid #b06b5c;
   color: #fff; }
   p.error a {
-    color: #ff1a35; }
+    color: #b06b5c; }
 
 .success {
-  background-color: rgba(141, 255, 112, 0.6); }
+  background-color: rgba(164, 164, 54, 0.6); }
 
 p.success {
   padding: 5px;
-  border: 2px solid #8dff70;
+  border: 2px solid #a4a436;
   color: #fff; }
   p.success a {
-    color: #8dff70; }
+    color: #a4a436; }
 
 #content {
   padding: 20px 50px;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-y: auto; }
 
 div.video-container {
   position: relative;

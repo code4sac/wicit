@@ -1,5 +1,5 @@
 /** MAP CONTROLLER */
-var MapCtrl = function ($scope, $http, leafletEvents, leafletData, NotificationService, GeolocationService, ServerConstants) {
+var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarkersHelpers, NotificationService, GeolocationService, ServerConstants) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
@@ -28,6 +28,12 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, NotificationS
         updateNearbyLocations(event).then(function() { mapUpdating = false });
       }
     });
+  });
+
+  // Workaround for angular-leaflet-directive issue: https://github.com/tombatossals/angular-leaflet-directive/issues/381
+  $scope.$on('$destroy', function () {
+    console.log(leafletMarkersHelpers);
+    leafletMarkersHelpers.resetCurrentGroups();
   });
 
   function initMap()
@@ -135,12 +141,12 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, NotificationS
   {
     return {
       iconUrl: iconUrl,
-      shadowUrl: shadowUrl,
+      shadowUrl: false,
       iconSize: [iconHeight, iconWidth], // size of the icon
       shadowSize: [iconHeight, iconWidth], // size of the shadow
       iconAnchor: [0, iconWidth/2], // point of the icon which will correspond to marker's location
-      shadowAnchor: [0, iconWidth/2],  // the same for the shadow
-      popupAnchor: [iconWidth/2, 0] // point from which the popup should open relative to the iconAnchor
+      shadowAnchor: [-5, iconWidth/2],  // the same for the shadow
+      popupAnchor: [iconWidth/2, -10] // point from which the popup should open relative to the iconAnchor
     };
   };
 

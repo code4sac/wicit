@@ -1,8 +1,11 @@
+body.map, body.map #container {
+  overflow: hidden;
+}
+
 #map-container {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: $brand-info;
-  z-index: 0;
   &.loading {
     background: $brand-info url('../image/loader.gif') no-repeat center center;
     .angular-leaflet-map {
@@ -25,18 +28,17 @@
 }
 
 .leaflet-container a.leaflet-popup-close-button {
-  color: #fff;
+  color: $brand-primary;
   top: 5px;
   right: 5px;
   &:hover {
-    color: #fff;
-    font-size: 1.2em;
+    color: $brand-info;
   }
 }
 
 .leaflet-popup-content-wrapper {
   font-family: Oxygen, sans-serif;
-  color: #fff;
+  color: $brand-text;
   background-color: #fff;
   border: 2px solid $brand-info;
   @include border-radius(8px);
@@ -49,9 +51,12 @@
     p.directions {
       font-size: 1.2em;
       a {
-        color: #fff;
+        color: $brand-primary;
         font-weight: bold;
         text-transform: uppercase;
+      }
+      a:hover {
+        color: $brand-info;
       }
     }
   }

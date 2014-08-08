@@ -1,15 +1,3 @@
 div#content.col-md-8.col-md-offset-2
-    h2
-        | Do I qualify for WIC?
-    p
-        | This short survey is designed to help you figure out if you qualify for WIC. Your answers are <em>not</em> saved, this is just for you to figure out if you qualify for WIC.
-    p.warning
-        | Please keep in mind, this is just a guide. Only local WIC Agency staff can determine for certain if you qualify for WIC services.
-        | Call&nbsp;
-        a(href='tel://888-942-9675')
-            | 1-888-WIC-WORKS
-        |  to find out for sure if you qualify.
-    ui-view
-
-    pre
-        | {{ formData }}
+    form#qualify
+        ui-view

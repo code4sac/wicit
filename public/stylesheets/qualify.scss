@@ -1,18 +1,21 @@
-#qualify-form {
-  background-color: $brand-primary;
-  color: #fff;
+.form-group.qualify {
   padding: 20px;
-  .radio {
-    .form-group-label {
-      font-size: 200%;
-      font-weight: 100;
+  text-align: center;
+  button {
+    margin-right: 20px;
+    &:last-of-type {
+      margin-right: 0;
     }
-    text-align: center;
-    label{
-      margin-right: 20px;
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
+  }
+
+  li {
+    text-align: left;
+  }
+
+  .family-count, .family-payperiod, .currency-sign, .per {
+    margin-left: 10px;
+  }
+  .currency-sign {
+    margin-right: 5px;
   }
 }
