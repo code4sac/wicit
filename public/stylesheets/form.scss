@@ -3,3 +3,10 @@
   font-size: 1.2em;
   font-weight: bold;
 }
+
+input {
+  border: 0;
+  border-bottom: 2px dashed $brand-text;
+  text-align: center;
+  outline: 0;
+}

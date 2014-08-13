@@ -25,7 +25,10 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
       }
       curBounds = map.getBounds();
       if ( ! prevBounds || ! prevBounds.contains(curBounds)) {
-        updateNearbyLocations(event).then(function() { mapUpdating = false });
+        updateNearbyLocations(event).then(function() {
+          mapUpdating = false;
+          $scope.mapLoading = false;
+        });
       }
     });
   });
@@ -90,17 +93,13 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
 
   /**
    * Update the map with nearby locations
-   * TODO: Use real data.
-   * TODO: search in map bounding box
    */
   function updateNearbyLocations(event) {
     mapUpdating = true;
-    var bounds = event.bounds;
-    // var nw = bounds.getNorthWest();
-    // var se = bounds.getSouthEast();
-    var locationsUrl = '/locations';
-    // var locationsUrl = locationsBaseUrl;
-    // locationsUrl += '&$where=within_box(location, ' + nw.lat + ', ' + nw.long + ', ' + se.lat + ', ' + se.long + ')';
+    var nw = curBounds.getNorthWest();
+    var se = curBounds.getSouthEast();
+    var locationsUrl = locationsBaseUrl;
+    locationsUrl += '?$where=within_box(location,' + nw.lat + ',' + nw.lng + ',' + se.lat + ',' + se.lng + ')';
     return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
@@ -110,7 +109,14 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
         var name = vendor.vendor;
         var city = vendor.city;
         var zip = vendor.zip_code;
-        var address = vendor.address + ' ' + vendor.second_address + ', ' + city + ' ' + zip;
+        var address = vendor.address;
+        // Data has some weird ones where second address is just a space, double quotes and a space.
+        if (vendor.second_address && vendor.second_address != ' " "') {
+          address += ' ' + vendor.second_address;
+        }
+        address += ', ' + city + ' ' + zip;
+        console.log(vendor.second_address);
+        console.log(vendor.second_address.length);
         var message ='<h3>' + name + '</h3><p class="address">' + address + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
         $scope.markers[keyify(name)] = {
           group: vendor.county,
