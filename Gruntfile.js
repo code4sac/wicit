@@ -8,13 +8,6 @@ module.exports = function(grunt) {
           production:  false,
           directory:   'public/components'
         }
-      },
-      prod: {
-        options: {
-          color:       true,
-          production:  true,
-          directory:   'public/components'
-        }
       }
     },
     express: {
@@ -47,6 +40,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('build-dev', ['npm-install', 'bower-install-simple:dev']);
-  grunt.registerTask('build-prod', ['npm-install', 'bower-install-simple:prod']);
   grunt.registerTask('dev', ['express', 'watch', 'express-keepalive']);
 }
