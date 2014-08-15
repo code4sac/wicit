@@ -2336,6 +2336,14 @@
         }
         return new L.Icon.Default(iconData);
       };
+      var _resetMarkerGroup = function(groupName) {
+        if (isDefined(groups[groupName])) {
+          delete groups[groupName];
+        }
+      }
+      var _resetMarkerGroups = function() {
+        groups = {};
+      }
       var _deleteMarker = function (marker, map, layers) {
         marker.closePopup();
         // There is no easy way to know if a marker is added to a layer, so we search for it
@@ -2362,6 +2370,8 @@
         }
       };
       return {
+        resetMarkerGroup: _resetMarkerGroup,
+        resetMarkerGroups: _resetMarkerGroups,
         deleteMarker: _deleteMarker,
         createMarker: function (markerData) {
           if (!isDefined(markerData)) {

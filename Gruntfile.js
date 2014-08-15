@@ -1,15 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    "bower-install-simple": {
-      dev: {
-        options: {
-          color:       true,
-          production:  false,
-          directory:   'public/components'
-        }
-      }
-    },
     express: {
       custom: {
         options: {
@@ -35,10 +26,9 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-npm-install');
-  grunt.loadNpmTasks("grunt-bower-install-simple");
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('build-dev', ['npm-install', 'bower-install-simple:dev']);
+  grunt.registerTask('build-dev', ['npm-install']);
   grunt.registerTask('dev', ['express', 'watch', 'express-keepalive']);
 }

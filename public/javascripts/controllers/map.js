@@ -35,8 +35,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
 
   // Workaround for angular-leaflet-directive issue: https://github.com/tombatossals/angular-leaflet-directive/issues/381
   $scope.$on('$destroy', function () {
-    console.log(leafletMarkersHelpers);
-    leafletMarkersHelpers.resetCurrentGroups();
+    leafletMarkersHelpers.resetMarkerGroups();
   });
 
   function initMap()
@@ -115,8 +114,6 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
           address += ' ' + vendor.second_address;
         }
         address += ', ' + city + ' ' + zip;
-        console.log(vendor.second_address);
-        console.log(vendor.second_address.length);
         var message ='<h3>' + name + '</h3><p class="address">' + address + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
         $scope.markers[keyify(name)] = {
           group: vendor.county,
