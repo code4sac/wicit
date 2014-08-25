@@ -110,7 +110,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
         var zip = vendor.zip_code;
         var address = vendor.address;
         // Data has some weird ones where second address is just a space, double quotes and a space.
-        if (vendor.second_address && vendor.second_address != ' " "') {
+        if (vendor.second_address && vendor.second_address.indexOf('"') < 0) {
           address += ' ' + vendor.second_address;
         }
         address += ', ' + city + ' ' + zip;
