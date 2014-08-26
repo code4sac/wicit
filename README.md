@@ -1,7 +1,7 @@
 #WICIT: Where to Shop with WIC
 ###Setup (Mac)
   - [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
-  - Install grunt on your machine: `sudo npm install -g grunt`
+  - Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
   - [Fork the repository and setup a local clone](https://help.github.com/articles/fork-a-repo)
   - Move into your local wicit directory: `cd <yourdirectory>/wicit`
   - Install dependencies: `grunt build-dev`
