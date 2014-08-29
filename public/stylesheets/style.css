@@ -5418,30 +5418,20 @@ input {
 
 body.map {
   width: 100%;
-  height: 100%;
-  display: flex;
-  overflow-y: hidden;
-  flex-direction: column;
-  justify-content: flex-end;
-  /* align items in Main Axis */
-  align-items: stretch;
-  /* align items in Cross Axis */
-  align-content: stretch;
-  /* Extra space in Cross Axis */ }
+  height: 100%; }
+  body.map #header {
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 3px rgba(0, 0, 0, 0.4); }
   body.map #container {
-    flex: 3;
-    display: flex;
-    flex-direction: column; }
+    height: 100%;
+    width: 100%; }
 
 #map-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
   background-color: #8c8a34; }
-  #map-container .angular-leaflet-map {
-    width: 100%;
-    height: 100%;
-    position: absolute; }
   #map-container.loading {
     background: #8c8a34 url("../image/loader.gif") no-repeat center center; }
     #map-container.loading .angular-leaflet-map {
