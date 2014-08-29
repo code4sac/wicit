@@ -1,11 +1,28 @@
-body.map, body.map #container {
+body.map {
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+  display: flex;
+  overflow-y: hidden;
+  flex-direction: column;
+  justify-content: flex-end; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  #container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #map-container {
-  height: 100%;
-  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .angular-leaflet-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
   background-color: $brand-info;
   &.loading {
     background: $brand-info url('../image/loader.gif') no-repeat center center;
