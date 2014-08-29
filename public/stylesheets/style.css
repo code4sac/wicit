@@ -5422,7 +5422,7 @@ body.map {
   body.map #header {
     z-index: 2;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 3px rgba(0, 0, 0, 0.4); }
   body.map #container {
     height: 100%;
