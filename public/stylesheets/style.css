@@ -5423,7 +5423,7 @@ body.map {
     z-index: 2;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 3px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 3px rgba(0, 0, 0, 0.2); }
   body.map #container {
     height: 100%;
     width: 100%; }
@@ -5565,6 +5565,7 @@ button {
   font-weight: 100;
   text-transform: uppercase;
   padding: 10px;
+  width: 50%;
   min-width: 100px;
   margin-top: 10px; }
   button:last-of-type {
