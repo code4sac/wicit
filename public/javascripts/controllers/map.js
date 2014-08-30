@@ -13,13 +13,11 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
   var prevBounds = false;
   var curBounds = false;
 
-  leafletHelpers.MarkerClusterPlugin.showCoverageOnHover = false;
-
   $scope.mapLoading = true;
 
   initMap();
-
-  GeolocationService.getPosition().then(setUserLocation, geolocationError);
+  initLocateButton();
+  geolocateUser();
 
   $scope.$on('leafletDirectiveMap.moveend', function(event){
     leafletData.getMap().then(function(map) {
@@ -69,6 +67,36 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
         }
       }
     });
+  }
+
+  function initLocateButton()
+  {
+    var locateControl = L.Control.extend({
+      options: {
+        position: 'bottomright'
+      },
+      onAdd: function(map) {
+        // Create the control container with a particular class name
+        var container = L.DomUtil.create('div', 'locate-control');
+        // Attach event listeners
+        L.DomEvent.addListener(container, 'click', function() {
+          geolocateUser();
+        });
+        var controlUI = L.DomUtil.create('div', 'leaflet-control-command-interior', container);
+        // controlUI.title = 'Map Commands';
+        return container;
+      }
+    });
+    $scope.controls = {
+      custom: [
+        new locateControl()
+      ]
+    };
+  }
+
+  function geolocateUser()
+  {
+    GeolocationService.getPosition().then(setUserLocation, geolocationError);
   }
 
   function setUserLocation(position)

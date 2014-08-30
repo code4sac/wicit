@@ -29,11 +29,31 @@ body.map {
     opacity: 1;
   }
 
-  .leaflet-control-zoom {
+  .leaflet-bottom.leaflet-right {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
     margin: 0;
+  }
+
+  .locate-control {
+    background: #fff url('../image/geolocate.png') no-repeat center center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 26px;
+    height: 26px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    margin: 0 10px 10px 0;
+  }
+
+  .locate-control:hover {
+    background-color: #f4f4f4;
   }
 
 }

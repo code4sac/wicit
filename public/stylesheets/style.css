@@ -5440,11 +5440,27 @@ body.map {
     width: 100%;
     height: 100%;
     opacity: 1; }
-  #map-container .leaflet-control-zoom {
+  #map-container .leaflet-bottom.leaflet-right {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
     margin: 0; }
+  #map-container .locate-control {
+    background: white url("../image/geolocate.png") no-repeat center center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 26px;
+    height: 26px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    margin: 0 10px 10px 0; }
+  #map-container .locate-control:hover {
+    background-color: #f4f4f4; }
 
 .leaflet-container a.leaflet-popup-close-button {
   color: #a4a436;

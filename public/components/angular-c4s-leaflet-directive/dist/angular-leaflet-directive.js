@@ -2525,7 +2525,6 @@
             return;
           }
           if (!isDefined(groups[groupName])) {
-            console.log(groupOptions);
             groups[groupName] = new L.MarkerClusterGroup(groupOptions);
             map.addLayer(groups[groupName]);
           }
