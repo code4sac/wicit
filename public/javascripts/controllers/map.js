@@ -1,8 +1,9 @@
 /** MAP CONTROLLER */
-var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarkersHelpers, NotificationService, GeolocationService, ServerConstants) {
+var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelpers, leafletMarkersHelpers, NotificationService, GeolocationService, ServerConstants) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
+  var minZoom = 10;
   var pinIcon = iconFactory('image/pin.png', 'image/pin_shadow.png', 30, 30);
   var markerIcon = iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
   var mapId = ServerConstants.MAPBOX_MAP_ID;
@@ -11,6 +12,8 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
   var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
   var prevBounds = false;
   var curBounds = false;
+
+  leafletHelpers.MarkerClusterPlugin.showCoverageOnHover = false;
 
   $scope.mapLoading = true;
 
@@ -44,6 +47,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
       defaults: {
         tileLayer: tileUrl,
         maxZoom: maxZoom,
+        minZoom: minZoom,
         zoomControlPosition: 'bottomright',
         tileLayerOptions: {
           detectRetina: true,
@@ -117,6 +121,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletMarker
         var message ='<h3>' + name + '</h3><p class="address">' + address + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
         $scope.markers[keyify(name)] = {
           group: vendor.county,
+          groupOption: { showCoverageOnHover: false },
           lat: lat,
           lng: lng,
           focus: false,
