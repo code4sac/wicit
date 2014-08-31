@@ -38,11 +38,12 @@ body.map {
 
   .locate-control {
     background: #fff url('../image/geolocate.png') no-repeat center center;
+    background-size: 14px 14px;
     cursor: pointer;
     border: 1px solid #ccc;
     width: 26px;
     height: 26px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.65);
     line-height: 26px;
     display: block;
     text-align: center;
@@ -55,6 +56,13 @@ body.map {
   .locate-control:hover {
     background-color: #f4f4f4;
   }
+
+  .leaflet-retina .locate-control {
+    background-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
 
 }
 
