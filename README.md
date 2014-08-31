@@ -1,4 +1,4 @@
-#WICIT: Where to Shop with WIC
+#WICit: Where to Shop with WIC
 ###Setup (Mac)
   - [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
   - Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
@@ -9,4 +9,4 @@
   - [Try it out](http://localhost:3000)
 
 ###License
-Wicit is free software, and may be redistributed under the MIT-LICENSE.
+WICit is free software, and may be redistributed under the MIT-LICENSE.
