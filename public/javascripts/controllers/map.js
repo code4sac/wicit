@@ -4,8 +4,8 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
   var defaultZoom = 13;
   var maxZoom = 18;
   var minZoom = 10;
-  var pinIcon = iconFactory('image/pin.png', 'image/pin_shadow.png', 30, 30);
-  var markerIcon = iconFactory('image/marker.png', 'image/marker_shadow.png', 30, 30);
+  var pinIcon = iconFactory('image/pin.png', 'image/pin@2x.png', 'image/pin_shadow.png', 'image/pin_shadow@2x.png', 30, 30);
+  var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
   var mapId = ServerConstants.MAPBOX_MAP_ID;
   var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png";
   var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
@@ -173,15 +173,17 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
     return orig.replace(/\W/g, '');
   }
 
-  function iconFactory(iconUrl, shadowUrl, iconHeight, iconWidth)
+  function iconFactory(iconUrl, iconRetinaUrl, shadowUrl, shadowRetinaUrl, iconHeight, iconWidth)
   {
     return {
       iconUrl: iconUrl,
-      shadowUrl: false,
+      iconRetinaUrl: iconRetinaUrl,
+      shadowUrl: shadowUrl,
+      shadowRetinaUrl: shadowRetinaUrl,
       iconSize: [iconHeight, iconWidth], // size of the icon
       shadowSize: [iconHeight, iconWidth], // size of the shadow
       iconAnchor: [0, iconWidth/2], // point of the icon which will correspond to marker's location
-      shadowAnchor: [-5, iconWidth/2],  // the same for the shadow
+      shadowAnchor: [0, iconWidth/2],  // the same for the shadow
       popupAnchor: [iconWidth/2, -10] // point from which the popup should open relative to the iconAnchor
     };
   };
