@@ -5463,9 +5463,9 @@ body.map {
   #map-container .locate-control:hover {
     background-color: #f4f4f4; }
   #map-container .leaflet-retina .locate-control {
-    background-size: 26px;
-    width: 44px;
-    height: 44px; }
+    background-size: 20px;
+    width: 36px;
+    height: 36px; }
 
 .leaflet-container a.leaflet-popup-close-button {
   color: #a4a436;
