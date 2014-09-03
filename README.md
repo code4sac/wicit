@@ -1,4 +1,7 @@
 #WICit: Where to Shop with WIC
+
+### The California deployment of WICit is live! Check it out at [findwic.com](http://findwic.com)!
+
 ###Setup (Mac)
   - [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
   - Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
