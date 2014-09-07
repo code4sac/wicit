@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
     if (err) {
       res.status(500).send("Error loading locations.");
     } else {
-      res.send(JSON.parse(data));
+      res.json(data);
     }
   });
 });
