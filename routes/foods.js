@@ -4,14 +4,13 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  fs.readFile('sample_data/wic_locations.json', null, function(err, data) {
+  fs.readFile('sample_data/foods.json', null, function(err, data) {
     if (err) {
       res.status(500).send("Error loading locations.");
     } else {
-      res.send(data);
+      res.send(JSON.parse(data));
     }
   });
-
 });
 
 module.exports = router;
