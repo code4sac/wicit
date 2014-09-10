@@ -20,7 +20,7 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-sass": "^0.7.3",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-express": "^1.4.1",
+    "grunt-express-server": "^0.4.19",
     "grunt-npm-install": "^0.1.0"
   }
 }
