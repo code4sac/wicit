@@ -6,5 +6,6 @@ html(ng-app="wicItApp", ng-controller='AppCtrl')
     link(rel='stylesheet', href='components/leaflet/dist/leaflet.css')
     link(rel='stylesheet', href='components/leaflet.markercluster/dist/MarkerCluster.Default.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/components/angular/angular.js')
   body(ng-class='$state.current.name')
     block content

@@ -7,7 +7,7 @@
   - Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
   - [Fork the repository and setup a local clone](https://help.github.com/articles/fork-a-repo)
   - Move into your local wicit directory: `cd <yourdirectory>/wicit`
-  - Install dependencies: `grunt build-dev`
+  - Install server-side dependencies: `npm install`
   - Start the development server: `grunt dev`
   - [Try it out](http://localhost:3000)
 
