@@ -1,5 +1,7 @@
 #WICit: Where to Shop with WIC
 
+### This README has recently changed! Be sure to set up a Mapbox map for your development environment.
+
 ### The California deployment of WICit is live! Check it out at [findwic.com](http://findwic.com)!
 
 ###Setup (Mac)
