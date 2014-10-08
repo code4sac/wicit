@@ -5,6 +5,12 @@ script(type='text/javascript', src='/components/angular-ui-router/release/angula
 script(type='text/javascript', src='/components/leaflet/dist/leaflet.js')
 script(type='text/javascript', src='/components/leaflet.markercluster/dist/leaflet.markercluster.js')
 script(type='text/javascript', src='components/angular-c4s-leaflet-directive/dist/angular-leaflet-directive.js')
+script(type="text/javascript").
+    angular.module('wicItApp.Constants', [])
+        .constant('Constants', Object.freeze({
+            mapboxId: '#{mapboxId}',
+            mapboxToken: '#{mapboxToken}'
+        }));
 script(type="text/javascript", src='/javascripts/services/notifications.js')
 script(type="text/javascript", src='/javascripts/services/geolocation.js')
 script(type="text/javascript", src='/javascripts/controllers/app.js')

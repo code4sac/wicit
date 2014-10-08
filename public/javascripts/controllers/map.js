@@ -1,13 +1,14 @@
 /** MAP CONTROLLER */
-var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelpers, leafletMarkersHelpers, NotificationService, GeolocationService, ServerConstants) {
+var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelpers, leafletMarkersHelpers, NotificationService, GeolocationService, Constants) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
   var minZoom = 10;
   var pinIcon = iconFactory('image/pin.png', 'image/pin@2x.png', 'image/pin_shadow.png', 'image/pin_shadow@2x.png', 30, 30);
   var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
-  var mapId = ServerConstants.MAPBOX_MAP_ID;
-  var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png";
+  var mapId = Constants.mapboxId;
+  var mapToken = Constants.mapboxToken;
+  var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
   var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
   var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
   var prevBounds = false;
