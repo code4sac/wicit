@@ -1,8 +1,3 @@
-var constants = {
-  MAPBOX_MAP_ID: 'jesserosato.j200j557'
-};
-angular.module('wicItApp.Constants', []).constant('ServerConstants', constants);
-
 var wicItApp = angular.module('wicItApp', ['wicItApp.Constants', 'ui.router', 'ngAnimate', 'leaflet-directive', 'geolocation', 'notifications']);
 
 var mapState = {
