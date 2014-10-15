@@ -7,6 +7,7 @@
 ###Setup (Mac)
   - [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
   - Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
+  - Install the SASS compiler gem: `gem install sass`
   - [Fork the repository and setup a local clone](https://help.github.com/articles/fork-a-repo)
   - Move into your local wicit directory: `cd <yourdirectory>/wicit`
   - Install server-side dependencies: `npm install`
