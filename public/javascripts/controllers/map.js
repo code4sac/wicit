@@ -9,7 +9,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
   var mapId = Constants.mapboxId;
   var mapToken = Constants.mapboxToken;
   var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
-  var locationsBaseUrl = 'http://health.data.ca.gov/resource/i7wi-ei4m.json';
+  var locationsBaseUrl = 'http://cdph.data.ca.gov/resource/i7wi-ei4m.json';
   var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
   var prevBounds = false;
   var curBounds = false;
