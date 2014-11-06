@@ -9,7 +9,8 @@ script(type="text/javascript").
     angular.module('wicItApp.Constants', [])
         .constant('Constants', Object.freeze({
             mapboxId: '#{mapboxId}',
-            mapboxToken: '#{mapboxToken}'
+            mapboxToken: '#{mapboxToken}',
+            apiToken: '#{apiToken}'
         }));
 script(type="text/javascript", src='/javascripts/services/notifications.js')
 script(type="text/javascript", src='/javascripts/services/geolocation.js')

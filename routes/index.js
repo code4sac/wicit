@@ -8,7 +8,8 @@ router.get('/', function(req, res) {
   res.render('index', {
     title: 'WICit: Where to shop with WIC.',
     mapboxId: process.env.MAPBOX_ID,
-    mapboxToken: process.env.MAPBOX_TOKEN
+    mapboxToken: process.env.MAPBOX_TOKEN,
+    apiToken: process.env.API_TOKEN
   });
 });
 

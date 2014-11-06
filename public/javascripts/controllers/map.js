@@ -8,9 +8,9 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
   var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
   var mapId = Constants.mapboxId;
   var mapToken = Constants.mapboxToken;
+  var locationsApiToken = Constants.apiToken;
   var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
   var locationsBaseUrl = 'http://cdph.data.ca.gov/resource/i7wi-ei4m.json';
-  var locationsAppToken = 'S0kfDwCy0pFWq18dpMK7JADbT';
   var prevBounds = false;
   var curBounds = false;
 
@@ -132,6 +132,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
     var se = curBounds.getSouthEast();
     var locationsUrl = locationsBaseUrl;
     locationsUrl += '?$where=within_box(location,' + nw.lat + ',' + nw.lng + ',' + se.lat + ',' + se.lng + ')';
+    locationsUrl += '&$$app_token=' + locationsApiToken;
     return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
