@@ -3,8 +3,7 @@
 ### This README has recently changed!
 ###Be sure to register for a data portal API token (step 6) and set up a Mapbox map for your development environment (step 7).
 
-### The California deployment of WICit is live!
-### Check it out at [findwic.com](http://findwic.com)!
+### The California deployment of WICit is live! <br /> Check it out at [findwic.com](http://findwic.com)!
 
 ###Setup (Mac)
   1 [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
