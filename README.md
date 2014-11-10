@@ -1,11 +1,10 @@
 #WICit: Where to Shop with WIC
 
-### The California deployment of WICit is live! <br /> Check it out at [findwic.com](http://findwic.com)!
-
-### This README has recently changed!
-#### Be sure to register for a data portal API token (step 6) and set up a Mapbox map for your development environment (step 7).
-
-###Setup (Mac)
+### The California deployment of WICit is live!
+#### Check it out at [findwic.com](http://findwic.com)!
+---
+### Development Environment Setup
+#### OS X
   1 [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
   
   2 Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
