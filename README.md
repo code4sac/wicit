@@ -1,7 +1,6 @@
 #WICit: Where to Shop with WIC
 
-### This README has recently changed!
-###Be sure to register for a data portal API token (step 6) and set up a Mapbox map for your development environment (step 7).
+### This README has recently changed! <br /> Be sure to register for a data portal API token (step 6) and set up a Mapbox map for your development environment (step 7).
 
 ### The California deployment of WICit is live! <br /> Check it out at [findwic.com](http://findwic.com)!
 
