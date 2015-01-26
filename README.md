@@ -26,6 +26,10 @@
   10 Start the development server: `grunt dev`
   
   11 [Try it out](http://localhost:3000)
+  
+### Deployment
+#### Digital Ocean
+Wicit is ready to be [deployed on Digital Ocean using Dokku](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application) (wicit doesn't use a database right now, so you don't have to worry about that part). Just be sure to use `dokku config:set <appname> VAR=value` to add the settings present in your local `.env` file to your deployment environment.
 
 ###License
 WICit is free software, and may be redistributed under the MIT-LICENSE.
