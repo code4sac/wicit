@@ -13,7 +13,8 @@ router.get('/', function(req, res) {
       + 'Public Health.',
     mapboxId: process.env.MAPBOX_ID,
     mapboxToken: process.env.MAPBOX_TOKEN,
-    apiToken: process.env.API_TOKEN
+    apiToken: process.env.API_TOKEN,
+    env: process.env.NODE_ENV
   });
 });
 

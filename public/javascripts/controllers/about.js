@@ -1,3 +1,3 @@
-var AboutCtrl = function ($scope, $http) {
+wicItApp.controller('AboutCtrl',  function ($scope, $http) {
 
-};
+});

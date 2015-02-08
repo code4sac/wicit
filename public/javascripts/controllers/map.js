@@ -1,5 +1,5 @@
 /** MAP CONTROLLER */
-var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelpers, leafletMarkersHelpers, NotificationService, GeolocationService, Constants) {
+wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletData, leafletHelpers, leafletMarkersHelpers, NotificationService, GeolocationService, Constants) {
 
   var defaultZoom = 13;
   var maxZoom = 18;
@@ -190,4 +190,4 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
     };
   };
 
-};
+});

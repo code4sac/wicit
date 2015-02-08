@@ -1,4 +1,4 @@
-var SearchCtrl = function ($scope) {
+wicItApp.controller('SearchCtrl', function ($scope) {
 
   var STATE_INITIAL     = 'initial';
   var STATE_PENDING     = 'pending';
@@ -49,4 +49,4 @@ var SearchCtrl = function ($scope) {
     clearTimeout(timeout);
     timeout = setTimeout(request, DEBOUNCE);
   };
-};
+});
