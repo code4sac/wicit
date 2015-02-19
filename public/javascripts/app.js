@@ -84,6 +84,13 @@ var aboutState = {
   templateUrl: '/partials/about'
 };
 
+var searchState = {
+  name: 'search',
+  url: '/search',
+  templateUrl: '/partials/search',
+  controller: 'SearchCtrl'
+};
+
 wicItApp.config(function($stateProvider, $urlRouterProvider) {
   // For any unmatched url, redirect to /map
   $urlRouterProvider.otherwise("/map");
@@ -100,5 +107,6 @@ wicItApp.config(function($stateProvider, $urlRouterProvider) {
     .state(qualifyCategoryOtherProgramsState)
     .state(qualifyIncomeState)
     .state(qualifyResultState)
-    .state(aboutState);
+    .state(aboutState)
+    .state(searchState);
 });

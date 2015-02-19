@@ -2,6 +2,8 @@ var fs = require('fs');
 var express = require('express');
 var router = express.Router();
 
+var MAX_RESULTS = 100;
+
 /* GET foods by search parameter. */
 router.get('/', function(req, res) {
   // Get the query parameter 'q'
@@ -17,7 +19,10 @@ router.get('/', function(req, res) {
       var foods = JSON.parse(data);
       // Filter by search term.
       var filteredFoods = filterSearchResult(query, foods);
-      res.json(filteredFoods);
+      res.json({
+        count: filteredFoods.length,
+        results: filteredFoods.slice(0, MAX_RESULTS)
+      });
     }
   });
 
