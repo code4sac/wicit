@@ -26,7 +26,19 @@
   10 Start the development server: `grunt dev`
   
   11 [Try it out](http://localhost:3000)
-  
+	
+#### Windows
+1. [Install: Git](http://git-scm.com/download)
+2. [Install: Node & NPM](http://nodejs.org/)
+3. [Install: Python 2.x.x](https://www.python.org/downloads/)
+	- Version 3 of Python is not supported by nodegyp so make sure to install version 2.x.x.
+4. [Install: Visual Studio Community (with Update 4)](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+	- Visual Studio Express for Windows Desktop should also work, but if you want a full IDE, go with the Community edition
+5. [Install: RubyInstaller](http://rubyinstaller.org/downloads/)
+6. From a command prompt, install the Grunt Command Line Interface: `npm install -g grunt-cli`
+7. From a command prompt, install the SASS compiler: `gem install sass`
+8. Follow the OS X instructions above from step 4
+
 ### Deployment
 #### Digital Ocean
 Wicit is ready to be [deployed on Digital Ocean using Dokku](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application) (wicit doesn't use a database right now, so you don't have to worry about that part). Just be sure to use `dokku config:set <appname> VAR=value` to add the settings present in your local `.env` file to your deployment environment.
