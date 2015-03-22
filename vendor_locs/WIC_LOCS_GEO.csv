@@ -1,0 +1,491 @@
+Site ID,Site Name,Address,City,Zip,Phone,Latitude,Longitude
+101002,Eastmont Mall WIC,7200 Bancroft Avenue Suite 204,Oakland,94605,(510) 577-7040,37.7671679,-122.1767049
+101003,Fremont Resource Center,39155 Liberty Street Suite H-840,Fremont,94538,(510) 795-2456,37.5507906,-121.9832503
+101004,Hayward WIC,24085 Amador Suite 100,Hayward,94544,(510) 670-6465,37.659529,-122.095457
+101001,North Oakland Office (Telegraph),3600 Telegraph Avenue,Oakland,94609,(510) 595-6410,37.824868,-122.2652317
+102005,Cloverdale,223-A S Cloverdale Boulevard,Cloverdale,95425,(707) 431-0831,38.8035613,-123.0162119
+102002,Healdsburg,1381 University Street,Healdsburg,95448,(707) 431-0831,38.6206579,-122.8633645
+102004,Windsor,8465 Old Redwood Highway Suite 410,Windsor,95492,(707) 431-0831,38.5433735,-122.8010239
+103001,City Of Berkeley,830 University Avenue,Berkeley,94710,(510) 981-5360,37.8678272,-122.2972235
+105009,Brentwood Health Center,171 Sand Creek Road,Brentwood,94513,(925) 513-6880,37.94792899999999,-121.69926
+105008,Concord WIC Office,2355 Stanwell Circle,Concord,94520,(925) 646-5370,37.98254,-122.048899
+105006,Contra Costa County Health Department Richmond WIC Office,100 38th Street,Richmond,94805,(510) 231-8600,37.93234330000001,-122.3329564
+105007,Pittsburg WIC Office,2311 Loveridge Road,Pittsburg,94565,(925) 431-2460,38.0067455,-121.8694854
+107001,Alviso Health Clinic,1621 Gold Street,Alviso,95002,(408) 254-5197,37.4247859,-121.9754397
+107007,Comprecare Health Center,3030 Alum Rock Avenue,San Jose,95127,(408) 254-5197,37.364498,-121.8288
+107005,Emma Prusch Community Center,647 South King Road,San Jose,95116,(408) 254-5197,37.3412365,-121.8449673
+107002,Gardner Site WIC Office,160 East Virginia Suite 210,San Jose,95112,(408) 294-1323,37.325608,-121.877664
+107008,Gardner South County Health Clinic,7526 Monterey Road,Gilroy,95020,(408) 254-5197,37.00864,-121.569001
+108001,Mountain Community Resources,6134 Highway 9,Felton,95018,(831) 426-3911,37.05019660000001,-122.0732893
+108004,Santa Cruz,1105 Water Street,Santa Cruz,95062,(831) 426-3911,36.9816016,-122.0099698
+108002,Watsonville WIC,18 W Lake Avenue Suite A,Watsonville,95076,(831) 722-7121,36.91123350000001,-121.7591988
+110001,Pleasanton WIC Program,1991 Santa Rita Road Suite H,Pleasanton,94566,(925) 462-2365,37.6792618,-121.875452
+111005,Del Norte County Health Department,286 M Street Suite D,Crescent City,95531,(707) 464-7293,41.7547602,-124.1926119
+111001,Eureka,317 2nd Street,Eureka,95501,(707) 445-6255,40.80444,-124.168345
+111006,Fortuna WIC,1108 Main Street,Fortuna,95540,(707) 726-9427,40.598256,-124.15531
+111002,Garberville WIC,727 Cedar Street,Garberville,95542,(707) 923-2779,40.1021874,-123.7926882
+111008,McKinleyville Clinic,1450 Hiller Road,McKinleyville,95519,(707) 839-1173,40.941712,-124.106981
+112003,IHC-Silver Creek WIC,1642 E Capitol Expressway,San Jose,95121,(408) 445-3400,37.3058949,-121.8105781
+112001,Indian Health Center,1685 Westwood Drive Suite 4,San Jose,95125,(408) 445-3400,37.3030199,-121.915146
+112004,Mountain View WIC,327 Moffett Boulevard Suite F,Mountain View,94043,(408) 445-3400,37.3980439,-122.0752388
+113001,"La Clinica de La Raza, Inc.",2716 International Boulevard,Oakland,94601,(510) 535-4110,37.7806967,-122.2309522
+113002,San Antonio WIC,1030 International Boulevard,Oakland,94606,(510) 272-1500,37.791911,-122.248991
+114001,Marin City,630 Drake Avenue,Marin City,94965,(415) 473-6889,37.8729121,-122.5144105
+114007,Marin Community Clinics - Novato Clinic,6100 RedwoodBoulevard,Novato,94945,(415) 473-6889,38.0964925,-122.5630725
+114004,Marin Health and Wellness Campus,3250 Kerner Boulevard,San Rafael,94901,(415) 473-6889,37.96130300000001,-122.500541
+114002,Novato Wellness Center,1767 Grant Avenue,Novato,94945,(415) 473-6889,38.1081543,-122.580013
+114003,Point Reyes Community Center,100 6th Street,Point Reyes,94956,(415) 473-6889,38.06927719999999,-122.8086519
+115001,Boonville,14470 Highway 128,Boonville,95415,None,39.0025986,-123.361463
+115010,"Consolidated Tribal Health Project, Inc. (CTHP)",6991 North State Street Building A,Ukiah,95482,(707) 485-5115,39.195287,-123.2065448
+115008,Covelo,2300 Henderson Road,Covelo,95428,(707) 232-2367,39.8039569,-123.277146
+115003,Fort Bragg,120 West Fir Street,Fort Bragg,95437,(707) 964-7106,39.447564,-123.806491
+115011,Gualala,39144 Ocean Drive Suite 4,Gualala,95445,(707) 884-5413,38.7696298,-123.5307751
+115006,Long Valley Health Center,50 Branscomb Road,Laytonville,95454,(707) 984-6131,39.6881808,-123.484219
+115002,Point Arena,24000 South Highway 1,Point Arena,95468,None,38.916423,-123.703363
+115007,Ukiah,1120 South Dora Street,Ukiah,95482,(707) 472-2737,39.1361755,-123.2105368
+115009,Willits,221 South Lenore Avenue,Willits,95490,None,39.4102131,-123.3458981
+116003,Monterey County Department of Health,620 Broadway,King City,93930,(831) 386-6879,36.2103571,-121.1314103
+116006,Salinas Classroom,632 E Alisal Street,Salinas,93905,None,36.6733529,-121.6338842
+116007,Salinas WIC,632 E Alisal Street,Salinas,93905,(831) 796-2888,36.6733529,-121.6338842
+116004,Seaside WIC,1942 Fremont Boulevard,Seaside,93955,(831) 393-3251,36.6174574,-121.8407996
+116009,Soledad WIC,355 Gabilan Drive,Soledad,93960,(831) 678-5121,36.4368257,-121.3279682
+117005,American Canyon City Hall,4381 Broadway Street Suite 100,American Canyon,94503,(707) 299-2167,38.1839365,-122.256027
+117003,Calistoga Community Center Calistoga WIC Clinic,1307 Washington Street,Calistoga,94515,(707) 942-0947,38.57886939999999,-122.579914
+117002,First Presbyterian Church,1428 Spring Street,St. Helena,94574,(707) 963-1255,38.502002,-122.470286
+117001,Napa County WIC Program,2344 Old Sonoma Road Building G,Napa,94559,(707) 253-4853,38.2886854,-122.2982354
+120001,San Benito Health Foundation,351 Felice Drive,Hollister,95023,None,36.8532362,-121.4163828
+120002,San Juan Bautista Community Center,301 Alameda Building 3,San Juan Bautista,95045,(831) 623-4615,36.8414116,-121.5349868
+121004,Chinatown Public Health Center,1490 Mason Street,San Francisco,94133,(415) 364-7654,37.7970036,-122.4118344
+121005,Ocean Park Health Center,1351 - 24th Avenue,San Francisco,94122,(415) 682-1928,37.7623921,-122.4826004
+121001,San Francisco General Hospital,"2550 - 23rd Street Building 9, Room 125",San Francisco,94110,(415) 206-5494,37.7546347,-122.4054732
+121003,Silver Avenue Family Health Center,1525 Silver Avenue,San Francisco,94134,(415) 657-1724,37.7323381,-122.4066361
+121010,Southeast Health Center,2401 Keith Street,San Francisco,94124,(415) 671-7059,37.7257196,-122.3918908
+121011,Van Ness Avenue,30 Van Ness Avenue Suite 2118,San Francisco,94102,(415) 558-5940,37.77592180000001,-122.4190548
+122001,Atascadero Health Department,5575 Capistrano Avenue,Atascadero,93422,(805) 461-6053,35.492635,-120.663437
+122006,Cambria Veterans Memorial Building,1000 Main Street,Cambria,93428,None,35.5646906,-121.0969019
+122002,Grover Beach Health Department,286 South 16th Street Suite B,Grover City,93433,None,35.1193232,-120.6118647
+122003,Morro Bay Health Department,760 Morro Bay Boulevard,Morro Bay,93422,None,35.365681,-120.8441
+122007,Nipomo Community Medical Center,200 East Dana Street,Nipomo,93444,None,35.0440427,-120.4719199
+122004,Paso Robles Health Department,723 Walnut Street,Paso Robles,93446,None,35.6283314,-120.67329
+122005,San Luis Obispo Health Department,2180 Johnson Avenue,San Luis Obispo,93401,None,35.2748961,-120.6460904
+122008,San Miguel WIC,1383 Mission,San Miguel,93451,None,35.7524519,-120.6963599
+123002,Daly City WIC,380 - 90th Street,Daly City,94015,(650) 301-8632,37.6914367,-122.4738655
+123006,East Palo Alto WIC,2160 Euclid Avenue,East Palo Alto,94303,(650) 578-7155,37.4635041,-122.1432475
+123005,Half Moon Bay WIC,225 South Cabrillo Hwy 100A,Half Moon Bay,94019,(650) 573-2168,37.464756,-122.43267
+123003,Redwood City WIC,2342 El Camino Real Suite 200,Redwood City,94063,(650) 599-1354,37.4747478,-122.2198683
+123001,San Mateo WIC,477 9th Avenue Suite 110,San Mateo,94402,(650) 573-2168,37.5629155,-122.3171638
+123007,South Coast Community WIC North Street Community Center,620 North Street Building 16,Pescadero,94060,(650) 573-2168,37.2562587,-122.3784982
+123004,South San Francisco WIC SSF Family Health Center,306 Spruce Avenue,South San Francisco,94080,(650) 877-7025,37.6566063,-122.4156565
+124006,San Jose Medical Plaza Main Office,725 East Santa Clara Street Suite 200,San Jose,95112,(408) 792-5101,37.3434269,-121.8757574
+124004,VHC Bascom,2406 Clove Drive Building T41,San Jose,95128,(408) 792-5101,37.3120363,-121.9372935
+124002,VHC East Valley,1993 McKee Road Building EVT1,San Jose,95116,(408) 792-5101,37.3558627,-121.8505679
+124003,VHC Gilroy,7475 Camino Arroyo,Gilroy,95020,(408) 792-5101,37.0112,-121.557045
+124007,VHC Milpitas,143 North Main Street,Milpitas,95035,(408) 792-5101,37.43218,-121.907993
+124005,VHC Sunnyvale,660 South Fair Oaks Avenue,Sunnyvale,94086,(408) 792-5101,37.3648488,-122.0234962
+124001,VHC Tully,500 Tully Road,San Jose,95111,(408) 792-5101,37.3056291,-121.8503981
+125006,Dixon Family Services,155 North Second Street,Dixon,95620,(707) 678-0717,38.4461586,-121.8216773
+125007,Dixon Migrant Camp,7290 Radio Station Road,Dixon,95620,None,38.387318,-121.7778503
+125004,"Rio Vista Ministry, Inc.",1105 Airport Road Suite A,Rio Vista,94571,(707) 864-2200,38.172578,-121.68739
+125003,SCHSSD - FF Solano County Health And Social Services Department,2101 Courage Drive,Fairfield,94533,(707) 784-2200,38.2364855,-122.067584
+125005,SCHSSD - Vacaville Solano County Health And Social Services Department,1119 E Monte Vista Avenue,Vacaville,95688,(707) 469-4555,38.360856,-121.976359
+125001,Solano County Health and Social Services Department (SCHSSD) - Vallejo (VJO),365 Tuolumne Street,Vallejo,94590,(707) 553-5381,38.1032052,-122.2400076
+126006,Guerneville WIC,16390 Main Street,Guerneville,95446,None,38.502182,-122.999966
+126003,Petaluma Clinic,11 English Street Room 13,Petaluma,94952,None,38.2319956,-122.644391
+126001,Santa Rosa Clinic,1450 Guerneville Road,Santa Rosa,95403,(707) 565-6590,38.4566632,-122.7343426
+126002,Sonoma Clinic,19270 Sonoma Highway,Sonoma,95476,None,38.2987133,-122.4750649
+127002,Sonoma County Indian Health Department,144 Stony Point Road,Santa Rosa,95401,None,38.4405583,-122.7435965
+128002,Fremont WIC,3845 Beacon Avenue Suite A,Fremont,94538,(510) 794-5015,37.5480284,-121.9837515
+128004,San Leandro WIC,15949 E 14th Street,San Leandro,94578,(510) 471-5913,37.6992833,-122.1205384
+128001,"Tiburcio Vasquez Health Center, Inc.",32970 Alvarado Niles Road Suite 760,Union City,94587,(510) 471-5913,37.5937755,-122.0448645
+128005,TVHC - Hayward,22331 Mission Boulevard Second Floor,Hayward,94541,(510) 471-5913,37.6743188,-122.086888
+129009,Crescent City - UIHS Indian Lodge,1080 Mason Mall,Crescent City,95531,None,41.7528879,-124.1951409
+129014,Eureka,309 Harris Street,Eureka,95503,(707) 825-5030,40.7806279,-124.1655358
+129011,Fortuna WIC,1426 Main Street,Fortuna,95540,None,40.5979373,-124.1518888
+129004,Hoopa Health Association,Airport Road,Hoopa,95546,None,41.0445179,-123.6660636
+129008,Klamath - UIHS/Resighini Tribal Clinic,151 East Klamath Beach Road,Klamath,95548,None,41.5116226,-124.0258921
+129001,Potawot Health Village,5000 Valley West Boulevard,Arcata,95521,(707) 822-9900,40.9030366,-124.0822832
+129010,Smith River - Howonquest Tribal Center,300 North Indian Road,Smith River,95546,None,41.9569366,-124.2027552
+129015,"United Indian Health Services, Inc",HC 67 Highway 96,Weitchpec,95546,(707) 825-5030,41.18898189999999,-123.682402
+129003,Willow Creek Health Department,3888 Highway 299,Willow Creek,95573,None,40.9333574,-123.6751181
+130003,Alameda Point Collaborative,677 West Ranger Avenue,Alameda,94501,(510) 814-8440,37.7845836,-122.2981667
+130001,Native American Health Center - Oakland,3124 International Boulevard Room 103,Oakland,94601,(510) 434-5300,37.7780883,-122.2263538
+130002,Native American Health Center - San Francisco,160 Capp Street,San Francisco,94103,(415) 621-7574,37.7641193,-122.4189111
+132002,"East Oakland Health Council, Inc.",7450 East 14th Street,Oakland,94621,(510) 613-2257,37.7539608,-122.1971751
+132001,"West Oakland Health Council, Inc.",700 Adeline Street,Oakland,94607,(510) 302-3734,37.804271,-122.287389
+201004,Chico,2491 Carmichael Drive Suite 400,Chico,95928,(530) 891-2767,39.7157617,-121.8044132
+201005,Chico NVIH,845 West East Avenue,Chico,95926,(530) 899-5156,39.7474534,-121.8762321
+201003,Feather River Hospital,5125 Skyway,Paradise,95969,(530) 891-2767,39.7464464,-121.640706
+201008,Gridley,200 East Spruce Street,Gridley,95948,(530) 538-7455,39.3669781,-121.6860428
+201001,Oroville,82 Table Mountain Boulevard,Oroville,95965,(530) 538-7455,39.5211158,-121.5540769
+201006,Willows NVIH,201 North Butte Street,Willows,95988,(530) 934-5431,39.521861,-122.1953555
+202004,Chowchilla,405 Trinity Avenue,Chowchilla,93610,(559) 201-5023,37.1205715,-120.2609902
+202002,Madera,14215 Road 28,Madera,93638,(559) 675-7623,36.95490350000001,-120.0373915
+202008,Oakhurst,40325 Highway 41,Oakhurst,93644,(559) 658-7456,37.3312157,-119.6516912
+203018,34th Street Neighborhood Health Center,2000 Physicians Plaza,Bakersfield,93301,(661) 862-5422,35.3968236,-119.0085944
+203011,Arvin Community Health Center,1305 Bear Mountain Boulevard,Arvin,93203,(661) 862-5422,35.2084873,-118.839518
+203017,Arvin WIC,601 Bear Mountain Boulevard,Arvin,93203,(661) 862-5422,35.208792,-118.831161
+203029,Bakersfield College,1801 Panorama Drive,Bakersfield,93305,(661) 862-5422,35.4077288,-118.9686012
+203012,Benton Park WIC Office,2519 South H Street,Bakersfield,93304,(661) 862-5422,35.33132870000001,-119.0213244
+203006,Central Bakersfield Community Health Center,301 Nrundage,Bakersfield,93304,(661) 862-5422,35.3532391,-119.0054347
+203007,Delano Community Health Center,1508 Garces Highway,Delano,93215,(800) 707-4401,35.7611681,-119.2368442
+203016,East Bakersfield Community Health Center,"815 Dr. Martin Luther King, Jr. Boulevard",Bakersfield,93307,(661) 862-5422,35.3657968,-118.984888
+203026,Elm Community Health Center WIC,2790 S. Elm Avenue,Fresno,93706,(559) 457-5828,36.70041690000001,-119.791346
+203030,Family Health Center WIC,1611 First Street,Bakersfield,93304,(661) 862-5422,35.3548538,-119.0204494
+203002,Frazier Mountain Community Health Center,704 Lebec Road,Lebec,93243,(800) 707-4401,34.820542,-118.883872
+203025,Greenfield WIC,403 Boomerang Drive,Bakersfield,93307,(661) 862-5422,35.3014246,-119.0062621
+203003,Kern River Health Center,67 Evans Road,Wofford Heights,93285,(800) 707-4401,35.706319,-118.457778
+203015,Kern Valley Medical Group,6310 Lake Isabella Boulevard,Lake Isabella,93240,(800) 707-4401,35.6275853,-118.4734609
+203001,Lamont Community Health Center,8787 Hall Road,Lamont,93241,(661) 862-5422,35.2591524,-118.9081635
+203023,Maganda WIC,312 Austin,Delano,93215,(800) 707-4401,35.756111,-119.255112
+203009,Mcfarland Community Health Center,209 West Kern Avenue,Mcfarland,93250,(800) 707-4401,35.6778238,-119.229532
+203021,McFarland WIC,106 - 11th Street,McFarland,93250,(800) 707-4401,35.674689,-119.239922
+203004,Mount Vernon,2509 Mount Vernon Avenue,Bakersfield,93306,(661) 862-5422,35.39093769999999,-118.965899
+203022,North Bakersfeild WIC Office,2525 North Chester Avenue,Bakersfeild,93308,(661) 862-5422,35.429607,-119.022208
+203028,Orange & Butler Community Health Center WIC,1350 S. Orange Avenue,Fresno,93702,(559) 457-5828,36.7288937,-119.7640931
+203010,Rosedale WIC Office,10727 Rosedale Highway,Bakersfield,93312,(661) 862-5422,35.3830087,-119.1214324
+203014,Sagebrush WIC,1111 Columbus St.,Bakersfield,93305,(661) 862-5422,35.396788,-118.982481
+203019,South Bakersfield Community Health Center,2400 Wible Road Suite 14,Bakersfield,93304,(661) 862-5422,35.332872,-119.038495
+203013,Southwest WIC Office,4621 American Avenue Units A & B,Bakersfield,93309,(661) 862-5422,32.6744073,-114.1508349
+203008,"Taft WIC Program - ""The Fort""",915 North 10th Street Suite 12,Taft,93268,(800) 707-4401,35.1504562,-119.4661415
+203024,Union Avenue WIC,701 Union Avenue,Bakersfield,93307,(661) 862-5422,35.3634593,-119.0032622
+203027,West Fresno Community Health Center WIC,302 Fresno Street Suite 200,Fresno,93706,(559) 457-5828,36.7238238,-119.8089299
+203031,West Shaw Community Health Center WIC,4739 West Shaw Avenue Suite #110,Fresno,93711,(559) 457-5828,36.80759949999999,-119.8779857
+204005,DHC - Northeast,7908 N. West Lane Suite 201,Stockton,95210,(209) 444-8600,38.0204291,-121.2936925
+204004,DHC - Sierra Vista,1604 East Eleventh Street,Stockton,95206,(209) 444-8600,37.9281607,-121.261615
+204006,DHC Edison Health Center,1425 South Center Street,Stockton,95026,(209) 444-8600,37.9362022,-121.2891519
+204002,DHC Lodi,318 South Crescent Avenue,Lodi,95240,(209) 370-6850,38.1289352,-121.2823202
+204001,DHC Stockton Main,4662 Precissi Lane,Stockton,95207,(209) 444-8600,37.989484,-121.314565
+205008,Ashlan/West,1426 W. Ashlan Avenue,Fresno,93705,(559) 263-1150,36.7942836,-119.8271734
+205005,Downtown Executive Plaza / Heart,1920 Mariposa Mall Suite 120,Fresno,93721,(559) 263-1150,36.73330869999999,-119.7918386
+205007,Downtown Executive Plaza/Flower,1920 Mariposa Mall Suite 120,Fresno,93721,(559) 263-1150,36.73330869999999,-119.7918386
+205006,Downtown Executive Plaza/Star,1920 Mariposa Mall Suite 120,Fresno,93721,(559) 263-1150,36.73330869999999,-119.7918386
+205009,East Shaw,1551 E Shaw Suite 128,Fresno,93710,(559) 263-1150,36.8079911,-119.7607142
+205004,First Street WIC,3636 North First Street Suite 132,Fresno,93726,(559) 263-1150,36.7833613,-119.771505
+205003,Kings Canyon,4995 E. Kings Canyon Suite 101,Fresno,93727,(559) 263-1150,36.7359745,-119.7277185
+205010,Roosevelt,4403 E Tulare St,Fresno,93702,(559) 263-1150,36.7433705,-119.7520804
+206041,Adelanto,11366 Bartlett Suites 13 & 14,Adelanto,92301,(866) 327-3074,34.579322,-117.4007608
+206038,American Indian Health Project,1617 30th Street,Bakersfield,93301,None,35.3865129,-119.0205066
+206001,Arvin WIC,204 S. Hill Street,Arvin,93203,(661) 327-3074,35.207961,-118.830654
+206017,Bakersfield High School,1600 East Truxton Avenue,Bakersfield,93305,(661) 327-3074,35.37348410000001,-118.9791641
+206004,Bakersfield WIC,500 East California Avenue,Bakersfield,93307,(805) 327-3074,35.368814,-118.998901
+206033,Boron Community Recreation Building WIC Clinic,26904 Nichols Street,Boron,93516,(661) 327-3074,34.9976131,-117.6518437
+206002,Buttonwillow WIC Clinic,277 East Front Street,Buttonwillow,93206,(661) 327-3074,35.400517,-119.4695619
+206016,California City,8070 California City Boulevard,California City,93505,None,35.1257339,-117.9840396
+206036,China Lake Naval Weapons Center Family Support Services,610 Blandy Building,China Lake,93505,None,35.6545418,-117.6552847
+206030,Delano MESC,1201 Jefferson Street,Delano,93215,(661) 327-3074,35.772009,-119.245342
+206003,Delano VFW Hall,1025 Garces Highway,Delano,93215,None,35.7614556,-119.2410447
+206005,Edwards Air Force Base,Airmen & Family Resource Center 412 FSS/FSFR90,Lost Hills,93249,(866) 327-3074,35.616349,-119.6942941
+206040,Food Bank,2424 Cottonwood Road,Bakersfield,93307,(661) 327-3074,35.328313,-118.9847849
+206027,KCEOC Medical Center,1611 First Street,Bakersfield,93304,None,35.3548538,-119.0204494
+206037,Lamont,10318 Main Street,Lamont,93241,None,35.2617737,-118.914769
+206013,Lost Hills Paramount Park,Corner of Lost Hills Road and Highway 46,Lost Hills,93249,(661) 327-3074,35.61611389999999,-119.6897856
+206007,Mojave Veterans Of Foreign Wars Hall,15580 O Street,Mojave,93501,None,35.0487629,-118.1670364
+206024,Northeast WIC Office,5913 # 3 Niles Street,Bakersfield,93306,None,35.37619189999999,-118.918317
+206014,Oildale Good Samaritan Hospital,525 Roberts Lane,Bakersfield,93308,None,35.4081631,-119.0315394
+206046,Panama,4600 Panama Lane Road,Bakersfield,93313,(661) 327-3074,35.1090685,-119.0227159
+206008,Ridgecrest WIC Center,814 Norma,Ridgecrest,93555,(760) 375-1435,35.636137,-117.678205
+206015,Rosamond Parks & Recreation Building,2861 Diamond Street,Rosamond,93560,(661) 327-3074,34.86216599999999,-118.16453
+206009,Shafter WIC,320 James Street,Shafter,93263,(661) 327-3074,35.5033941,-119.2770789
+206012,Tehachapi,108 S. Robinson,Tehachapi,93561,(661) 327-3074,35.1314343,-118.4458679
+206010,Wasco Medical Center,741 Palm Building E,Wasco,93280,None,35.593751,-119.3492938
+206022,WIC Mobile,500 E. California Avenue Actual locations will vary,Bakersfield,93305,(866) 327-3074,35.3964972,-118.9819731
+207003,Avenal Clinic,590 Skyline Boulevard,Avenal,93204,(559) 582-0180,36.0040132,-120.129755
+207005,Corcoran Center,1002 Dairy Avenue,Corcoran,93212,(559) 582-0180,36.099473,-119.5724096
+207002,Kettleman City Clinic,124 Becky Pease Road,Kettleman City,93239,(559) 582-0180,36.0079796,-119.9602141
+207001,Kings County Department of Public Health WIC Program,330 N Harris Street #103,Hanford,93230,(559) 582-0180,36.3286943,-119.6447504
+207004,Lemoore Health Center,229 C Street,Lemoore,93245,(559) 582-0180,36.3006422,-119.7836926
+208011,Atwater WIC Program,1160-1170 3rd Street,Atwater,95301,(209) 358-1593,37.3472901,-120.6083988
+208010,Coulterville WIC Old School House,5043 Broadway,Coulterville,95311,None,37.714218,-120.195809
+208005,Dos Palos WIC,1813 Blossom Street,Dos Palos,93620,(209) 392-1102,36.9859169,-120.6259071
+208019,El Portal,100 Foresta Road,El Portal,95318,(209) 383-4859,37.6800998,-119.7899115
+208015,Greeley Hill WIC Program,10332 Fiske Road,Greeley Hill,95311,None,37.7462887,-120.1322442
+208008,Gustine WIC,399 Sixth Street,Gustine,95322,None,37.255828,-121.001376
+208020,Hilmar WIC,20056 West American Avenue,Hilmar,95324,(209) 668-0400,37.4115616,-120.8504562
+208007,Livingston WIC,2335 F Street,Livingston,95334,(209) 394-4539,37.3823631,-120.7122264
+208004,Los Banos WIC,340 I Street,Los Banos,93635,(209) 826-8128,37.062742,-120.8511815
+208003,Mariposa WIC,5074 Hwy 49 N Suite D,Mariposa,95338,(209) 966-2588,37.460363,-119.9439574
+208001,Merced WIC and Administrative Offices,1235 West Main Street,Merced,95340,(209) 383-7454,37.3058241,-120.4946184
+208013,Mercy Hospital - WIC Program,2740 M Street,Merced,95340,(209) 384-6444,37.3121296,-120.4779993
+208006,Planada WIC,9222 East Broadway,Planada,95365,(209) 382-0844,37.2907974,-120.3210744
+208012,Sutter Merced Medical Center - WIC Program,"301 East 13th Street 1St Floor, East Wing",Merced,95340,(209) 726-5049,37.3021632,-120.4829677
+209003,Clearlake WIC,15312 Lakeshore Drive,Clearlake,95422,(707) 994-1151,38.950406,-122.626443
+209004,E-Center Lakeport,831 Bevins Street,Lakeport,95453,(707) 263-5253,39.0361064,-122.9249134
+209001,Lucerne Lutheran Church WIC Office,3863 Country Club Drive,Lucerne,95458,(707) 274-9964,39.090527,-122.791957
+209006,Middletown,15833 Armstrong,Middletown,95461,(707) 987-2802,38.7511545,-122.6140726
+210011,Herlong Community Center,100 Tamarack Avenue,Herlong,96113,(530) 257-7094,40.1431262,-120.1562569
+210010,Newell WIC Program Basin Bible Church,5th And Glendale Streets,Newell,96134,(530) 257-7094,41.8833123,-121.3663503
+210005,"Northeastern Rural Health Clinics, Inc.",106 East Modoc Street,Alturas,96101,(530) 233-5800,41.4826904,-120.5419043
+210008,Susanville - Main Office,1410 Chestnut Street,Susanville,96130,(530) 257-7094,40.42393,-120.6501297
+210014,Susanville Rancheria,795 Joaquin Street,Susanville,96130,(530) 257-7094,40.4267937,-120.6571423
+210006,Veterans Memorial Hall,657-575 Bridge Street,Bieber,96009,(530) 257-7094,41.1211776,-121.1340304
+210013,Westwood Community Center,3rd And Birch Street,Westwood,96137,(530) 257-7094,40.302165,-121.0018856
+212001,Placer County Department of Health and Human Services,427 'A' Street,Lincoln,95648,(916) 784-6447,38.891565,-121.2930079
+212004,Placer County DHHS WIC Program,11562 B Avenue,Auburn,95603,(530) 889-7187,38.9401351,-121.103965
+212006,Rocklin,1000 Sunset Boulevard Suite 150,Rocklin,95765,(916) 784-6447,38.8158334,-121.2892569
+212005,Tahoe Site,265 Bear Street,Kings Beach,96143,(530) 889-7187,39.237974,-120.024854
+213007,Elk Grove Light of the Valley Church,9270 Bruceville Road,Elk Grove,95758,(916) 876-5000,38.4208039,-121.418659
+213008,Folsom WIC Office Mercy Village Folsom Housing,1160 Duchow Way,Folsom,95630,(916) 876-5000,38.6735005,-121.1615886
+213003,Grand Avenue Office,811 Grand Avenue Suite A-1,Sacramento,95838,(916) 876-5000,38.63713,-121.446932
+213002,Oak Park WIC Office,3415 Martin Luther King Jr. Boulevard,Sacramento,95817,(916) 876-5000,38.5434392,-121.4640932
+213009,Old Town Elk Grove (OEG),8986 Elk Grove Boulevard,Sacramento,95624,None,38.408693,-121.367549
+213004,Rancho Cordova Neighborhood Center,10665 Coloma Road (At Coloma And Mcgregor),Rancho Cordova,95670,(916) 876-5000,38.6117211,-121.2905352
+213005,Sacramento County WIC Program Main Office,2251 Florin Road (24th And Florin) Suite 100,Sacramento,95822,(916) 876-5000,38.4957182,-121.4826946
+214010,Coalition United for Families ( CUFF ),2044 Fair Street,Stockton,95206,(207) 444-5507,37.9338559,-121.2646984
+214011,Family Health Center WIC,1414 North California Street,Stockton,95204,(209) 468-3280,37.9675637,-121.2880432
+214006,Family Ties,500 West Hospital Road,FrenchCamp,95231,(209) 468-3280,37.8869674,-121.2830525
+214001,Railroad Square,620 North Aurora Street,Stockton,95202,(209) 468-3286,37.9611732,-121.2804265
+214003,San Joaquin County Public Health Services - Manteca,124 Sycamore Lane,Manteca,95336,(209) 823-7104,37.7981928,-121.2186796
+214002,San Joaquin County Public Health Services - Tracy,205 West 9th Street,Tracy,95376,(209) 831-5930,37.737564,-121.429507
+214009,Taylor Family Center,1101 Lever Boulevard,Stockton,95206,(209) 933-7290,37.9239075,-121.3021822
+214004,Transcultural Clinic,4422 North Pershing Avenue Suite D-5,Stockton,95207,(209) 953-8865,37.9859892,-121.3198809
+215007,Anderson WIC,2889 East Center Street,Anderson,96007,(530) 225-5168,40.449356,-122.298082
+215001,Burney WIC Program,36911 Main Street,Burney,96013,(530) 225-5168,40.880108,-121.6739315
+215014,Downtown Redding Center WIC,1220 Sacramento Street,Redding,96001,(530) 225-5168,40.58250719999999,-122.3875181
+215005,McArthur WIC,44218 A Street Inter Mountain Fair Grounds,McArthur,96056,(530) 225-5168,41.0501634,-121.3991469
+215009,Shasta Lake WIC,4216 Shasta Dam Boulevard,Shasta Lake City,96019,(530) 225-5168,40.68065199999999,-122.3699891
+215011,Shingletown WIC Black Butte Elementary School,7752 Ponderosa Way Room 19,Shingletown,96088,(530) 225-5168,40.5135722,-121.9360574
+217001,Live Oak,2670 Myrtle Street,Live Oak,95953,(530) 822-7224,39.2805449,-121.663199
+217002,Richland Migrant Center,479 Bernard Drive Unit G1,Yuba City,95991,(530) 822-7224,39.1201915,-121.6085245
+217003,Sutter County Health Department,1445 Veterans Memorial Circle,Yuba City,95993,(530) 822-7224,39.1447386,-121.6380095
+218002,Dinuba WIC,1433 East El Monte,Dinuba,93618,(800) 360-8840,36.5458669,-119.380193
+218012,Earlimart WIC,728 East Washington Street,Earlimart,93219,(800) 360-8840,35.8847145,-119.268037
+218003,Farmersville WIC,175 East Front Street,Farmersville,93223,(800) 360-8840,36.30444,-119.206073
+218004,Lindsay WIC,248 North Highway 65,Lindsay,93247,(800) 360-8840,36.2036063,-119.1045732
+218006,Orosi WIC,40802 Road 128,Orosi,93647,(800) 360-8840,36.5432797,-119.2865843
+218005,Porterville WIC,"1055 West Henderson Suite 5, Government Center South",Porterville,93257,(800) 360-8840,36.06523,-119.0167679
+218009,Tulare WIC,458 E. O'Neal,Tulare,93274,(800) 360-8840,36.2077288,-119.3473379
+218010,Visalia,1819 N. Dinuba Boulevard,Visalia,93291,(800) 360-8840,36.3454931,-119.2978751
+218011,Woodlake,250 East Antelope Suite F,Woodlake,93286,(800) 360-8840,36.4165658,-119.0968222
+219011,Coalinga,1510 Falcon Way,Coalinga,93210,(559) 935-6046,36.1474518,-120.3589406
+219013,Easton,5716 South Elm Street,Easton,93706,(559) 442-1418,36.652513,-119.790508
+219017,FCC WIC,1853 McKinley Avenue,Fresno,93703,(559) 268-7400,36.7653447,-119.7886589
+219003,Huron,16928 - 11th Avenue,Huron,93234,(559) 945-5090,36.2053519,-120.1025465
+219008,Kerman,642 South Madera Avenue,Kerman,93630,(559) 846-6681,36.725162,-120.059832
+219014,Marks,2482 N. Marks Avenue,Fresno,93722,(559) 271-7511,36.773274,-119.843505
+219004,Mendota,121 Barboza Street,Mendota,93640,(559) 655-6820,36.7661299,-120.38322
+219002,Parlier,490 Fresno Street Suite B,Parlier,93648,(559) 646-6611,36.611039,-119.524121
+219016,Pinedale,58 E. Herndon Avenue,Fresno,93720,(559) 435-5430,36.8374753,-119.7889236
+219010,Reedley,1560 East Manning Avenue,Reedley,93654,(559) 683-7177,36.6041688,-119.4319849
+219007,Riverdale,20949 Malsbary Avenue,Riverdale,93656,(559) 867-1726,36.4314618,-119.8614302
+219005,Sanger,2652 Jensen Avenue,Sanger,93657,(559) 875-8639,36.7068416,-119.5752137
+219006,Selma,2701 Whitson Street,Selma,93662,(559) 891-7097,36.5739772,-119.6222543
+219015,Tarpey,1840 Ashlan Avenue,Clovis,93611,(559) 294-7565,36.793647,-119.681228
+219001,UHCSJV-Orange Cove,765 Anchor Avenue Suite F,Orange Cove,93646,(559) 626-5030,36.6222235,-119.3227767
+220003,Davis Community Clinic,600 'A' Street,Davis,95616,(530) 666-8445,32.2289829,-110.9806276
+220004,Knights Landing Family Resource Center,42351 Third Street,Knights Landing,95645,(530) 666-8445,38.80037,-121.71784
+220008,West Sacramento,500 Jefferson Boulevard Building B,West Sacramento,95605,(916) 375-6390,38.587534,-121.5277665
+220009,Winters Library,111 E Grant Avenue,Winters,95694,(530) 666-8445,38.526988,-121.9663966
+220005,Yolo County WIC Program,137 North Cottonwood Street Suite 1200,Woodland,95695,(530) 666-8445,38.6875395,-121.7949948
+223003,Groveland Coummnity Hall,18990 Highway 120,Groveland,95321,(209) 533-7431,37.835516,-120.2145273
+223002,Tuolumne City Branch Library,18375 Fir Street,Tuolumne,95379,(209) 533-7431,37.9603805,-120.2365016
+223001,Tuolumne County WIC Program,20111 Cedar Road North,Sonora,95370,(209) 533-7431,37.987962,-120.366131
+224003,College of the Siskiyous,800 College Avenue,Weed,96094,(530) 841-2170,41.4126153,-122.3893698
+224006,Dorris City Hall,307 South Main Street,Dorris,96023,(530) 598-5826,41.9643569,-121.9182195
+224008,Dunsmuir Community Center,4835 Dunsmuir Avenue,Dunsmuir,96025,(530) 598-5826,41.2244269,-122.2759065
+224001,Fort Jones Community Hall,11960 East Street,Fort Jones,96032,(530) 598-5826,41.60723309999999,-122.840047
+224002,Happy Camp Grange Hall,64501 Second Avenue,Happy Camp,96039,(530) 598-5826,41.7896327,-123.3833042
+224004,Mt. Shasta Public Health Department,1107 Ream Avenue,Mt. Shasta,96067,(530) 841-2170,41.3030299,-122.3112235
+224005,Siskiyou County Public Health Department,808 S. Main Street,Yreka,96097,(530) 841-2170,41.7258231,-122.638331
+224007,Tulelake Fairgrounds,810 Main Street,Tulelake,96134,(530) 598-5826,41.9510383,-121.4766998
+225011,Administration Office,430 Sutter Hill Road,Sutter Creek,95685,(209) 223-7685,38.3804331,-120.800225
+225005,Calaveras Grange Hall / Faith Fellowship Church,376 Russels Road,San Andreas,95249,None,38.197158,-120.687752
+225007,CBC Hall,22283 Highway 26,West Point,95255,None,38.3992103,-120.527066
+225006,Faith Lutheran Church - Pioneer,22601 Highway 88,Pioneer,95666,None,38.4174957,-120.6090555
+225013,Food Bank,206 George Reed Drive,San Andreas,95249,None,38.1797709,-120.6782913
+225012,Ione-Memorial Hall,207 S. Amador Street,Ione,95640,None,38.3518366,-120.9302695
+225003,Jackson American Legion Hall,12134 Airport Road,Sutter Creek,95685,None,38.3763639,-120.8005834
+225014,Lake Tulloch Bible Church,3566 Spangler Lane,Copperopolis,95228,None,37.937348,-120.603089
+225010,Mt. Zion Church,13891 Cedar Pine Lane,Pine Grove,95665,None,38.409002,-120.652327
+225002,Murphy's,509 N. Algiers Street,Murphys,95247,None,38.1384918,-120.4648736
+225004,Oak Circle Church - Arnold,1483 Oak Circle,Arnold,95223,None,38.2543161,-120.355237
+225008,Plymouth City Hall,9426 Main Street,Plymouth,95669,None,38.4811309,-120.8477052
+225001,St. Patricks Church,809 N. Main Street,Angels Camp,95222,None,38.0884519,-120.5727033
+225009,Vets Memorial Hall,189 Pine Street,Valley Springs,95249,None,38.1902784,-120.8315741
+226001,Grass Valley,471 Sutton Way Suite 204,Grass Valley,95945,(530) 265-1454,39.2325158,-121.0351485
+226004,Nevada County Public Health Department,10075 Levone Avenue Suite 202,Truckee,96161,(530) 582-7814,39.3254322,-120.1988431
+228002,Community Hall,22 Maiden Lane,Downieville,95936,(530) 993-6703,39.560865,-120.8286
+228001,Sierra County Human Services,202 Front Street,Loyalton,96118,(530) 993-6703,39.67438800000001,-120.240907
+229006,Ceres Medical Office,1424 Mitchell Road,Ceres,95307,None,37.610346,-120.937923
+229004,Modesto WIC Program Community Services Agency,251 E. Hackett Road,Modesto,95358,(209) 558-7377,37.5883131,-120.9914385
+229002,Oakdale WIC Program,"1405 West ""F"" Street",Oakdale,95361,(209) 558-7377,37.7597049,-120.8620979
+229003,Patterson WIC Program,118 North Second Street Suite D,Patterson,95363,(209) 558-7377,37.4739552,-121.1305178
+229007,Turlock WIC Program,1125 North Golden State Suites A & B,Turlock,95380,(209) 558-7377,37.508247,-120.8761964
+229005,Waterford Head Start Program,325 D Street #2,Waterford,95386,(209) 558-7377,37.642443,-120.760346
+231002,Almanor Basin Parks & Rec,102 Meadowbrook Loop,Chester,96020,(530) 283-4093,40.309084,-121.231656
+231003,Greenville,430 Main Street,Greenville,95947,(530) 283-4093,40.1058177,-120.9087533
+231001,Plumas Rural Services WIC Quincy,711 East Main Street,Quincy,95971,(530) 283-4093,39.9350279,-120.9246856
+231004,Portola,171 Nevada Street,Portola,96122,(530) 283-4093,39.8058218,-120.4687744
+232008,Arbuckle Family Health Center,89 Putnam Way,Arbuckle,95912,None,39.021033,-122.062341
+232003,Beale Air Force Base - Family Support Center 9MSS/MSF,17800 - 13th Street Suite 400,Beale Air Force Base,95903,None,39.1111236,-121.4079754
+232005,Colusa WIC Clinic,515 Fremont Street,Colusa,95932,(530) 458-5503,39.207538,-122.010777
+232002,Lindhurst Family Health Center,4949 Olivehurst Avenue,Olivehurst,95961,(530) 743-1678,39.0974476,-121.5515191
+232001,Marysville WIC,1114 Yuba Street Suite 217,Marysville,95901,(530) 749-4830,39.1478135,-121.585012
+232007,Oregon House WIC,8676 Marysville Road,Oregon House,95962,(530) 742-3055,39.3565458,-121.278862
+233009,Alpine County Department of Social Services,75 Diamond Valley Road,Markleeville,96120,(530) 573-3491,38.769474,-119.817042
+233010,El Dorado County Department of Human Services,1360 Jonhson Boulevard,South Lake Tahoe,96150,(530) 573-3491,38.933032,-119.971636
+233001,El Dorado County Department Of Human Services,937 Spring Street,Placerville,95667,(530) 621-6176,38.7323207,-120.8016939
+233005,Georgetown Community Facility,6329 Lower Main Street,Georgetown,95634,(530) 621-6176,38.905206,-120.84057
+233003,Pioneer Park,6740 Fairplay,Somerset,95684,(530) 621-6176,38.608025,-120.702945
+233002,Pollock Pines Community Church,6361 Pony Express Trail,Pollock Pines,95726,(530) 621-6176,38.7629172,-120.5831622
+233011,White Rock Village Apartments,2200 Valley View Parkway,El Dorado Hills,95762,(530) 621-6176,38.6436452,-121.0592401
+234012,41st Avenue Office,3821 41st Avenue,Sacramento,95824,(916) 326-5840,38.516047,-121.46397
+234005,Citrus Heights WIC,7640 Greenback Lane,Citrus Heights,95610,(916) 326-5830,38.6775477,-121.2832753
+234010,"Community Resource Project, Inc",1440 Ethan Way,Sacramento,95825,None,38.59172969999999,-121.4186649
+234003,"Community Resource Project, Inc.",602 C Street Suite 300,Galt,95632,(916) 326-5830,38.2527409,-121.3025522
+234008,Elk Grove,8231 East Stockton Boulevard Suite B,Sacramento,95828,(916) 326-5830,38.459738,-121.410517
+234009,Fruitridge WIC,8031 Fruitridge Road Suite D,Sacramento,95820,(916) 326-5830,38.5254239,-121.4096577
+234006,Main WIC Office,915 Broadway Suite 1,Sacramento,95818,(916) 326-5830,38.56442300000001,-121.501084
+234004,North Highlands Clinic,5655 Hillsdale Boulevard #1,North Highlands,95842,(916) 326-5830,38.6713336,-121.3603159
+234011,Walnut Grove Office,14181 Grove Street,Walnut Grove,95690,(916) 326-5830,38.24047059999999,-121.5121752
+235002,Channel Medical Center WIC,701 East Channel,Stockton,95202,(209) 944-4760,37.9563176,-121.2821982
+235007,Community Medical Center WIC,425 North California Street # 7,Stockton,95202,(209) 870-5000,37.9580397,-121.2861049
+235014,Eastland Plaza WIC,678 North Wilson Way Suite 16,Stockton,95205,(209) 870-5000,37.9613904,-121.2708613
+235006,Esparto Family Practice,17050 South Grafton Street,Esparto,95627,(530) 787-3455,38.6930317,-122.0173511
+235003,Martin Luther King Jr. School,2640 East Lafayette Street,Stockton,95202,(209) 870-5000,37.958788,-121.249896
+235001,Tracy Family Practice,738 North Central,Tracy,95376,(209) 820-1550,37.7362003,-121.4258054
+235013,Tracy Family Practice WIC,73 E. 10th Street,Tracy,95376,(209) 229-7800,37.738805,-121.4242413
+235004,Woodbridge Medical Group,2401 West Turner Road #470,Lodi,95252,(209) 370-1750,38.1460569,-121.3059456
+236002,Hayfork Community Center,154 Tule Creek Road,Hayfork,96041,(530) 628-5622,40.5497325,-123.1945303
+236001,WIC Office,51 Industrial Parkway Building 1,Weaverville,96093,(530) 623-3238,40.7099199,-122.9252732
+237003,Orland Admin Site and Clinic,345 Yolo Street,Orland,95963,(530) 865-8791,39.7437686,-122.1941941
+237002,Sycamore Family Center,1035 West Wood Street,Willows,95988,(530) 865-8791,39.5243553,-122.2064521
+238008,Corning Health Care District WIC,275 Solano Street,Corning,96021,(530) 824-7490,39.927309,-122.168853
+238007,Walnut Street Complex,1850 Walnut Street Suite H,Red Bluff,96080,(530) 527-8791,40.1686594,-122.2548586
+302018,Branch Medical Clinic Family Service Center Building 263,32Nd Street Naval Station,San Diego,92136,(800) 500-6411,32.6833364,-117.1220632
+302024,Camp Pendleton Marine Corps Base Mainside,Building 1131,Camp Pendleton,92055,(800) 500-6411,33.4209436,-117.4327742
+302006,El Cajon WIC Office,564 North Second Street,El Cajon,92020,(800) 500-6411,32.801782,-116.936952
+302028,Euclid Health Center WIC Office,292 Euclid Avenue Suite 225,San Diego,92114,(800) 500-6411,32.7071142,-117.0860117
+302009,Lakeside Community Center,9841 Vine Street,Lakeside,92040,(800) 500-6411,32.8591605,-116.9202943
+302003,Lemon Grove WIC Office,7034 Broadway Avenue,Lemon Grove,91945,(800) 500-6411,32.7466834,-117.0179925
+302008,Linda Vista WIC Office,7612 Linda Vista Road Suite #111,San Diego,92111,(800) 500-6411,32.801906,-117.158178
+302017,Marine Corp Air Station,MCAS Chapel Building 5632,Miramar,92145,(800) 500-6411,32.8728949,-117.1323579
+302025,Marine Corps Recruit Depot (MCRD),3800 Chosin Avenue Bldg. 7 West,San Diego,92140,(800) 500-6411,32.7439593,-117.2004205
+302021,Mesa Margarita Community Center San Luis Rey Valley Resource Center,5306 N River Road,Oceanside,92057,(800) 500-6411,33.2564873,-117.2919547
+302026,Murphy Canyon Housing Chapel of Light,4867 Santo Road,San Diego,92124,(800) 500-6411,32.8209999,-117.1034911
+302002,Oceanside WIC Office,"1906 Oceanside Boulevard T, U, V",Oceanside,92054,(800) 500-6411,33.1940994,-117.3563221
+302013,Poway Community-Center Auditorium,13094 Civic Center Drive,Poway,92064,(800) 500-6411,32.953356,-117.0477136
+302022,San Onofre San Onofre Community Center,Marine Corps Base Building 51919,Camp Pendleton,92055,(800) 500-6411,33.4209436,-117.4327742
+302007,Spring Valley WIC Office,"8810 Jamacha Boulevard Suites D, E, & F",Spring Valley,91977,(800) 500-6411,32.744774,-116.998916
+302001,University WIC Clinic,5821 University Avenue,San Diego,92115,(800) 500-6411,32.7483745,-117.0713634
+303001,Inland Family Community Health Center,665 North 'D' Street,San Bernardino,92401,(855) 424-7942,45.8035979,9.2200575
+303002,Whitney Young Family Health Clinic WIC,1755 Maple Street,San Bernardino,92411,(855) 424-7942,34.1146106,-117.3258959
+304001,Brawley WIC,"561 ""E"" Street",Brawley,92227,(877) 686-5468,32.980077,-115.532263
+304002,Calexico WIC,2451 Rockwood Avenue Suite 109 (El Paseo Shopping Center),Calexico,92231,(877) 686-5468,32.6789476,-115.4988834
+304003,El Centro WIC Clinic,2600 Thomas Drive,El Centro,92243,(877) 686-5468,32.769869,-115.5577008
+304005,Niland Clinic,8027 Highway 111,Niland,92257,(877) 686-5468,33.23552,-115.520851
+304006,West Shores WIC,1289 South Marina Drive Suite A,Salton City,92275,(877) 686-5468,33.3207012,-115.9448167
+304004,Winterhaven Satellite Site,676 Baseline Road Suite 306,Winterhaven,92283,(877) 686-5468,32.7520759,-114.5988548
+305006,Burbank WIC,930 W. Alameda Avenue,Burbank,91505,(818) 361-7541,34.1629437,-118.312405
+305005,Canoga Park,21013 Sherman Way,Canoga Park,91303,(818) 361-7541,34.201119,-118.5908995
+305025,Canyon Country,26974 Rainbow Glen Drive,Santa Clarita,91351,(818) 361-7541,34.4209228,-118.4901803
+305002,Glendale WIC,801 South Chevy Chase Drive Suite 40,Glendale,91205,(818) 361-7541,34.1365869,-118.2403881
+305029,Mobile Medical Van,Mobile Unit,,,(800) 313-4924,38.8961547,-90.03103879999999
+305020,NEVHC Pacoima Health Center WIC,12756 Van Nuys Boulevard,Pacoima,91331,(818) 361-7541,34.2739042,-118.4107744
+305030,NEVHC Santa Clarita Health Center,18533 Soledad Canyon Road,Canyon Country,91351,(818) 361-7541,34.4165527,-118.4560587
+305027,NEVHC Sun Valley Health Center,7223 Fair Avenue,Sun Valley,91352,(818) 361-7541,34.2018353,-118.3748849
+305003,NEVHC Valencia Health Center,23763 Valencia Boulevard,Valencia,91355,(818) 361-7541,34.41504949999999,-118.5518025
+305026,Newhall,23630 Newhall Road,Newhall,91321,(818) 361-7541,34.369847,-118.5126901
+305017,North Hollywood,6420 Bellingham Avenue,North Hollywood,91605,(818) 361-7541,34.1873827,-118.3984755
+305028,Pacoima WIC,13631 Van Nuys Boulevard,Pacoima,91331,None,34.2606939,-118.4299192
+305008,Panorama City,8215 Van Nuys Boulevard Suite 100,Panorama City,91402,(818) 361-7541,34.22023550000001,-118.4490478
+305004,Reseda WIC,18341 Sherman Way Suite 108,Reseda,91335,(818) 361-7541,34.2013562,-118.5331886
+305015,Sun Valley WIC,8132 Sunland Boulevard,Sun Valley,91352,(818) 361-7541,34.21817800000001,-118.3697465
+305009,Sunland/Tujunga WIC,8828 Fenwick Street,Sunland,91040,(818) 361-7541,34.2613235,-118.3245486
+305007,Sylmar/San Fernando,1161 N. Maclay Avenue Suite B,San Fernando,91340,None,34.2959603,-118.4245
+305001,Van Nuys WIC,7138 Van Nuys Boulevard,Van Nuys,91406,(818) 361-7541,34.2002078,-118.4478394
+306002,Bridgeport Health Department,221 Twin Lakes Road,Bridgeport,93517,(760) 924-1830,38.252602,-119.230643
+306006,June Lake Community Center,90 West Granite,June Lake,93529,(760) 924-1830,37.7784472,-119.0803999
+306005,Lee Vining Community Center,296 Mattly Avenue,Lee Vining,93541,(760) 924-1830,37.961514,-119.119587
+306003,Marine and Family Services Building,700 Champagne Avenue,Coleville,96107,(760) 924-1830,38.58811,-119.516067
+306001,Mono County Health Department,437 Old Mammoth Road Suite Q,Mammoth Lakes,93546,(760) 924-1830,37.63910300000001,-118.9642989
+306004,Walker Community Center,442 Mule Deer Avenue,Walker,96107,(760) 924-1830,38.514154,-119.479411
+307007,Independence,155 East Market Street,Independence,93526,None,36.8030861,-118.1981788
+307001,Inyo County Department Of Health And Human Services,568 W. line Street,Bishop,93514,(760) 872-1885,37.361215,-118.3999487
+307009,Inyo County Department Of Health And Human Services,Tecopa County Building Suite 2,Tecopa,92389,None,35.8482993,-116.2264127
+307008,Lone Pine WIC Statham Hall,138 Jackson Street,Lone Pine,93545,None,36.606599,-118.062244
+308005,Central Facilities Center,1133 Rhea Street,Long Beach,90806,(562) 570-4479,33.7926913,-118.1782735
+308002,City of Long Beach Department of Health and Human Services,2525 Grand Avenue,Long Beach,90815,(562) 570-4242,33.8026766,-118.1487985
+308003,City of Long Beach North Service Center,5166 Atlantic Avenue,Long Beach,90805,(562) 570-4242,33.8502003,-118.1838806
+308004,St. Mary's Physician Center,1043 Elm Avenue Suite 401,Long Beach,90813,(562) 570-4242,33.7796472,-118.188439
+308001,West Facilities Center,2125 Santa Fe Avenue,Long Beach,90810,(562) 570-4242,33.7955199,-118.216016
+309005,Linda Vista Family Care,6963 Linda Vista Road,San Diego,92111,(619) 260-3400,32.787206,-117.1697829
+309015,Paradise Valley Wellness Center,2345 E 8th Street Suite 100,National City,91950,(619) 260-3400,32.6828121,-117.0825877
+309012,Scripps Mercy City Heights,4440 Wightman Street Suite 200,San Diego,92105,(619) 260-3400,32.7483545,-117.0992321
+309009,Scripps Mercy WIC Chula Vista,251 Palomar Street Suite C,Chula Vista,91911,(619) 260-3400,32.6077461,-117.0647668
+309099,WIC Administration Office,3660 7th Avenue 2nd Floor,San Diego,92103,(619) 260-3400,32.7444658,-117.1586971
+310014,Borrego Springs,1315 Palm Canyon Road,Borrego Springs,92004,(888) 477-6333,33.254976,-116.346818
+310004,Encinitas,285 North El Camino Real Suite 111,Encinitas,92024,(888) 477-6333,33.0536183,-117.2603988
+310010,Escondido,649 West Mission Avenue Suite 7,Escondido,92025,(888) 477-6333,33.1270012,-117.0948198
+310011,Mission Mesa,2210 Mesa Drive Suite 2,Oceanside,92054,(888) 477-6333,33.2082912,-117.3579969
+310020,North Park WIC,3078 El Cajon Boulevard Suite 100,San Diego,92104,(888) 999-6897,32.755725,-117.128223
+310003,Ramona,1721 Main Street Suite 110,Ramona,92065,(888) 477-6333,33.0359198,-116.879976
+310005,San Marcos,150 Valpreda Road Suite 102,San Marcos,92069,(888) 477-6333,33.1403531,-117.1569078
+310007,Valley Center Community Service,28246 Lilac Road,Valley Center,92082,(888) 477-6333,33.2214622,-117.0390526
+311046,Access California Services WIC,631 S Brookhurst Street Suite 107,Anaheim,92804,(888) 968-7942,33.82367,-117.960126
+311038,Ball Road WIC,2137 East Ball Road,Anaheim,92806,(888) 968-7942,33.818104,-117.8864918
+311009,Buena Park WIC,6301 Beach Boulevard # 103,Buena Park,90621,(888) 968-7942,33.868851,-117.9987705
+311006,County of Orange HCA WIC,1725 West 17th Street Room 101 G,Santa Ana,92706,(888) 968-7942,33.76069750000001,-117.8926087
+311044,Danbrook Family Resource Center WIC,320 South Danbrook Street,Anaheim,92804,(888) 968-7942,33.828728,-118.008189
+311041,El Modena Family Resource Center WIC,18672 East Center Street,Orange,92869,(888) 968-7942,33.7892571,-117.8070982
+311002,Hemlock WIC,1220 Hemlock Way,Santa Ana,92707,(888) 968-7942,33.7094544,-117.8846289
+311040,Independencia Community Center,10841 Garza Avenue,Anaheim,92804,(888) 968-7942,33.805073,-117.9702878
+311004,Ponderosa Park Family Resource Center WIC,2100 South Haster Street,Anaheim,92802,(888) 968-7942,33.7961129,-117.9063534
+311047,Warwick Square Learning and Resource Center WIC,780 South Lyon Street,Santa Ana,92705,(888) 968-7942,33.7375344,-117.8456166
+311010,West/Beach WIC,14120 Beach Boulevard,Westminister,92683,(888) 968-7942,33.757051,-117.9890287
+312004,Pasadena Community Health Center,1845 North Fair Oaks Ave,Pasadena,91103,(626) 744-6520,34.1777736,-118.1511928
+312001,Villa Parke Community Center,363 East Villa Street,Pasadena,91101,(626) 744-6520,34.1544919,-118.1430267
+313010,Bell Gardens WIC Site,6501 South Garfield Avenue,Bell Gardens,90201,(310) 661-3080,33.9731248,-118.147775
+313004,Central Ave WIC,4150 South Central Avenue,Los Angeles,90011,(310) 661-3080,34.0082401,-118.2563044
+313005,Compton WIC Site,130 East Compton Boulevard,Compton,90221,(310) 661-3080,33.8959508,-118.2234177
+313008,Cudahy WIC Site,7272 Atlantic Boulevard,Cudahy,90201,(310) 661-3080,33.9699673,-118.1879358
+313001,Figueroa Wic Site,4101 South Figueroa Street,Los Angeles,90037,(310) 661-3080,34.0094769,-118.283133
+313002,Florence WIC Site,501 East Florence Avenue,Los Angeles,90003,(310) 661-3080,33.9747466,-118.2661222
+313007,Huntington Park WIC,7022 Rugby Avenue,Huntington Park,90255,(310) 661-3080,33.975641,-118.226168
+313006,Lynwood WIC Site,3811 Martin Luther King Jr. Boulevard,Lynwood,90262,(310) 661-3080,33.9289296,-118.198009
+313014,Manchester,250 E Manchester Ave,Los Angeles,90003,(310) 661-3080,33.9600457,-118.2702548
+313011,Paramount WIC Site,16260 Paramount Boulevard,Paramount,90723,(310) 661-3080,33.8865469,-118.1599698
+313009,South Gate WIC Site,3357 Tweedy Boulevard,South Gate,90280,(310) 661-3080,33.9448423,-118.2100028
+314058,117th Street,4455 West 117th Street,Hawthorne,90250,(626) 856-6600,33.9283975,-118.3540232
+314216,1st Street WIC Center,2798 E. 1st Street,Los Angeles,90033,(626) 856-6600,34.04115,-118.2047263
+314016,8Th Street WIC Center,2120 West 8th Street 1St Floor,Los Angeles,90057,(626) 856-6600,34.0550281,-118.2787573
+314010,Amar WIC Center,15942-44 Amar Road,City Of Industry,91744,(626) 856-6600,34.0361855,-117.9363544
+314222,Anaheim WIC Center,"1120 W. La Palma Avenue 2nd Floor, Suite 12",Anaheim,92801,(888) 942-2229,33.846648,-117.932634
+314113,Angelus Plaza WIC,3648 Olympic Boulevard,Los Angeles,90023,(626) 856-6600,34.0188026,-118.1988548
+314083,Avalon-Harry L. Hufford Co. Government,236 Metropole Ave,Avalon,90704,(626) 856-6600,33.34285,-118.327893
+314214,Avenue 43 WIC Center,4303-05 North Figueroa Street,Los Angeles,90065,(626) 856-6600,34.0944366,-118.2085739
+314124,Azusa WIC Center,109 W. 6th Avenue,Azusa,91702,(626) 856-6600,34.1316759,-117.9076342
+314070,Baldwin Park WIC Center,4239 Maine Avenue,Baldwin Park,91706,(626) 856-6600,34.0894631,-117.9604702
+314100,Bellflower WIC Center,17610 Bellflower Boulevard #103-105,Bellflower,90706,(626) 856-6600,33.8724564,-118.1240789
+314219,Beverly WIC Center,277 Atlantic Boulevard,Los Angeles,90022,(626) 856-6600,34.0325253,-118.1534878
+314026,Carson WIC Center,860 East Carson Street Suites 108-109,Carson,90745,(626) 856-6600,33.8313535,-118.2598611
+314250,Chino WIC Center,4774 Riverside Drive,Chino,91710,(626) 856-6600,34.019338,-117.700947
+314112,Citrus Valley WIC Citrus Valley Medical Center,115 South Sunset Avenue Prenatal Service Dept.,West Covina,91790,(626) 856-6600,34.0656464,-117.9424743
+314076,Covina WICc Center,1012 Citrus #A & B,Covina,91722,(626) 856-6600,34.1060102,-117.8642966
+314009,Culver City WIC Center,4700 Inglewood Boulevard #103,Culver City,90230,(626) 856-6600,33.9939467,-118.41456
+314014,Cypress WIC Center,"4470 West Lincoln Units 5, 6, & 6A",Cypress,90630,(626) 856-6600,33.8169599,-118.0372852
+314046,Echo Park WIC Center,1311 Glendale Boulevard B & C,Los Angeles,90026,(626) 856-6600,34.1286868,-118.2527145
+314092,El Monte Valley WIC Center,3560 Santa Anita Avenue Suite G,El Monte,91731,(626) 856-6600,34.0743502,-118.04059
+314053,El Sereno WIC Center,4837 Huntington Drive # 6 & 7,Los Angeles,90032,(626) 856-6600,34.2985288,-118.4321258
+314066,Fountain WIC Center,4618 Fountain Avenue,Los Angeles,90028,(626) 856-6600,34.0951916,-118.2900887
+314098,Fullerton WIC Center,174 North Raymond Avenue,Fullerton,92831,(626) 856-6600,33.8723465,-117.9060658
+314069,Gardena WIC Center,15212 South Western Avenue Unit D,Gardena,90249,(626) 856-6600,33.8930423,-118.3088957
+314035,Garvey WIC Center,10016 Garvey Avenue,El Monte,91733,(626) 856-6600,34.0627181,-118.0510108
+314057,Hawthorne WIC Center,15685 Hawthorne Boulevard Units E-H,Lawndale,90260,(626) 856-6600,33.8888247,-118.3527459
+314055,Highland Park WIC Center,6512 North Figueroa #4,Los Angeles,90042,(626) 856-6600,34.1205263,-118.1834875
+314126,Indian Hill WIC Center,1460 East Holt Ave Suite 194,Pomona,91767,(626) 856-6600,34.0620445,-117.7201733
+314002,Industry Hills WIC Center,417 South Azusa Avenue,La Puente,91744,(626) 856-6600,34.0154674,-117.9216892
+314019,Inglewood WIC Center,100 South Market Street,Inglewood,90301,(626) 856-6600,33.9629562,-118.3519028
+314218,Irwindale ISIS Lab,12781 Schabarum Avenue,Irwindale,91706,(626) 856-6600,34.0811246,-117.9951667
+314008,La Cienega WIC Center,1801 S La Cienga Boulevard,Los Angeles,90035,(310) 945-3418,34.0442454,-118.3775121
+314097,La Habra WIC Center,131 South Harbor Boulevard,La Habra,90631,(626) 856-6600,33.9307798,-117.9336825
+314118,La Mirada WICc Center,14569 Telegraph Road,La Mirada,90638,(626) 856-6600,33.9232276,-118.0210538
+314120,La Palma WIC,"1110 W. La Palma Avenue Suite 8, 2nd Floor",Anaheim,92801,(626) 856-6600,33.8467881,-117.9321221
+314127,Lincoln WIC Center,2323 West Lincoln Ave Suite 135,Anaheim,92801,(626) 856-6600,33.8328295,-117.9644467
+314094,Los Angeles Street WIC,119 East Washington Boulevard,Los Angeles,90015,(626) 856-6600,34.0308964,-118.2640737
+314114,Main Street WIC Center,631 S Main Street Suite B,Santa Ana,92701,(714) 542-2227,33.7398403,-117.867215
+314131,Marengo WIC Center,2032 Marengo Street Room 115,Los Angeles,90033,(626) 856-6600,34.0564801,-118.207638
+314093,Montebello WIC Center,2313 Whittier Boulevard,Montebello,90640,(626) 856-6600,34.0138014,-118.1259954
+314121,Normandie WIC Center,4214 Beverly Boulevard Suites 205-206,Los Angeles,90004,(626) 856-6600,34.075949,-118.300961
+314212,North Pomona WIC,1890 N Garey Avenue,Pomona,91767,(909) 868-7147,34.080211,-117.752223
+314079,Norwalk WIC Center,13926 South San Antonio Drive Suite 102,Norwalk,90650,(626) 856-6600,33.904348,-118.0798588
+314004,Pico Place WIC Center,4100 West Pico,,,,,
