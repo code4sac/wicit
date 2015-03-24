@@ -1,6 +1,7 @@
 body.map {
   width: 100%;
   height: 100%;
+  background-image: none;
   #header {
     z-index: 2;
     position: absolute;
@@ -16,9 +17,9 @@ body.map {
 #map-container {
   height: 100%;
   width: 100%;
-  background-color: $brand-info;
+  background-color: $brand-secondary;
   &.loading {
-    background: $brand-info url('../image/loader.gif') no-repeat center center;
+    background: $brand-secondary url('../image/loader.gif') no-repeat center center;
     .angular-leaflet-map {
       opacity: 0;
     }
@@ -71,7 +72,7 @@ body.map {
   top: 5px;
   right: 5px;
   &:hover {
-    color: $brand-info;
+    color: $brand-secondary;
   }
 }
 
@@ -79,7 +80,7 @@ body.map {
   font-family: Oxygen, sans-serif;
   color: $brand-text;
   background-color: #fff;
-  border: 2px solid $brand-info;
+  border: 2px solid $brand-secondary;
   @include border-radius(8px);
   .leaflet-popup-content {
     background-color: transparent;
@@ -95,7 +96,7 @@ body.map {
         text-transform: uppercase;
       }
       a:hover {
-        color: $brand-info;
+        color: $brand-secondary;
       }
     }
   }
@@ -109,10 +110,10 @@ body.map {
 }
 
 .marker-cluster-medium {
-  background-color: rgba($brand-info, .6);
+  background-color: rgba($brand-secondary, .6);
 }
 .marker-cluster-medium div {
-  background-color: rgba($brand-info, .2);
+  background-color: rgba($brand-secondary, .2);
 }
 
 .marker-cluster-large {

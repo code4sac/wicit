@@ -18,6 +18,12 @@ body, html {
   height: 100%;
   color: $brand-text;
   background-color: #fff;
+  background-size: cover;
+  overflow: auto;
+}
+
+body {
+  background-image: $bg-image;
 }
 
 #container {
@@ -25,7 +31,7 @@ body, html {
 }
 
 a {
-  color: $brand-info;
+  color: $brand-secondary;
 }
 
 a:hover {
@@ -47,7 +53,7 @@ button {
     margin-right: 0;
   }
   &:hover {
-    background-color: $brand-info;
+    background-color: $brand-secondary;
   }
 }
 
@@ -55,7 +61,7 @@ button {
   background-color: rgba($brand-warning, .6);
 }
 p.warning {
-  padding: 5px;
+  padding: 10px;
   border: 2px solid $brand-warning;
   color: #fff;
   a {
@@ -67,7 +73,7 @@ p.warning {
   background-color: rgba($brand-error, .6);
 }
 p.error {
-  padding: 5px;
+  padding: 10px;
   border: 2px solid $brand-error;
   color: #fff;
   a {
@@ -75,11 +81,23 @@ p.error {
   }
 }
 
+.info {
+  background-color: rgba($brand-info, .6);
+}
+p.info {
+  padding: 10px;
+  border: 2px solid $brand-info;
+  color: #fff;
+  a {
+    color: $brand-info;
+  }
+}
+
 .success {
   background-color: rgba($brand-success, .6);
 }
 p.success {
-  padding: 5px;
+  padding: 10px;
   border: 2px solid $brand-success;
   color: #fff;
   a {
@@ -88,9 +106,11 @@ p.success {
 }
 
 #content {
+  margin-top: 30px;
   padding: 20px 50px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .85);
   overflow-y: auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
 }
 
 div.video-container {
@@ -114,6 +134,11 @@ div.video-container {
 }
 
 @media (max-width: $screen-sm) {
+
+  body {
+    background-image: none;
+  }
+
   #content {
     padding: 20px;
   }
