@@ -1,7 +1,12 @@
 .form-group.qualify {
 
-  select {
-    line-height: 30px;
+  .form-control {
+    width: auto;
+    background-color: transparent;
+  }
+
+  select.form-control {
+    display: inline;
   }
 
   padding: 20px 0;
