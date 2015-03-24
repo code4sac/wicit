@@ -17,12 +17,12 @@ body, html {
   width: 100%;
   height: 100%;
   color: $brand-text;
-  background-color: #fff;
+  background-color: transparent;
   background-size: cover;
 }
 
 body {
-  background-image: $bg-image;
+  background: $bg-image no-repeat center center fixed;
 }
 
 #container {
@@ -106,9 +106,9 @@ p.success {
 
 #content {
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px 50px;
   background-color: rgba(255, 255, 255, .85);
-  overflow-y: auto;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
 }
 
@@ -139,6 +139,7 @@ div.video-container {
   }
   #content {
     margin-top: 0;
+    margin-bottom: 0;
     padding: 20px;
   }
 }
