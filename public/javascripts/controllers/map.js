@@ -81,7 +81,7 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
         var container = L.DomUtil.create('div', 'locate-control');
         // Attach event listeners
         L.DomEvent.addListener(container, 'click', function() {
-          geolocateUser();
+          geolocateUser({forceUpdate: true});
         });
         var controlUI = L.DomUtil.create('div', 'leaflet-control-command-interior', container);
         // controlUI.title = 'Map Commands';
@@ -95,9 +95,9 @@ var MapCtrl = function ($scope, $http, leafletEvents, leafletData, leafletHelper
     };
   }
 
-  function geolocateUser()
+  function geolocateUser(options)
   {
-    GeolocationService.getPosition().then(setUserLocation, geolocationError);
+    GeolocationService.getPosition(options).then(setUserLocation, geolocationError);
   }
 
   function setUserLocation(position)
