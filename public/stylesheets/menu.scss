@@ -26,10 +26,10 @@
       padding: 10px;
     }
     &:hover {
-      background-color: $brand-info;
+      background-color: $brand-secondary;
     }
     &.active, &.active:hover {
-      background-color: $brand-info;
+      background-color: $brand-secondary;
     }
   }
 }

@@ -10,7 +10,7 @@
   padding: 0;
   list-style: none;
   li {
-    background-color: $brand-info;
+    background-color: $brand-secondary;
     color: #fff;
     display: block;
     padding: 10px;
@@ -25,6 +25,9 @@
     }
     &.error {
       background-color: $brand-error;
+    }
+    &.info {
+      background-color: $brand-info;
     }
     &.success {
       background-color: $brand-success;

@@ -1,10 +1,13 @@
 $brand-primary:         #A4A436;
 $brand-success:         #A4A436;
-$brand-info:            #8C8A34;
+$brand-secondary:       #8C8A34;
+$brand-info:            #366DA4;
 $brand-text:            #444444;
-$brand-warning:         #B06B5C;
+$brand-warning:         #A46D36;
 $brand-danger:          #B06B5C;
 $brand-error:           #B06B5C;
+
+$bg-image: url('../image/bg7.jpg');
 
 @include keyframes(throbble) {
   0% {
