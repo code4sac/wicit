@@ -41,7 +41,9 @@ Thumbs.db
 ####################
 node_modules/
 .sass-cache
-style.css.map
+public/javascripts/*.min.js
+public/stylesheets/*.min.css
+public/stylesheets/*.css.map
 .env
 
 # IDE #

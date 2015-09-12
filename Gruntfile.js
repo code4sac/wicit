@@ -7,6 +7,13 @@ module.exports = function(grunt) {
           port: 3000,
           script: 'app.js'
         }
+      },
+      prod: {
+        options: {
+          port: 3000,
+          script: 'app.js',
+          node_env: 'production'
+        }
       }
     },
     sass: {
@@ -15,7 +22,25 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'public/stylesheets/style.css' : 'public/stylesheets/style.scss'
+          'public/stylesheets/style.min.css' : 'public/stylesheets/style.scss'
+        }
+      }
+    },
+    ngAnnotate: {
+      dist: {
+        files: {
+          'public/javascripts/app.min.js': [
+            'public/javascripts/app.js',
+            'public/javascripts/controllers/*.js',
+            'public/javascripts/services/*.js'
+          ]
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          'public/javascripts/app.min.js': 'public/javascripts/app.min.js'
         }
       }
     },
@@ -37,7 +62,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-npm-install');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-ng-annotate');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('build-dev', ['npm-install']);
   grunt.registerTask('dev', ['express:dev', 'watch']);
+  grunt.registerTask('prod', ['ngAnnotate', 'uglify', 'express:prod', 'watch']);
 }

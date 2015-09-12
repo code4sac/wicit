@@ -1,4 +1,4 @@
-var QualifyCtrl = function ($scope, $state, NotificationService) {
+wicItApp.controller('QualifyCtrl', function ($scope, $state, NotificationService) {
   $scope.family = {};
 
   // we will store all of our form data in this object
@@ -50,4 +50,4 @@ var QualifyCtrl = function ($scope, $state, NotificationService) {
   {
     $state.transitionTo(nextState);
   };
-};
+});
