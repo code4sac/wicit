@@ -25,9 +25,9 @@
 5. From a command prompt, install the Grunt Command Line Interface: `npm install -g grunt-cli`
 6. Follow the OS X instructions above from step 4
 
-### Developmnt
+### Development
 1. Setup the app using the relevant instructions above.
-2. From a new command prompt, start the build watcher to automatically build client-side JavaScript and CSS when JS and CSS files change: `grunt dev`
+2. From a new command prompt, start the build watcher to automatically build client-side JavaScript and CSS when JS and CSS files change: `grunt dev`. This task does not watch for server-side changes. For those, you'll need to restart the app server.
 
 ### Deployment
 #### Digital Ocean
