@@ -1,7 +1,12 @@
 module.exports = function (grunt) {
 
+    var env= process.env.NODE_ENV || 'dev'
+
     var buildOptions = {
         dev: {
+            sass: {
+                style: 'compressed'
+            },
             uglify: {
                 sourceMap: true,
                 compress: {
@@ -25,22 +30,16 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         express: {
-            dev: {
-                options: {
-                    port: 3000,
-                    script: 'app.js'
-                }
-            },
-            prod: {
+            default: {
                 options: {
                     port: 3000,
                     script: 'app.js',
-                    node_env: 'production'
+                    node_env: env
                 }
             }
         },
         sass: {
-            options: buildOptions.production.sass,
+            options: buildOptions[env].sass,
             dist: {
                 files: {
                     'public/stylesheets/style.min.css': 'public/stylesheets/style.scss'
@@ -59,14 +58,8 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
-            dev: {
-                options: buildOptions.dev.uglify,
-                files: {
-                    'public/javascripts/app.min.js': 'public/javascripts/app.min.js'
-                }
-            },
-            prod: {
-                options: buildOptions.production.uglify,
+            default: {
+                options: buildOptions[env].uglify,
                 files: {
                     'public/javascripts/app.min.js': 'public/javascripts/app.min.js'
                 }
@@ -79,14 +72,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['public/javascripts/controllers/*.js', 'public/javascripts/services/*.js', 'app.js'],
-                tasks: ['ngAnnotate', 'uglify:dev']
-            },
-            express: {
-                files: ['app.js', 'routes/*.js'],
-                tasks: ['express:dev'],
-                options: {
-                    spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
-                }
+                tasks: ['ngAnnotate', 'uglify:default']
             }
         }
     });
@@ -96,8 +82,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-sass');
-    grunt.registerTask('build:dev', ['ngAnnotate', 'uglify:dev', 'sass']);
-    grunt.registerTask('build:prod', ['ngAnnotate', 'uglify:prod', 'sass']);
-    grunt.registerTask('dev', ['build:dev', 'express:dev', 'watch']);
-    grunt.registerTask('prod', ['build:prod', 'express:prod', 'watch']);
+    grunt.registerTask('build', ['ngAnnotate', 'uglify:default', 'sass']);
+    grunt.registerTask('server', ['build', 'express:default']);
+    grunt.registerTask('dev', ['build', 'watch']);
 };
