@@ -11,6 +11,9 @@ module.exports = function (grunt) {
             }
         },
         production: {
+            sass: {
+                style: 'compressed'
+            },
             uglify: {
                 compress: {
                     drop_console: true
@@ -37,10 +40,8 @@ module.exports = function (grunt) {
             }
         },
         sass: {
+            options: buildOptions.production.sass,
             dist: {
-                options: {
-                    style: 'compressed'
-                },
                 files: {
                     'public/stylesheets/style.min.css': 'public/stylesheets/style.scss'
                 }
@@ -94,7 +95,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-express-server');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ng-annotate');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.registerTask('build:dev', ['ngAnnotate', 'uglify:dev', 'sass']);
     grunt.registerTask('build:prod', ['ngAnnotate', 'uglify:prod', 'sass']);
     grunt.registerTask('dev', ['build:dev', 'express:dev', 'watch']);
