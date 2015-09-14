@@ -1,43 +1,88 @@
-module.exports = function(grunt) {
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    express: {
-      dev: {
-        options: {
-          port: 3000,
-          script: 'app.js'
-        }
-      }
-    },
-    sass: {
-      dist: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          'public/stylesheets/style.css' : 'public/stylesheets/style.scss'
-        }
-      }
-    },
-    watch: {
-      css: {
-        files: '**/*.scss',
-        tasks: ['sass']
-      },
-      express: {
-        files:  [ 'app.js', 'routes/*.js' ],
-        tasks:  [ 'express:dev' ],
-        options: {
-          spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
-        }
-      }
-    }
-  });
+module.exports = function (grunt) {
 
-  grunt.loadNpmTasks('grunt-npm-install');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-express-server');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('build-dev', ['npm-install']);
-  grunt.registerTask('dev', ['express:dev', 'watch']);
-}
+    var env= process.env.NODE_ENV || 'dev'
+
+    var buildOptions = {
+        dev: {
+            sass: {
+                style: 'compressed'
+            },
+            uglify: {
+                sourceMap: true,
+                compress: {
+                    drop_debugger: false
+                },
+                mangle: false
+            }
+        },
+        production: {
+            sass: {
+                style: 'compressed'
+            },
+            uglify: {
+                compress: {
+                    drop_console: true
+                }
+            }
+        }
+    };
+
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        express: {
+            default: {
+                options: {
+                    port: 3000,
+                    script: 'app.js',
+                    node_env: env
+                }
+            }
+        },
+        sass: {
+            options: buildOptions[env].sass,
+            dist: {
+                files: {
+                    'public/stylesheets/style.min.css': 'public/stylesheets/style.scss'
+                }
+            }
+        },
+        ngAnnotate: {
+            dist: {
+                files: {
+                    'public/javascripts/app.min.js': [
+                        'public/javascripts/app.js',
+                        'public/javascripts/controllers/*.js',
+                        'public/javascripts/services/*.js'
+                    ]
+                }
+            }
+        },
+        uglify: {
+            default: {
+                options: buildOptions[env].uglify,
+                files: {
+                    'public/javascripts/app.min.js': 'public/javascripts/app.min.js'
+                }
+            }
+        },
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['sass']
+            },
+            js: {
+                files: ['public/javascripts/controllers/*.js', 'public/javascripts/services/*.js', 'app.js'],
+                tasks: ['ngAnnotate', 'uglify:default']
+            }
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-ng-annotate');
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.registerTask('build', ['ngAnnotate', 'uglify:default', 'sass']);
+    grunt.registerTask('server', ['build', 'express:default']);
+    grunt.registerTask('dev', ['build', 'watch']);
+};

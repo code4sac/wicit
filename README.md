@@ -5,27 +5,15 @@
 ---
 ### Development Environment Setup
 #### OS X
-  1 [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
-  
-  2 Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
-
-  3 Install the SASS compiler gem: `gem install sass`
-  
-  4 [Fork the repository and setup a local clone](https://help.github.com/articles/fork-a-repo)
-  
-  5 Move into your local wicit directory: `cd <yourdirectory>/wicit`
-  
-  6 Install server-side dependencies: `npm install`
-  
-  7 [Register your development application](http://dev.socrata.com/register) to receive a data portal API token.
-  
-  8 [Setup a Mapbox map](https://www.mapbox.com/help/creating-new-map/) to use in your development environment.
-  
-  9 Copy the `.env.dist` file to a file called `.env`, and update the `MAPBOX_ID`, `MAPBOX_TOKEN`, and `API_TOKEN` parameters in that file with your Mapbox map ID, Mapbox API token, and data portal API token.
-  
-  10 Start the development server: `grunt dev`
-  
-  11 [Try it out](http://localhost:3000)
+1. [Install node.js and NPM (Node Package Manager)](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
+2. Install grunt command-line on your machine: `sudo npm install -g grunt-cli`
+3. [Fork the repository and setup a local clone](https://help.github.com/articles/fork-a-repo)
+4. Move into your local wicit directory: `cd <yourdirectory>/wicit`
+5. [Register your development application](http://dev.socrata.com/register) to receive a data portal API token.
+6. [Setup a Mapbox map](https://www.mapbox.com/help/creating-new-map/) to use in your development environment.
+7. Copy the `.env.dist` file to a file called `.env`, and update the `MAPBOX_ID`, `MAPBOX_TOKEN`, and `API_TOKEN` parameters in that file with your Mapbox map ID, Mapbox API token, and data portal API token.
+8. Install server-side dependencies, build the app, and start the server: `npm install`. You can start the server without installing the app using `grunt server`
+9. [Try it out](http://localhost:3000)
 	
 #### Windows
 1. [Install: Git](http://git-scm.com/download)
@@ -34,10 +22,12 @@
 	- Version 3 of Python is not supported by nodegyp so make sure to install version 2.x.x.
 4. [Install: Visual Studio Community (with Update 4)](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 	- Visual Studio Express for Windows Desktop should also work, but if you want a full IDE, go with the Community edition
-5. [Install: RubyInstaller](http://rubyinstaller.org/downloads/)
-6. From a command prompt, install the Grunt Command Line Interface: `npm install -g grunt-cli`
-7. From a command prompt, install the SASS compiler: `gem install sass`
-8. Follow the OS X instructions above from step 4
+5. From a command prompt, install the Grunt Command Line Interface: `npm install -g grunt-cli`
+6. Follow the OS X instructions above from step 4
+
+### Development
+1. Setup the app using the relevant instructions above.
+2. From a new command prompt, start the build watcher to automatically build client-side JavaScript and CSS when JS and CSS files change: `grunt dev`. This task does not watch for server-side changes. For those, you'll need to restart the app server.
 
 ### Deployment
 #### Digital Ocean
