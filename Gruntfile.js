@@ -1,9 +1,17 @@
 module.exports = function (grunt) {
 
-    var env= process.env.NODE_ENV || 'dev'
+    var env= process.env.NODE_ENV || 'development'
 
     var buildOptions = {
-        dev: {
+        development: {
+            express: {
+                server: {
+                    options: {
+                        port: 3000,
+                        script: 'app.js'
+                    }
+                }
+            },
             sass: {
                 style: 'compressed'
             },
@@ -16,6 +24,15 @@ module.exports = function (grunt) {
             }
         },
         production: {
+            express: {
+                server: {
+                    options: {
+                        port: 3000,
+                        script: 'app.js',
+                        node_env: "production"
+                    }
+                }
+            },
             sass: {
                 style: 'compressed'
             },
@@ -29,15 +46,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        express: {
-            default: {
-                options: {
-                    port: 3000,
-                    script: 'app.js',
-                    node_env: env
-                }
-            }
-        },
+        express: buildOptions[env].express,
         sass: {
             options: buildOptions[env].sass,
             dist: {
@@ -83,6 +92,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-sass');
     grunt.registerTask('build', ['ngAnnotate', 'uglify:default', 'sass']);
-    grunt.registerTask('server', ['build', 'express:default']);
+    grunt.registerTask('server', ['build', 'express:server']);
     grunt.registerTask('dev', ['build', 'watch']);
 };
