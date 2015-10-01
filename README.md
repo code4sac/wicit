@@ -12,8 +12,9 @@
 5. [Register your development application](http://dev.socrata.com/register) to receive a data portal API token.
 6. [Setup a Mapbox map](https://www.mapbox.com/help/creating-new-map/) to use in your development environment.
 7. Copy the `.env.dist` file to a file called `.env`, and update the `MAPBOX_ID`, `MAPBOX_TOKEN`, and `API_TOKEN` parameters in that file with your Mapbox map ID, Mapbox API token, and data portal API token.
-8. Install server-side dependencies, build the app, and start the server: `npm install`. You can start the server without installing the app using `grunt server`
-9. [Try it out](http://localhost:3000)
+8. Install server-side dependencies, build the app: `npm install`. You can build the app without installing dependencies using `grunt build`
+9. Start the server: `node app.js`
+10. [Try it out](http://localhost:3000)
 	
 #### Windows
 1. [Install: Git](http://git-scm.com/download)
