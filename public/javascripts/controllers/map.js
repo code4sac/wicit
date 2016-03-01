@@ -10,7 +10,7 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
   var mapToken = Constants.mapboxToken;
   var locationsApiToken = Constants.apiToken;
   var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
-  var locationsBaseUrl = 'http://cdph.data.ca.gov/resource/i7wi-ei4m.json';
+  var locationsBaseUrl = 'https://chhs.data.ca.gov/resource/x5nq-b49e.json';
   var prevBounds = false;
   var curBounds = false;
 
