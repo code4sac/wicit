@@ -9,7 +9,8 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
   var mapId = Constants.mapboxId;
   var mapToken = Constants.mapboxToken;
   var locationsApiToken = Constants.apiToken;
-  var tileUrl = "https://{s}.tiles.mapbox.com/v3/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
+  // var tileUrl = "https://{s}.tiles.mapbox.com/v4/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
+  var tileUrl = "https://api.mapbox.com/styles/v1/" + mapId + "/tiles/256/{z}/{x}/{y}?access_token=" + mapToken
   var locationsBaseUrl = 'https://chhs.data.ca.gov/resource/x5nq-b49e.json';
   var prevBounds = false;
   var curBounds = false;
