@@ -1,0 +1,27 @@
+<div ng-if="success"><h3>You probably qualify for WIC!</h3>
+    <p class="success">Your next step is to talk to a WIC agent. Call&nbsp;<a
+            href="tel://888-942-9675">1-888-WIC-WORKS</a> to get started.</p></div>
+<div ng-if="!success">
+    <div ng-if="reason == &quot;residency&quot;"><h3>Sorry, you have to live in-state to qualify for
+        WIC in California.</h3>
+        <p class="warning">If you're moving here, WIC can work with you. Give them a call at&nbsp;<a
+                href="tel://888-942-9675">1-888-WIC-WORKS</a>.</p></div>
+    <div ng-if="reason == &quot;category&quot;"><h3>Sorry, WIC is for people who identify with one
+        of the following:</h3>
+        <ul>
+            <li>Women who are pregnant, breastfeeding, or just had a baby.</li>
+            <li>Children under 5 years old (including foster children)</li>
+            <li>Families with low to medium income (working families may qualify)</li>
+        </ul>
+        <p class="warning">A WIC agent may be able to help you find a different program that can
+            help. To talk to a WIC agent, call&nbsp;<a href="tel://888-942-9675">1-888-WIC-WORKS</a>.
+        </p></div>
+    <div ng-if="reason == &quot;income&quot;"><h3>You might not qualify for WIC.</h3>
+        <p class="warning">WIC is for families making less than 185% of the Federal Poverty Level
+            ($23,850 for a family of four in 2014).
+            You should still talk to a WIC agent at&nbsp;<a href="tel://888-942-9675">1-888-WIC-WORKS</a>
+            to find out for sure whether you qualify.</p></div>
+    <div ng-if="!reason"><h3>Whoops!</h3>
+        <p class="warning">Told you we don't save your data! You can take the&nbsp;<a
+                ui-sref="qualify.residency">quiz</a> again though.</p></div>
+</div>
