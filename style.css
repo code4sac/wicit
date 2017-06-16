@@ -6001,7 +6001,7 @@ input {
 }
 @media (max-width: 768px) {
     #header {
-        background-image: url("assets/images/bg7.jpg");
+        background-image: url("images/bg7.jpg");
         background-size: cover;
     }
     #header > div {
@@ -6100,7 +6100,7 @@ body.map #container {
     background-color: #8C8A34;
 }
 #map-container.loading {
-    background: #8C8A34 url("assets/images/loader.gif") no-repeat center center;
+    background: #8C8A34 url("images/loader.gif") no-repeat center center;
 }
 #map-container.loading .angular-leaflet-map {
     opacity: 0;
@@ -6117,7 +6117,7 @@ body.map #container {
     margin: 0;
 }
 #map-container .locate-control {
-    background: #fff url("assets/images/geolocate.png") no-repeat center center;
+    background: #fff url("images/geolocate.png") no-repeat center center;
     background-size: 14px 14px;
     cursor: pointer;
     border: 1px solid #ccc;
@@ -6285,7 +6285,7 @@ body, html {
     background-size: cover;
 }
 body {
-    background: url("assets/images/bg7.jpg") no-repeat center center fixed;
+    background: url("images/bg7.jpg") no-repeat center center fixed;
 }
 #container {
     width: 100%;
