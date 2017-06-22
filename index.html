@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="wicItApp" ng-controller="AppCtrl">
+<head><title>WICit: Where to shop with WIC.</title>
+    <meta name="description"
+          content="Where and how to get and use WIC: Find locations that accept WIC in California, using data from the California Department of Public Health.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+    <link rel="stylesheet"
+          href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+</head>
+<body ng-class="$state.current.name">
+<ul id="global-notifications" class="notifications">
+    <li ng-repeat="notification in notifications" ng-class="{hide: remove}" ng-cloak
+        class="{{ notification.status.class }}">{{ notification.message }}
+    </li>
+</ul>
+<div id="header">
+    <div>
+        <div class="logo"><img src="images/logo.png"
+                               title="WICit, Where and How to Get and Use WIC.">
+            <p>Where and how to get and use WIC</p></div>
+        <div id="menu-wrapper">
+            <ul id="main-menu">
+                <li ui-sref-active="active"><a ui-sref="map">Who Accepts WIC?</a></li>
+                <li ng-class="{active : $state.includes(&quot;qualify&quot;)}"><a
+                        ui-sref="qualify.residency">Do I Qualify?</a></li>
+                <li ui-sref-active="active"><a ui-sref="about">What Is WIC?</a></li>
+                <li ui-sref-active="active"><a ui-sref="search">Which Foods Qualify?</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="container" ui-view></div>
+<div id="footer"></div>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascrit"
+        src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript"
+        src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="bower_components/leaflet/dist/leaflet.js"></script>
+<script type="text/javascript"
+        src="bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script type="text/javascript"
+        src="bower_components/angular-c4s-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+<script type="text/javascript">angular.module('wicItApp.Constants', [])
+    .constant('Constants', Object.freeze({
+        mapboxId: 'mapbox/streets-v9',
+        mapboxToken: 'pk.eyJ1Ijoic3RhbmNoZXRhIiwiYSI6ImNpc2p1b2dhOTAycTQydW53a2Nmcm5jOHAifQ.9me3QyJy645Rw9qsPyvW7w',
+        apiToken: 'Ju5gZGk9nPFJQylN0fd1B3CXl'
+    }));</script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-53902941-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>

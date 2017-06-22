@@ -1,0 +1,35 @@
+<div class="col-md-8 col-md-offset-2" id="content"><h2>Which Foods Qualify for WIC?</h2>
+    <div class="row search-wrap">
+        <div class="search-col col-xs-12 col-sm-8 col-md-7"><p class="info">We're still working on
+            this feature.
+            This is not a complete list — see the <a
+                    href="http://www.fns.usda.gov/wic/wic-food-packages-regulatory-requirements-wic-eligible-foods">USDA
+                website</a> for more details on qualified foods.</p><input class="form-control"
+                                                                           id="search-input"
+                                                                           type="text"
+                                                                           ng-model="query"
+                                                                           ng-change="submit()"
+                                                                           placeholder="Search Qualifying Foods..."/>
+            <div class="well" ng-show="state === &quot;initial&quot;">Search for WIC-eligible foods,
+                brands, and UPC codes.
+            </div>
+            <div class="well" ng-show="state === &quot;pending&quot;">Searching...</div>
+            <div class="alert alert-danger" ng-show="state === &quot;error&quot;">Sorry, something
+                has gone wrong.
+            </div>
+            <div class="well" ng-show="state === &quot;noResults&quot;">No results for &ldquo;{{
+                query }}&rdquo; found.
+            </div>
+            <div ng-show="state === &quot;results&quot;">
+                <ul class="list-group" id="search-results">
+                    <li class="list-group-item" ng-repeat="result in results track by $index">{{
+                        result['Brand Name'] }} {{ result['Product Name'] }}
+                        <div class="upc">UPC: {{ result['UPC'] }}</div>
+                    </li>
+                </ul>
+                <div>{{ results.length }} of {{ count }} results.</div>
+            </div>
+            <p class="info"> If you have any ideas on how we can improve this feature, please tweet
+                us <a href="http://twitter.com/wicitapp">@wicitapp</a>.</p></div>
+    </div>
+</div>
