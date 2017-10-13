@@ -108,21 +108,31 @@ wicItApp.config(["$stateProvider", "$urlRouterProvider", function (a, b) {
 
     function o(c) {
         function d(b) {
-            b.forEach(function (b) {
-                var c = parseFloat(b.location.latitude), d = parseFloat(b.location.longitude),
-                    e = b.vendor, f = b.city, g = b.zip_code, h = b.address;
-                b.second_address && b.second_address.indexOf('"') < 0 && (h += " " + b.second_address), h += ", " + f + " " + g;
-                var i = "<h3>" + e + '</h3><p class="address">' + h + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + h + '" target="_blank">Directions</a></p>';
-                a.markers[p(e)] = {
-                    group: b.county,
-                    groupOption: {showCoverageOnHover: !1},
-                    lat: c,
-                    lng: d,
-                    focus: !1,
-                    message: i,
-                    icon: v
-                }
+            var  nLocations = 0;
+            b.result.records.forEach(function (b) {
+               var loc = b.Location;
+               var regexLatLng = /\((-?[0-9]+\.?[0-9]*) *, *(-?[0-9]+\.?[0-9]*)\)/g;
+               var [orig, latitude, longitude] = regexLatLng.exec(loc);
+               var c = parseFloat(latitude), d = parseFloat(longitude),
+                    e = b.Vendor, f = b.City, g = b["Zip Code"], h = b.Address;
+               if (c >  0) {
+                  b["Second Address"] && b["Second Address"].indexOf('"') < 0 && (h += " " + b["Second Address"]), h += ", " + f + " " + g;
+                  var i = "<h3>" + e + '</h3><p class="address">' + h + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + h + '" target="_blank">Directions</a></p>';
+                  a.markers[p(e)] = {
+                      group: b.County,
+                      groupOption: {showCoverageOnHover: !1},
+                      lat: c,
+                      lng: d,
+                      focus: !1,
+                      message: i,
+                      icon: v
+                  }
+                  nLocations++;
+               } else {
+                 console.warn("Location is no good", b);
+               }
             })
+            console.log("Parsed locations: " + nLocations);
         }
 
         function e(a, b, c, d) {
@@ -134,7 +144,9 @@ wicItApp.config(["$stateProvider", "$urlRouterProvider", function (a, b) {
 
         mapUpdating = !0;
         var f = C.getNorthWest(), h = C.getSouthEast(), i = A;
-        return i += "?$where=within_box(location," + f.lat + "," + f.lng + "," + h.lat + "," + h.lng + ")", i += "&$$app_token=" + y, b.get(i).success(d).error(e)
+        return i += "&q=SACRAMENTO", b.get(i).success(d).error(e)
+        //return i += "&bbox=" + f.lat + "," +  f.lng + "," + h.lat + "," + h.lng , b.get(i).success(d).error(e)
+        //return i += "?$where=within_box(location," + f.lat + "," + f.lng + "," + h.lat + "," + h.lng + ")", i += "&$$app_token=" + y, b.get(i).success(d).error(e)
     }
 
     function p(a) {
@@ -160,7 +172,7 @@ wicItApp.config(["$stateProvider", "$urlRouterProvider", function (a, b) {
         v = q("images/marker.png", "images/marker@2x.png", "images/marker_shadow.png", "images/marker_shadow@2x.png", 30, 30),
         w = i.mapboxId, x = i.mapboxToken, y = i.apiToken,
         z = "https://api.mapbox.com/styles/v1/" + w + "/tiles/256/{z}/{x}/{y}?access_token=" + x,
-        A = "https://chhs.data.ca.gov/resource/x5nq-b49e.json", B = !1, C = !1;
+        A = "https://data.chhs.ca.gov/api/action/datastore_search?resource_id=ee10b67b-2b93-47e7-aa41-cecfbbd32e17", B = !1, C = !1;
     a.mapLoading = !0, j(), k(), l(), a.$on("leafletDirectiveMap.moveend", function (b) {
         d.getMap().then(function (c) {
             C && (B = C), C = c.getBounds(), B && B.contains(C) || o(b).then(function () {
