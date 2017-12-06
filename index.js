@@ -110,26 +110,26 @@ wicItApp.config(["$stateProvider", "$urlRouterProvider", function (a, b) {
         function d(b) {
             var  nLocations = 0;
             b.result.records.forEach(function (b) {
-               var loc = b.Location;
-               var regexLatLng = /\((-?[0-9]+\.?[0-9]*) *, *(-?[0-9]+\.?[0-9]*)\)/g;
-               var [orig, latitude, longitude] = regexLatLng.exec(loc);
-               var c = parseFloat(latitude), d = parseFloat(longitude),
+               var latitude_string = b.Latitude;
+               var longitude_string = b.Longitude;
+
+               var lat = parseFloat(latitude_string), lng = parseFloat(longitude_string),
                     e = b.Vendor, f = b.City, g = b["Zip Code"], h = b.Address;
-               if (c >  0) {
+               if (lat >  0) {
                   b["Second Address"] && b["Second Address"].indexOf('"') < 0 && (h += " " + b["Second Address"]), h += ", " + f + " " + g;
                   var i = "<h3>" + e + '</h3><p class="address">' + h + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + h + '" target="_blank">Directions</a></p>';
                   a.markers[p(e)] = {
                       group: b.County,
                       groupOption: {showCoverageOnHover: !1},
-                      lat: c,
-                      lng: d,
+                      lat: lat,
+                      lng: lng,
                       focus: !1,
                       message: i,
                       icon: v
                   }
                   nLocations++;
                } else {
-                 console.warn("Location is no good", b);
+                 console.warn("Location for " + b.Address + " is no good", b);
                }
             })
             console.log("Parsed locations: " + nLocations);
