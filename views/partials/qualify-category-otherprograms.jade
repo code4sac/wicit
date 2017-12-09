@@ -1,0 +1,18 @@
+div.form-group.qualify.category.otherprograms
+    span.form-group-label
+        | Do you currently receive any of the following:
+        ul
+            li
+                | Medi-Cal?
+            li
+                | Food Stamps/SNAP?
+            li
+                | TANF?
+            li
+                | FDPIR?
+            li
+                | WIC benefits from another state?
+    button(ng-click='result(false, "category")')
+        | No
+    button(ng-click='result(true)')
+        | Yes

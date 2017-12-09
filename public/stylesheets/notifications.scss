@@ -1,0 +1,36 @@
+#global-notifications {
+  position: fixed;
+  max-width: 50%;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    background-color: $brand-secondary;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    text-transform: uppercase;
+    &:last-of-type {
+      border-bottom: 2px solid #fff;
+    }
+    &.warning {
+      background-color: $brand-warning;
+    }
+    &.error {
+      background-color: $brand-error;
+    }
+    &.info {
+      background-color: $brand-info;
+    }
+    &.success {
+      background-color: $brand-success;
+    }
+  }
+}

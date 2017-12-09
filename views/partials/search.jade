@@ -1,0 +1,28 @@
+div#content.col-md-8.col-md-offset-2
+    h2
+        | Which Foods Qualify for WIC?
+    div.row.search-wrap
+        div.search-col.col-xs-12.col-sm-8.col-md-7
+            p.info
+                | We're still working on this feature.
+                |  This is not a complete list — see the <a href="http://www.fns.usda.gov/wic/wic-food-packages-regulatory-requirements-wic-eligible-foods">USDA website</a> for more details on qualified foods.
+            input.form-control#search-input(type='text', ng-model='query', ng-change='submit()', placeholder='Search Qualifying Foods...')
+            div.well(ng-show='state === "initial"')
+                | Search for WIC-eligible foods, brands, and UPC codes.
+            div.well(ng-show='state === "pending"')
+                | Searching...
+            div.alert.alert-danger(ng-show='state === "error"')
+                | Sorry, something has gone wrong.
+            div.well(ng-show='state === "noResults"')
+                | No results for &ldquo;{{ query }}&rdquo; found.
+            div(ng-show='state === "results"')
+                ul#search-results.list-group
+                    li.list-group-item(ng-repeat='result in results track by $index')
+                        | {{ result['Brand Name'] }} {{ result['Product Name'] }}
+                        div.upc
+                            | UPC: {{ result['UPC'] }}
+                div
+                    | {{ results.length }} of {{ count }} results.
+            p.info
+                |  If you have any ideas on how we can improve this feature, please tweet us <a href="http://twitter.com/wicitapp">@wicitapp</a>.
+

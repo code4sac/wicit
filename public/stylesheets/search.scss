@@ -1,0 +1,26 @@
+.search-wrap {
+  text-align: center;
+
+  .search-col {
+    text-align: left;
+    float: none;
+    margin: 20px auto;
+  }
+}
+
+#search-input {
+  text-align: left;
+  margin-bottom: 20px;
+
+  &:focus {
+    &::-webkit-input-placeholder { color: transparent; }
+    &:-moz-placeholder { color: transparent; }
+    &::-moz-placeholder { color: transparent; }
+    &:-ms-input-placeholder { color: transparent; }
+  }
+}
+
+.upc {
+  text-transform: italic;
+  color: rgba($brand-text, 0.6);
+}

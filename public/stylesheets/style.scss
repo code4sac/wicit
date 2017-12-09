@@ -1,0 +1,145 @@
+@import '../components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import 'mixins';
+@import 'variables';
+@import 'fonts';
+@import 'form';
+@import 'header';
+@import 'menu';
+@import 'footer';
+@import 'notifications';
+@import 'map';
+@import 'qualify';
+@import 'search';
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: $brand-text;
+  background-color: transparent;
+  background-size: cover;
+}
+
+body {
+  background: $bg-image no-repeat center center fixed;
+}
+
+#container {
+  width: 100%;
+}
+
+a {
+  color: $brand-secondary;
+}
+
+a:hover {
+  color: $brand-primary;
+}
+
+button {
+  display: inline-block;
+  color: #fff;
+  background-color: $brand-primary;
+  border: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 50%;
+  min-width: 100px;
+  margin-top: 10px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: $brand-secondary;
+  }
+}
+
+.warning {
+  background-color: rgba($brand-warning, .6);
+}
+p.warning {
+  padding: 10px;
+  border: 2px solid $brand-warning;
+  color: #fff;
+  a {
+    color: $brand-warning;
+  }
+}
+
+.error {
+  background-color: rgba($brand-error, .6);
+}
+p.error {
+  padding: 10px;
+  border: 2px solid $brand-error;
+  color: #fff;
+  a {
+    color: $brand-error;
+  }
+}
+
+.info {
+  background-color: rgba($brand-info, .6);
+}
+p.info {
+  padding: 10px;
+  border: 2px solid $brand-info;
+  color: #fff;
+  a {
+    color: $brand-info;
+  }
+}
+
+.success {
+  background-color: rgba($brand-success, .6);
+}
+p.success {
+  padding: 10px;
+  border: 2px solid $brand-success;
+  color: #fff;
+  a {
+    color: $brand-success;
+  }
+}
+
+#content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, .85);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+}
+
+div.video-container {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  background-color: $brand-primary;
+  box-sizing: border-box;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: $screen-sm) {
+
+  body {
+    background-image: none;
+  }
+  #content {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,3 @@
+ul#global-notifications.notifications
+    li(ng-repeat="notification in notifications", class="{{ notification.status.class }}", ng-class="{hide: remove}", ng-cloak)
+        | {{ notification.message }}

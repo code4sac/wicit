@@ -1,0 +1,47 @@
+{
+  "name": "angular-c4s-leaflet-directive",
+  "description": "C4S fork of AngularJS directive to embed an interact with maps managed by Leaflet library. Avoid using this. It will only be maintained until changes are merged into original.",
+  "keywords": [
+    "angularjs",
+    "javascript",
+    "directive",
+    "leaflet"
+  ],
+  "main": [
+    "dist/angular-leaflet-directive.js"
+  ],
+  "dependencies": {
+    "angular": "1.2.x",
+    "leaflet": "0.7.x"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "angular-route": "~1.2.18",
+    "angular-animate": "~1.2.18",
+    "angular-mocks": "~1.2.18",
+    "leaflet.markercluster": "~0.4",
+    "leaflet.draw": "~0.2.3",
+    "Leaflet.label": "~0.2.1",
+    "leaflet-tilelayer-geojson": "*",
+    "Leaflet.awesome-markers": "~2.0.2",
+    "webgl-heatmap-leaflet": "*",
+    "leaflet-plugins": "~1.1.2",
+    "esri-leaflet": "~0.0.1-beta.5",
+    "proj4": "~2.1.2",
+    "proj4leaflet": "~0.7.0",
+    "Leaflet.MakiMarkers": "~1.0.1",
+    "Leaflet.PolylineDecorator": "bbecquet/Leaflet.PolylineDecorator"
+  },
+  "ignore": [
+    "**/.*",
+    "src",
+    "doc",
+    "examples",
+    "test",
+    "*.md",
+    "Gruntfile.js",
+    "package.json",
+    "bower.json"
+  ]
+}
