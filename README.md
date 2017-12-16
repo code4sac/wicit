@@ -1,4 +1,4 @@
-# WICit: Where to Shop with WIC
+#WICit: Where to Shop with WIC
 
 ### The California deployment of WICit is live!
 #### Check it out at [findwic.com](http://findwic.com)!

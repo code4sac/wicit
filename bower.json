@@ -1,11 +1,19 @@
 {
   "name": "wicit",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "authors": [
     "Jesse Rosato <jesse.rosato@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/javascripts/components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "angular": "~1.2.20",
     "angular-c4s-leaflet-directive": "~0.0.1",

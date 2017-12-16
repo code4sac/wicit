@@ -1,0 +1,18 @@
+div.form-group.qualify.income
+    span.form-group-label
+        | Last step...
+    label
+        | How many people (including unborn children) in your family?
+    input.family-count(type='text', maxlength='2', placeholder='4', ng-model='family.count', size='2')
+    br
+    label
+        | What is your family's combined income?
+    span.currency-sign
+        | $
+    input.family-income(type='text', maxLength='8', placeholder='amount', ng-model='family.income', size='10')
+    span.per
+        | per
+    select.family-payperiod(ng-model='family.payperiod', class="form-control" ng-init='family.payperiod = periods[0].value', ng-options='period.value as period.label for period in periods')
+    br
+    button(ng-click="submit()")
+        | Do I Qualify?

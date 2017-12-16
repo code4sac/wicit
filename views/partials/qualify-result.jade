@@ -1,0 +1,49 @@
+div(ng-if='success')
+    h3
+        | You probably qualify for WIC!
+    p.success
+        | Your next step is to talk to a WIC agent. Call&nbsp;
+        a(href='tel://888-942-9675')
+            | 1-888-WIC-WORKS
+        |  to get started.
+div(ng-if='!success')
+    div(ng-if='reason == "residency"')
+        h3
+            | Sorry, you have to live in-state to qualify for WIC in California.
+        p.warning
+            | If you're moving here, WIC can work with you. Give them a call at&nbsp;
+            a(href='tel://888-942-9675')
+                | 1-888-WIC-WORKS
+            | .
+    div(ng-if='reason == "category"')
+        h3
+            | Sorry, WIC is for people who identify with one of the following:
+        ul
+            li
+                | Women who are pregnant, breastfeeding, or just had a baby.
+            li
+                | Children under 5 years old (including foster children)
+            li
+                | Families with low to medium income (working families may qualify)
+        p.warning
+            | A WIC agent may be able to help you find a different program that can help. To talk to a WIC agent, call&nbsp;
+            a(href='tel://888-942-9675')
+                | 1-888-WIC-WORKS
+            | .
+    div(ng-if='reason == "income"')
+        h3
+            | You might not qualify for WIC.
+        p.warning
+            | WIC is for families making less than 185% of the Federal Poverty Level ($23,850 for a family of four in 2014).
+            | You should still talk to a WIC agent at&nbsp;
+            a(href='tel://888-942-9675')
+                | 1-888-WIC-WORKS
+            |  to find out for sure whether you qualify.
+    div(ng-if='!reason')
+        h3
+            | Whoops!
+        p.warning
+            | Told you we don't save your data! You can take the&nbsp;
+            a(ui-sref='qualify.residency')
+                | quiz
+            |  again though.

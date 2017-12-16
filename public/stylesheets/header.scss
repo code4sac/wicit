@@ -1,0 +1,36 @@
+#header {
+  width: 100%;
+  text-align: center;
+  background-image: none;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  & > div {
+    background: transparent;
+  }
+}
+
+.logo {
+  display: inline-block;
+  padding: 5px 10px;
+  h1.title {
+    color: #fff;
+    font-family: $cursive;
+    margin: 0;
+  }
+  p {
+    color: $brand-text;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: $screen-sm) {
+
+  #header {
+    background-image: $bg-image;
+    background-size: cover;
+    & > div {
+      background-color: rgba(255, 255, 255, .75);
+    }
+  }
+
+}

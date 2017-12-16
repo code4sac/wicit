@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+// VARIABLES
+$sans-serif:            Oxygen, sans-serif;
+$cursive:               Lobster, cursive;
+
+body {
+  font-family: $sans-serif;
+  color: #333333;
+}

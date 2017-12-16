@@ -37,6 +37,17 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
+# Project Specific #
+####################
+coverage
+node_modules/
+.sass-cache
+public/javascripts/*.min.js
+public/javascripts/*.min.js.map
+public/stylesheets/*.min.css
+public/stylesheets/*.css.map
+.env
+
 # IDE #
 #######
 *.iml

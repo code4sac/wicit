@@ -1,0 +1,21 @@
+.form-group.qualify {
+
+  .form-control {
+    width: auto;
+    background-color: transparent;
+  }
+
+  select.form-control {
+    display: inline;
+  }
+
+  padding: 20px 0;
+  text-align: left;
+  .family-count, .family-payperiod, .currency-sign, .per {
+    margin-left: 10px;
+  }
+  .currency-sign {
+    margin-right: 5px;
+  }
+
+}
