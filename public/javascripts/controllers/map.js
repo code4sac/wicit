@@ -6,11 +6,8 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
   var minZoom = 10;
   var pinIcon = iconFactory('image/pin.png', 'image/pin@2x.png', 'image/pin_shadow.png', 'image/pin_shadow@2x.png', 30, 30);
   var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
-  var mapId = Constants.mapboxId;
-  var mapToken = Constants.mapboxToken;
-  var locationsApiToken = Constants.apiToken;
   // var tileUrl = "https://{s}.tiles.mapbox.com/v4/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
-  var tileUrl = "https://api.mapbox.com/styles/v1/" + mapId + "/cjcjxnsrg9mic2snuyigc90sk/tiles/256/{z}/{x}/{y}@2x?access_token=" + mapToken;
+  var tileUrl = Constants.mapboxIntegrationUrl;
   var locationsBaseUrl = 'https://data.chhs.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE ';
   var prevBounds = false;
   var curBounds = false;
