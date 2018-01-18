@@ -8,7 +8,7 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
   var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
   // var tileUrl = "https://{s}.tiles.mapbox.com/v4/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
   var tileUrl = Constants.mapboxIntegrationUrl;
-  var locationsBaseUrl = 'https://data.chhs.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE ';
+  var locationsBaseUrl = 'https://data.chhs.ca.gov/api/3/action/datastore_search_sql';
   var prevBounds = false;
   var curBounds = false;
 
@@ -129,7 +129,7 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
     var nw = curBounds.getNorthWest();
     var se = curBounds.getSouthEast();
     var locationsUrl = locationsBaseUrl;
-    locationsUrl += '"Longitude" between ' + nw.lng + '  and ' + se.lng + '  AND "Latitude" between ' + se.lat + ' and ' + nw.lat;
+    locationsUrl += '?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE "Longitude" between ' + nw.lng + '  and ' + se.lng + '  AND "Latitude" between ' + se.lat + ' and ' + nw.lat;
     return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
