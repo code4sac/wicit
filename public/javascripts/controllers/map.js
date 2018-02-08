@@ -6,12 +6,9 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
   var minZoom = 10;
   var pinIcon = iconFactory('image/pin.png', 'image/pin@2x.png', 'image/pin_shadow.png', 'image/pin_shadow@2x.png', 30, 30);
   var markerIcon = iconFactory('image/marker.png', 'image/marker@2x.png', 'image/marker_shadow.png', 'image/marker_shadow@2x.png', 30, 30);
-  var mapId = Constants.mapboxId;
-  var mapToken = Constants.mapboxToken;
-  var locationsApiToken = Constants.apiToken;
   // var tileUrl = "https://{s}.tiles.mapbox.com/v4/" + mapId + "/{z}/{x}/{y}.png?access_token=" + mapToken;
-  var tileUrl = "https://api.mapbox.com/styles/v1/" + mapId + "/tiles/256/{z}/{x}/{y}?access_token=" + mapToken
-  var locationsBaseUrl = 'https://chhs.data.ca.gov/resource/x5nq-b49e.json';
+  var tileUrl = Constants.mapboxIntegrationUrl;
+  var locationsBaseUrl = 'https://data.chhs.ca.gov/api/3/action/datastore_search_sql';
   var prevBounds = false;
   var curBounds = false;
 
@@ -132,21 +129,20 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
     var nw = curBounds.getNorthWest();
     var se = curBounds.getSouthEast();
     var locationsUrl = locationsBaseUrl;
-    locationsUrl += '?$where=within_box(location,' + nw.lat + ',' + nw.lng + ',' + se.lat + ',' + se.lng + ')';
-    locationsUrl += '&$$app_token=' + locationsApiToken;
+    locationsUrl += '?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE "Longitude" between ' + nw.lng + '  and ' + se.lng + '  AND "Latitude" between ' + se.lat + ' and ' + nw.lat;
     return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
-      data.forEach(function (vendor) {
-        var lat = parseFloat(vendor.location.latitude);
-        var lng = parseFloat(vendor.location.longitude);
-        var name = vendor.vendor;
-        var city = vendor.city;
-        var zip = vendor.zip_code;
-        var address = vendor.address;
+      data.result.records.forEach(function (vendor) {
+        var lat = parseFloat(vendor.Latitude);
+        var lng = parseFloat(vendor.Longitude);
+        var name = vendor.Vendor;
+        var city = vendor.City;
+        var zip = vendor["Zip Code"];
+        var address = vendor.Address;
         // Data has some weird ones where second address is just a space, double quotes and a space.
-        if (vendor.second_address && vendor.second_address.indexOf('"') < 0) {
-          address += ' ' + vendor.second_address;
+        if (vendor['Second Address'] && vendor['Second Address'].indexOf('"') < 0) {
+          address += ' ' + vendor['Second Address'];
         }
         address += ', ' + city + ' ' + zip;
         var message ='<h3>' + name + '</h3><p class="address">' + address + '</p><p class="directions"><a href="https://maps.google.com?saddr=Current+Location&daddr=' + address + '" target="_blank">Directions</a></p>';
