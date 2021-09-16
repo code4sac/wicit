@@ -38,5 +38,11 @@
 #### Digital Ocean
 Wicit is ready to be [deployed on Digital Ocean using Dokku](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-dokku-application) (wicit doesn't use a database right now, so you don't have to worry about that part). Just be sure to use `dokku config:set <appname> VAR=value` to add the settings present in your local `.env` file to your deployment environment.
 
+Connecting (you will need your ssh key on the droplet or find someone who has their ssh key on the droplet):
+1. `ssh root@<ip address>`
+
+Renew SSL Manually (it should auto-renew via cron, but to troubleshoot)
+1. `dokku letsencrypt:auto-renew`
+
 ###License
 WICit is free software, and may be redistributed under the MIT-LICENSE.
