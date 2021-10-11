@@ -129,7 +129,7 @@ wicItApp.controller('MapCtrl', function ($scope, $http, leafletEvents, leafletDa
     var nw = curBounds.getNorthWest();
     var se = curBounds.getSouthEast();
     var locationsUrl = locationsBaseUrl;
-    locationsUrl += '?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE "Longitude" between ' + nw.lng + '  and ' + se.lng + '  AND "Latitude" between ' + se.lat + ' and ' + nw.lat;
+    locationsUrl += '?sql=SELECT * FROM "ee10b67b-2b93-47e7-aa41-cecfbbd32e17" WHERE "Longitude"::numeric between ' + nw.lng + '  and ' + se.lng + '  AND "Latitude"::numeric between ' + se.lat + ' and ' + nw.lat;
     return $http.get(locationsUrl).success(displayLocations).error(updateNearbyLocationsError);
 
     function displayLocations(data) {
